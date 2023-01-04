@@ -64,7 +64,7 @@ a:link {
 .sidenav {
   float: left;
   width: 16%;
-  height: 1200px; 
+  height: 1300px; 
   background: #ccc;
   padding: 20px;
   font-size: 15px;
@@ -84,7 +84,11 @@ a:link {
   color: black;
 }
 
-/* Style the list inside the menu */
+.sidenav a.active {
+  background-color: rgb(51, 102, 153);
+  color: black;
+}
+  
 nav ul {
   list-style-type: none;
   padding: 0;
@@ -141,7 +145,7 @@ footer {
 <section>
   <div class="sidenav">
     <a href="july_tournament.html"> June Tournament</a>
-    <a href="december_tournament.html"> December Tournament</a>
+    <a class="active" href="december_tournament.html"> December Tournament</a>
   </div>
 
 
