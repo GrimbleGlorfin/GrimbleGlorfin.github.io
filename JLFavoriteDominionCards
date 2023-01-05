@@ -145,7 +145,7 @@ nav {
 </style>
 
 <div class="topnav">
-  <a href="index.html">Home</a>
+  <a href="index.htm">Home</a>
   <a class="active" href="#cards">Cards</a>
   <a href="#game">Game</a>
   <a href="#extra">Extra</a>
