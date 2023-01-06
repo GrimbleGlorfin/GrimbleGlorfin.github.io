@@ -44,3 +44,11 @@ body {
 a:link {
   text-decoration: none;
 }
+
+<div class="topnav">
+  <a href="index.htm">Home</a>
+  <a href="JLFavoriteDominionCards.html">Cards</a>
+  <a href="#game">Game</a>
+  <a href="Books.html">Books</a>
+  <a class="active" href="tournaments_played.html">Tournament</a>
+</div>
