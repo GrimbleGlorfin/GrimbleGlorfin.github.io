@@ -48,7 +48,7 @@ margin: none;
   padding: 1px 1px 1px 1px;
   text-decoration: none;
   font-size: 100%;
-  display: block;
+  display: inline;
 }
 
 
@@ -63,35 +63,7 @@ margin: none;
   color: black;
 }
 
-.card-displays {
-  display: flex;
-  flex-direction: row;
-  padding: 8px;
-  background-color:rgb(211, 211, 211);
-  border:5px ridge gray;
-  width: 88.75%;
-  height: 400px; 
-  z-index: 3;
-  justify-content: center;
-}
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-/* Create four equal columns that sits next to each other */
-.column {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-}
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media (max-width: 800px) {
@@ -188,49 +160,10 @@ position: relative;
   font-size: 200%;
 }
 
-/* Popup container */
-.popup {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-}
-
-/* The actual popup (appears on top) */
-.popup .popuptext {
-  visibility: hidden;
-  width: 160px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 8px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -80px;
-}
-
-/* Popup arrow */
-.popup .popuptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
-
-/* Toggle this class when clicking on the popup container (hide and show the popup) */
-.popup .show {
-  visibility: visible;
-}  
-
 #homepage-img {
   height: auto;
   width: 100%;
+  float: right;
 }
 
 </style>
@@ -253,17 +186,17 @@ position: relative;
 <div class="sidenav">
   <h1 id="strat-pages-header">Main Links</h1>
   <table>
-  <tr><a href="#Aragorn">Characters</a></tr>
-  <tr><a href="#Arkenstone">NPCs</a></tr>
-  <tr><a href="#Azog">Monsters</a></tr>
-  <tr><a href="#Balin">Worlds</a></tr>
-  <tr><a href="#Bard">Campaigns</a></tr>
-  <tr><a href="#Barrel">Coming Soon</a></tr>
+  <tr><a href="#Characters">Characters</a></tr>
+  <tr><a href="#NPCs">NPCs</a></tr>
+  <tr><a href="#Monsters">Monsters</a></tr>
+  <tr><a href="#Worlds">Worlds</a></tr>
+  <tr><a href="#Campaigns">Campaigns</a></tr>
+  <tr><a href="#IDK">Coming Soon</a></tr>
   </table>
 </div>  
 
 <div id="homepage-img">
-  <img src="Green.jpg" alt="Green">
+  <img src="bard.webp" alt="bard">
 </div>
 
 
