@@ -7,10 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="TopnavStylesheet.css">
+  <link rel="stylesheet" href="SidenavStylesheet.css">
 </head>
 <body style="background-color:rgb(189, 217, 229);">
 
 <style>
+
 
 body {
 padding: none;
@@ -41,6 +43,16 @@ nav {
 
 .text-container {
 background-color: dimgray;
+float: right;
+display: inline;
+}
+
+.pic-container {
+  height: 300px;
+  width: auto;
+  position: relative;
+  float: left;
+  display: inline;
 }
 
 #page-title {
@@ -61,19 +73,35 @@ background-color: dimgray;
 
 </style>
 
-<div class="topnav">
+<nav class="topnav">
   <a href="index.htm">Home</a>
   <a href="JLFavoriteDominionCards.html">Cards</a>
   <a class="active" href="#Holson">Test Page</a>
   <a href="Books.html">Books</a>
   <a href="tournaments_played.html">Tournament</a>
-</div>
+</nav>
 
-<h1 id="page-title">Holson</h1>
+<aside class="sidenav">
+  <h1 id="strat-pages-header">Main Links</h1>
+  <table>
+  <tr><a href="#Characters">Characters</a></tr>
+  <tr><a href="#NPCs">NPCs</a></tr>
+  <tr><a href="#Monsters">Monsters</a></tr>
+  <tr><a href="#Worlds">Worlds</a></tr>
+  <tr><a href="#Campaigns">Campaigns</a></tr>
+  <tr><a href="#IDK">Coming Soon</a></tr>
+  </table>
+</aside> 
 
-<div class="text-container">
+<!-- <h1 id="page-title">Holson</h1> -->
+<section class="pic-container">
+  <img src="Groom.jpg" alt="Holson"> 
+</section>
+
+
+<section class="text-container">
     <p>Some Text</p>
-</div>
+</section>
 
 
 

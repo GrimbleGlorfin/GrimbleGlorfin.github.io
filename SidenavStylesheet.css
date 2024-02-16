@@ -1,0 +1,30 @@
+﻿.sidenav {
+  overflow-x: hidden;
+  background-color: rgb(204, 204, 204);
+  position:static;
+  height: 1000px;
+  width: 9%;
+  float:left;
+  
+}
+
+.sidenav a {
+  color: black;
+  padding: 1px 1px 1px 1px;
+  text-decoration: none;
+  font-size: 100%;
+  display: block;
+}
+
+
+@media (max-width: 850px) {
+.sidenav {
+  display: none;
+}
+}
+
+.sidenav a:hover {
+  background-color: rgb(128, 191, 255);
+  color: black;
+}
+
