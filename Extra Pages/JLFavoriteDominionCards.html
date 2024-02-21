@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<head>
+  <title>Cards | Jon Lawrence</title>
+  <link rel="icon" type="image/x-icon" href="TolkienSymbol.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="TopnavStylesheet.css">
+</head>
+<body style="background-color:rgb(189, 217, 229);">
+
+<style>
+
+body {
+padding: none;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+width: 100%;
+height: auto;
+padding: none;
+margin: none;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.card-displays {
+  float: left;
+  display: flex;
+  flex-direction: row;
+  padding: 8px;
+  background-color:rgb(211, 211, 211);
+  border:5px ridge gray;
+  width: 100%;
+  height: 400px; 
+  z-index: 3;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.card-info {
+  border: 6px ridge w3-blue-gray;
+  width:200px;
+  padding: 0;
+  margin: 8px;
+  float: left;
+  z-index: 4;
+}
+
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; 
+  background: #ccc;
+  padding: 20px;
+}
+
+#page-title-2 {
+  text-align:center;
+  background-color: rgb(51, 133, 255);
+  font-family: Cursive;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+  padding: 20px;
+  margin: 0px;
+  color: rgb(26, 26, 26);
+  width: 26%;
+  position: relative;
+  left: 37%;
+  top: 0px;
+  border: 5px groove rgb(0, 0, 51);
+  font-size: 200%;
+}
+
+</style>
+
+<div class="topnav">
+  <a href="index.htm">Home</a>
+  <a class="active" href="#cards">Cards</a>
+  <a href="#game">Game</a>
+  <a href="Books.html">Books</a>
+  <a href="tournaments_played.html">Tournament</a>
+</div>
+
+<h1 id="page-title-2">Jon Lawrence's Favorite Cards</h1>
+
+<div class="card-displays row">
+    <div class="card-info">
+        <img src="BlackCat.jpg" alt="Black Cat">
+    </div>
+    <div class="card-info">
+        <img src="BridgeTroll.jpg" alt="Bridge Troll">
+    </div>
+    <div class="card-info">
+        <img src="Courier.jpg" alt="Courier">
+    </div>
+    <div class="card-info">
+        <img src="Crown.jpg" alt="Crown">
+    </div>
+    <div class="card-info">
+        <img src="Encampment.jpg" alt="Encampment">
+    </div>
+    <div class="card-info">
+        <img src="Fool.jpg" alt="Fool">
+    </div>
+    <div class="card-info">
+        <img src="Groom.jpg" alt="Groom">
+    </div>
+    <div class="card-info">
+        <img src="Groundskeeper.jpg" alt="Groundskeeper">
+    </div>
+    <div class="card-info">
+        <img src="Hireling.jpg" alt="Hireling">
+    </div>
+    <div class="card-info">
+        <img src="Kiln.jpg" alt="Kiln">
+    </div>
+    <div class="card-info">
+        <img src="Lich.jpg" alt="Lich">
+    </div>
+    <div class="card-info">
+        <img src="Overlord.jpg" alt="Overlord">
+    </div>
+    <div class="card-info">
+        <img src="Paddock.jpg" alt="Paddock">
+    </div>
+    <div class="card-info">
+        <img src="Plunder.jpg" alt="Plunder">
+    </div>
+    <div class="card-info">
+        <img src="RoyalGalley.jpg" alt="Royal Galley">
+    </div>
+    <div class="card-info">
+        <img src="Sacrifice.jpg" alt="Sacrifice">
+    </div>
+    <div class="card-info">
+        <img src="Sheepdog.jpg" alt="Sheepdog">
+    </div>
+    <div class="card-info">
+        <img src="ThroneRoom.jpg" alt="Throne Room">
+    </div>
+    <div class="card-info">
+        <img src="TragicHero.jpg" alt="Tragic Hero">
+    </div>
+    <div class="card-info">
+        <img src="Villa.jpg" alt="Villa">
+    </div>
+    <div class="card-info">
+        <img src="WildHunt.jpg" alt="Wild Hunt">
+    </div>
+
+</div>
+
+</body>
+</html>

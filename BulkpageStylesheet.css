@@ -1,0 +1,53 @@
+body {
+    padding: none;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(75, 75, 75);
+    }
+    
+    img {
+    width: 100%;
+    height: auto;
+    padding: none;
+    margin: none;
+    }
+    
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    
+    .text-container {
+    background-color: rgb(75, 75, 75);
+    color: white;
+    float: left;
+    display: inline;
+    position: relative;
+    width: 90%;
+    height: auto;
+    margin-left: 10px;
+    }
+    
+    .pic-container {
+      height: auto;
+      width: 20%;
+      /*position: relative; */
+      float: left;
+      display: inline;
+    }
+    
+    #page-title {
+      color: white;
+      /*margin-left: 7%; */
+      width: 20%;
+      text-align: center;
+      height: auto;
+      float: left;
+      display: inline;
+      margin-right: 70%;
+    }
+    
+    .text-link {
+      color: rgb(94, 94, 204);
+    }

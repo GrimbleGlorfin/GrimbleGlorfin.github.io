@@ -1,14 +1,13 @@
 ﻿.sidenav {
-  overflow-x: hidden;
-  background-color: rgb(204, 204, 204);
+  overflow-x: clip;
+  background-color: rgb(155, 154, 154);
   position:static;
   height: 1000px;
   width: 9%;
   float:left;
-  
 }
 
-.sidenav a {
+.sidenav a, .dropdown-btn {
   color: black;
   padding: 1px 1px 1px 1px;
   text-decoration: none;
@@ -27,4 +26,43 @@
   background-color: rgb(128, 191, 255);
   color: black;
 }
+
+.dropbtn {
+  background-color: rgb(155, 154, 154);
+  padding: none;
+  font-size: 100%;
+  border: none;
+  width: 200px;
+  word-break: break-word;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: rgb(155, 154, 154);
+  width: 200px;
+  margin-left: 10px;
+  /*min-width: 160px;*/
+  /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+  z-index: 1;
+  word-break: break-word;
+}
+
+.dropdown-content a {
+  color: black;
+  /*padding: 12px 16px;*/
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: rgb(128, 191, 255);}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: rgb(128, 191, 255);}
 
