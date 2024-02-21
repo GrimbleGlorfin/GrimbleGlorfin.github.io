@@ -2,188 +2,87 @@
 <html>
 <meta charset="UTF-8">
 <head>
-  <title>Home | Jon Lawrence</title>
+  <title>Mirrors | Mirrors Multiverse</title>
   <link rel="icon" type="image/x-icon" href="TolkienSymbol.jpg">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="TopnavStylesheet.css">
+  <link rel="stylesheet" href="SidenavStylesheet.css">
+  <link rel="stylesheet" href="BulkpageStylesheet.css">
+  <!--<link rel="stylesheet" href="DropdownStylesheet.css">-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body style="background-color:rgb(189, 217, 229);">
+<body>
 
-<style>
-
-body {
-padding: none;
-}
-
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-img {
-width: 100%;
-height: auto;
-padding: none;
-margin: none;
-}
-
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.sidenav {
-  overflow-x: hidden;
-  background-color: rgb(204, 204, 204);
-  position:static;
-  height: 1000px;
-  width: 9%;
-  float:left;
-  
-}
-
-.sidenav a {
-  color: black;
-  padding: 1px 1px 1px 1px;
-  text-decoration: none;
-  font-size: 100%;
-  display: block;
-}
-
-
-@media (max-width: 850px) {
-.sidenav {
-  display: none;
-}
-}
-
-.sidenav a:hover {
-  background-color: rgb(128, 191, 255);
-  color: black;
-}
-
-
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-
-.card-info {
-  border: 6px ridge blue;
-  width:200px;
-  padding: 0;
-  margin: 8px;
-  float: left;
-  z-index: 4;
-}
-
-.container {
-  text-align: center;
-  padding: 0px;
-  margin: 0px;
-  line-height: 80%;
-}
-
-a:link {
-  text-decoration: none;
-}
-
-nav {
-  float: left;
-  width: 30%;
-  height: 300px; 
-  background: #ccc;
-  padding: 20px;
-}
-
-#strat-pages-header {
-text-align: center;
-font-size: 120%;
-font-family:Serif;
-color: rgb(0, 0, 102);
-background-color: rgb(140, 140, 140);
-border: 4px double rgb(70, 70, 70);
-padding-top: none;
-margin-top: none;
-top: -13px;
-position: relative;
-}
-
-#page-title-2 {
-  text-align:center;
-  background-color: rgb(11, 1, 1);
-  font-family: Cursive;
-  text-shadow: 2px 2px 4px rgb(72, 70, 70);
-  padding: 20px;
-  margin: 0px;
-  color: rgb(90, 125, 88);
-  width: 26%;
-  position: relative;
-  left: 37%;
-  top: 0px;
-  border: 5px groove rgb(18, 96, 53);
-  font-size: 200%;
-}
-
-#homepage-img {
-  height: auto;
-  width: 100%;
-  float: right;
-}
-
-</style>
-
-<div class="topnav">
-  <a class="active" href="#home">Home</a>
+<!--
+<nav class="topnav">
+  <a href="index.htm">Home</a>
   <a href="JLFavoriteDominionCards.html">Cards</a>
-  <a href="Holson.html">Holson</a>
+  <a class="active" href="#Holson">Holson</a>
   <a href="Books.html">Books</a>
   <a href="tournaments_played.html">Tournament</a>
-  <a href="dropdown-test.html">Dropdown</a>
-</div>
-
-<!--<h1 id="page-title">JL's Dominion Cards</h1>-->
-
-<h1 id="page-title-2">Mirrors Wiki Home</h1>
-
-
-<div class="sidenav">
-  <h1 id="strat-pages-header">Main Links</h1>
+</nav>
+-->
+<aside class="sidenav">
+  <h3 id="strat-pages-header">Main Links</h3>
   <table>
-  <tr><a href="#Characters">Characters</a></tr>
-  <tr><a href="#NPCs">NPCs</a></tr>
-  <tr><a href="#Monsters">Monsters</a></tr>
-  <tr><a href="#Worlds">Worlds</a></tr>
-  <tr><a href="#Campaigns">Campaigns</a></tr>
-  <tr><a href="#IDK">Coming Soon</a></tr>
+  <tr>
+    <div class="dropdown">
+      <div class="dropbtn">Characters</div>
+      <div class="dropdown-content">
+        <a href="Holson.html">Holson</a>
+        <a href="Ort.html">Ort</a>
+        <a href="Ralof.html">Ralof</a>
+      </div>
+    </div>
+  </tr>
+  <tr>
+    <div class="dropdown">
+      <div class="dropbtn">NPCs</div>
+      <div class="dropdown-content">
+        <a href="Abdul.html">Abdul</a>
+        <a href="Bear.html">Bear</a>
+        <a href="Hollow.html">Hollow</a>
+      </div>
+    </div>
+  </tr>
+  <tr>
+    <div class="dropdown">
+      <div class="dropbtn">Campaigns</div>
+      <div class="dropdown-content">
+        <a href="Call of Cthulhu.html">Call of Cthulhu</a>
+        <a href="Purging of Lysand.html">Purging of Lysand</a>
+        <a href="Three Cards Left.html">Three Cards Left</a>
+      </div>
+    </div>
+  </tr>
+  <tr>
+    <div class="dropdown">
+      <div class="dropbtn">Worlds</div>
+      <div class="dropdown-content">
+        <a href="Vertigonia.html">Vertigonia</a>
+        <a href="Vetras.html">Vetras</a>
+        <a href="Astarius.html">Astarius</a>
+      </div>
+    </div>
+  </tr>
   </table>
-</div>  
+</aside> 
 
-<div id="homepage-img">
-  <img src="Concept Art Pics/bard.webp" alt="bard">
-</div>
+<h3 id="page-title">Mirrors</h3>
+
+<!-- <h1 id="page-title">Holson</h1> -->
+<section class="pic-container">
+  <img src="Concept Art Pics/bard.webp" alt="Bard"> 
+</section>
 
 
-<script>
-// When the user clicks on <div>, open the popup
-function myFunction() {
-  var popup = document.getElementById("myPopup");
-  popup.classList.toggle("show");
-}
-</script>
-  
+<section class="text-container">
+    <h3>Details</h3>
+    <p>Mirrors is TTRPG created by Judah Dehnert. It is currently in its third edition.</p>
+</section>
+
+
+
 </body>
 </html>
