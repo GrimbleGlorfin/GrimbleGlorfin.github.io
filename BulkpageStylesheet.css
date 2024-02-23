@@ -51,3 +51,12 @@ body {
     .text-link {
       color: rgb(94, 94, 204);
     }
+
+    @media (max-width: 850px) {
+      .text-container {
+        width: 80%;
+      }
+      #page-title {
+        margin-right: 60%;
+      }
+      }
