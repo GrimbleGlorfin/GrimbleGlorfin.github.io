@@ -24,7 +24,7 @@ body {
     float: left;
     display: inline;
     position: relative;
-    width: 90%;
+    width: 88%;
     height: auto;
     margin-left: 10px;
     }
@@ -52,9 +52,9 @@ body {
       color: rgb(94, 94, 204);
     }
 
-    @media (max-width: 850px) {
+    @media (max-width: 700px) {
       .text-container {
-        width: 70%;
+        width: 75%;
       }
       #page-title {
         width: 100px;
