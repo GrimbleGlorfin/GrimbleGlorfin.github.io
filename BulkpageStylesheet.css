@@ -54,12 +54,13 @@ body {
 
     @media (max-width: 850px) {
       .text-container {
-        width: 80%;
+        width: 70%;
       }
       #page-title {
-        margin-right: 60%;
+        width: 100px;
+        margin-right: 50%;
       }
       .pic-container {
-        width: 40%;
+        width: 100px;
       }
       }
