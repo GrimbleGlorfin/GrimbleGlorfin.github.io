@@ -36,6 +36,23 @@ body {
       float: left;
       display: inline;
     }
+
+    .pic-container-world {
+      height: auto;
+      width: 70%;
+      /*position: relative; */
+      float: left;
+      display: inline;
+    }
+
+    .pic-container-2 {
+      height: auto;
+      width: 20%;
+      margin-right: 80%;
+      /*position: relative; */
+      float: left;
+      display: inline;
+    }
     
     #page-title {
       color: white;
@@ -46,6 +63,17 @@ body {
       float: left;
       display: inline;
       margin-right: 70%;
+    }
+
+    #page-title-world {
+      color: white;
+      /*margin-left: 7%; */
+      width: 70%;
+      text-align: center;
+      height: auto;
+      float: left;
+      display: inline;
+      margin-right: 10%;
     }
     
     .text-link {
@@ -60,8 +88,20 @@ body {
         width: 100px;
         margin-right: 50%;
       }
+      #page-title-world {
+        width: 300px;
+        margin-right: 20%;
+      }
       .pic-container {
         width: 100px;
         margin-right: 50%;
+      }
+      .pic-container-world {
+        width: 300px;
+        margin-right: 20%;
+      }
+      .pic-container-2 {
+        width: 100px;
+        margin-right: 70%;
       }
       }
