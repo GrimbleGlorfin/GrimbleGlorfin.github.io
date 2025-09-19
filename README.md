@@ -1,2 +1,2 @@
 # GrimbleGlorfin.github.io
-# Unfinished website for an RPG game. 
+# Unfinished website for a TTRPG game. 
