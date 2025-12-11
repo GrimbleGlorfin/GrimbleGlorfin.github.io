@@ -1,0 +1,114 @@
+body {
+  background-color: powderblue;
+}
+
+h1 {
+  text-align: center;
+}
+
+.topnav {
+  text-align: center;
+}
+
+.topnav .search-container button {
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+.topnav-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.card-images {
+  float: right;
+  margin-top: 5%;
+  margin-right: 15%;
+}
+
+.pic {
+  display: none;
+  width: 200px;
+  height: auto;
+  object-fit: contain;
+  border: 2px solid #333;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#blank-card {
+  display: block;
+}
+
+.blank-image {
+  float: right;
+  margin-top: 5%;
+  margin-right: 15%;
+  width: 200px;
+  height: auto;
+}
+
+#green {
+    background-color: #4CAF50;
+}
+
+#yellow {
+    background-color: #FFC107;
+    color: black;
+}
+
+#red {
+    background-color: #F44336;
+}
+
+.feedback {
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  display: flex;
+  margin-left: 32%;
+  margin-top: 50px;
+}
+
+.guess-rows {
+  display: flex;
+  flex-direction: row;
+  gap: 1px;
+  padding: 1px;
+}
+
+.box-wrapper {
+  text-align: center;
+}
+
+.label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.box {
+  width: 80px;
+  height: 40px;
+  border: 2px solid #333;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  background-color: #f5f5f5;
+}

@@ -1,0 +1,492 @@
+[
+  {
+    "name": "Copper",
+    "type": "Treasure",
+    "color": "Treasure",
+    "cost": 0,
+    "expansion": "Dominion (Base Set)"
+  },
+  {
+    "name": "Silver",
+    "type": "Treasure",
+    "color": "Treasure",
+    "cost": 3,
+    "expansion": "Dominion (Base Set)"
+  },
+  {
+    "name": "Gold",
+    "type": "Treasure",
+    "color": "Treasure",
+    "cost": 6,
+    "expansion": "Dominion (Base Set)"
+  },
+  {
+    "name": "Estate",
+    "type": "Victory",
+    "color": "Victory",
+    "cost": 2,
+    "expansion": "Dominion (Base Set)"
+  },
+  {
+    "name": "Duchy",
+    "type": "Victory",
+    "color": "Victory",
+    "cost": 5,
+    "expansion": "Dominion (Base Set)"
+  },
+  {
+    "name": "Province",
+    "type": "Victory",
+    "color": "Victory",
+    "cost": 8,
+    "expansion": "Dominion (Base Set)"
+  },
+  {
+    "name": "Curse",
+    "type": "Curse",
+    "color": "Curse",
+    "cost": 0,
+    "expansion": "Dominion (Base Set)"
+  },
+  {
+    "name": "Cellar",
+    "type": "Action",
+    "color": "Action",
+    "cost": 2,
+    "expansion": "Dominion (Base Set)"
+  },
+  {
+    "name": "Chapel",
+    "type": "Action",
+    "color": "Action",
+    "cost": 2,
+    "expansion": "Dominion (Base Set)"
+  },
+  {
+    "name": "Moat",
+    "type": "Action - Reaction",
+    "color": "Reaction",
+    "cost": 2,
+    "expansion": "Dominion (Base Set)"
+  },
+  {
+    "name": "Harbinger",
+    "type": "Action",
+    "color": "Action",
+    "cost": 3,
+    "expansion": "Dominion (Base Set)"
+  },
+  {
+    "name": "Merchant",
+    "type": "Action",
+    "color": "Action",
+    "cost": 3,
+    "expansion": "Dominion (Base Set)"
+  },
+  {
+    "name": "Vassal",
+    "type": "Action",
+    "color": "Action",
+    "cost": 3,
+    "expansion": "Dominion (Base Set)"
+  },
+  {
+    "name": "Village",
+    "type": "Action",
+    "color": "Action",
+    "cost": 3,
+    "expansion": "Dominion (Base Set)"
+  },
+  {
+    "name": "Workshop",
+    "type": "Action",
+    "color": "Action",
+    "cost": 3,
+    "expansion": "Dominion (Base Set)"
+  },
+  {
+    "name": "Bureaucrat",
+    "type": "Action - Attack",
+    "color": "Action",
+    "cost": 4,
+    "expansion": "Dominion (Base Set)"
+  },
+  {
+    "name": "Gardens",
+    "type": "Victory",
+    "color": "Victory",
+    "cost": 4,
+    "expansion": "Dominion (Base Set)"
+  },
+  {
+    "name": "Militia",
+    "type": "Action - Attack",
+    "color": "Action",
+    "cost": 4,
+    "expansion": "Dominion (Base Set)"
+  },
+  {
+    "name": "Moneylender",
+    "type": "Action",
+    "color": "Action",
+    "cost": 4,
+    "expansion": "Dominion (Base Set)"
+  },
+  {
+    "name": "Poacher",
+    "type": "Action",
+    "color": "Action",
+    "cost": 4,
+    "expansion": "Dominion (Base Set)"
+  },
+  {
+    "name": "Remodel",
+    "type": "Action",
+    "color": "Action",
+    "cost": 4,
+    "expansion": "Dominion (Base Set)"
+  },
+  {
+    "name": "Smithy",
+    "type": "Action",
+    "color": "Action",
+    "cost": 4,
+    "expansion": "Dominion (Base Set)"
+  },
+  {
+    "name": "Throne Room",
+    "type": "Action",
+    "color": "Action",
+    "cost": 4,
+    "expansion": "Dominion (Base Set)"
+  },
+  {
+    "name": "Bandit",
+    "type": "Action - Attack",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Dominion (Base Set)"
+  },
+  {
+    "name": "Council Room",
+    "type": "Action",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Dominion (Base Set)"
+  },
+  {
+    "name": "Festival",
+    "type": "Action",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Dominion (Base Set)"
+  },
+  {
+    "name": "Laboratory",
+    "type": "Action",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Dominion (Base Set)"
+  },
+  {
+    "name": "Library",
+    "type": "Action",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Dominion (Base Set)"
+  },
+  {
+    "name": "Market",
+    "type": "Action",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Dominion (Base Set)"
+  },
+  {
+    "name": "Mine",
+    "type": "Action",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Dominion (Base Set)"
+  },
+  {
+    "name": "Sentry",
+    "type": "Action",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Dominion (Base Set)"
+  },
+  {
+    "name": "Witch",
+    "type": "Action - Attack",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Dominion (Base Set)"
+  },
+  {
+    "name": "Artisan",
+    "type": "Action",
+    "color": "Action",
+    "cost": 6,
+    "expansion": "Dominion (Base Set)"
+  },
+  {
+    "name": "Amulet",
+    "type": "Action - Duration",
+    "color": "Duration",
+    "cost": 3,
+    "expansion": "Adventures"
+  },
+  {
+    "name": "Bridge Troll",
+    "type": "Action - Attack - Duration",
+    "color": "Duration",
+    "cost": 5,
+    "expansion": "Adventures"
+  },
+  {
+    "name": "Caravan Guard",
+    "type": "Action - Reaction - Duration",
+    "color": "Reaction - Duration",
+    "cost": 3,
+    "expansion": "Adventures"
+  },
+  {
+    "name": "Coin of the Realm",
+    "type": "Treasure - Reserve",
+    "color": "Treasure - Reserve",
+    "cost": 2,
+    "expansion": "Adventures"
+  },
+  {
+    "name": "Distant Lands",
+    "type": "Victory - Reserve",
+    "color": "Victory - Reserve",
+    "cost": 5,
+    "expansion": "Adventures"
+  },
+  {
+    "name": "Duplicate",
+    "type": "Action - Reserve",
+    "color": "Reserve",
+    "cost": 4,
+    "expansion": "Adventures"
+  },
+  {
+    "name": "Dungeon",
+    "type": "Action - Duration",
+    "color": "Duration",
+    "cost": 3,
+    "expansion": "Adventures"
+  },
+  {
+    "name": "Gear",
+    "type": "Action - Duration",
+    "color": "Duration",
+    "cost": 3,
+    "expansion": "Adventures"
+  },
+  {
+    "name": "Giant",
+    "type": "Action - Attack",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Adventures"
+  },
+  {
+    "name": "Guide",
+    "type": "Action - Reserve",
+    "color": "Reserve",
+    "cost": 3,
+    "expansion": "Adventures"
+  },
+  {
+    "name": "Haunted Woods",
+    "type": "Action - Duration - Attack",
+    "color": "Duration",
+    "cost": 5,
+    "expansion": "Adventures"
+  },
+  {
+    "name": "Hireling",
+    "type": "Action - Duration",
+    "color": "Duration",
+    "cost": 6,
+    "expansion": "Adventures"
+  },
+  {
+    "name": "Lost City",
+    "type": "Action",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Adventures"
+  },
+  {
+    "name": "Magpie",
+    "type": "Action",
+    "color": "Action",
+    "cost": 4,
+    "expansion": "Adventures"
+  },
+  {
+    "name": "Messenger",
+    "type": "Action",
+    "color": "Action",
+    "cost": 3,
+    "expansion": "Adventures"
+  },
+  {
+    "name": "Miser",
+    "type": "Action",
+    "color": "Action",
+    "cost": 4,
+    "expansion": "Adventures"
+  },
+  {
+    "name": "Port",
+    "type": "Action",
+    "color": "Action",
+    "cost": 4,
+    "expansion": "Adventures"
+  },
+  {
+    "name": "Ranger",
+    "type": "Action",
+    "color": "Action",
+    "cost": 4,
+    "expansion": "Adventures"
+  },
+  {
+    "name": "Ratcatcher",
+    "type": "Action - Reserve",
+    "color": "Reserve",
+    "cost": 2,
+    "expansion": "Adventures"
+  },
+  {
+    "name": "Raze",
+    "type": "Action",
+    "color": "Action",
+    "cost": 2,
+    "expansion": "Adventures"
+  },
+  {
+    "name": "Relic",
+    "type": "Treasure - Attack",
+    "color": "Treasure",
+    "cost": 5,
+    "expansion": "Adventures"
+  },
+  {
+    "name": "Royal Carriage",
+    "type": "Action - Reserve",
+    "color": "Reserve",
+    "cost": 5,
+    "expansion": "Adventures"
+  },
+  {
+    "name": "Storyteller",
+    "type": "Action",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Adventures"
+  },
+  {
+    "name": "Swamp Hag",
+    "type": "Action - Duration - Attack",
+    "color": "Duration",
+    "cost": 5,
+    "expansion": "Adventures"
+  },
+  {
+    "name": "Transmogrify",
+    "type": "Action - Reserve",
+    "color": "Reserve",
+    "cost": 4,
+    "expansion": "Adventures"
+  },
+  {
+    "name": "Treasure Trove",
+    "type": "Treasure",
+    "color": "Treasure",
+    "cost": 5,
+    "expansion": "Adventures"
+  },
+  {
+    "name": "Wine Merchant",
+    "type": "Action - Reserve",
+    "color": "Reserve",
+    "cost": 5,
+    "expansion": "Adventures"
+  },
+  {
+    "name": "Page",
+    "type": "Action - Traveller",
+    "color": "Action",
+    "cost": 2,
+    "expansion": "Adventures"
+  },
+  {
+    "name": "Treasure Hunter",
+    "type": "Action - Traveller",
+    "color": "Action",
+    "cost": 3,
+    "expansion": "Adventures"
+  },
+  {
+    "name": "Warrior",
+    "type": "Action - Attack - Traveller",
+    "color": "Action",
+    "cost": 4,
+    "expansion": "Adventures"
+  },
+  {
+    "name": "Hero",
+    "type": "Action - Traveller",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Adventures"
+  },
+  {
+    "name": "Champion",
+    "type": "Action - Duration",
+    "color": "Duration",
+    "cost": 6,
+    "expansion": "Adventures"
+  },
+  {
+    "name": "Peasant",
+    "type": "Action - Traveller",
+    "color": "Action",
+    "cost": 2,
+    "expansion": "Adventures"
+  },
+  {
+    "name": "Soldier",
+    "type": "Action - Attack - Traveller",
+    "color": "Action",
+    "cost": 3,
+    "expansion": "Adventures"
+  },
+  {
+    "name": "Fugitive",
+    "type": "Action - Traveller",
+    "color": "Action",
+    "cost": 4,
+    "expansion": "Adventures"
+  },
+  {
+    "name": "Disciple",
+    "type": "Action - Traveller",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Adventures"
+  },
+  {
+    "name": "Teacher",
+    "type": "Action - Reserve",
+    "color": "Reserve",
+    "cost": 6,
+    "expansion": "Adventures"
+  }
+]
