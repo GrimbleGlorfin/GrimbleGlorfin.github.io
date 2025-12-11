@@ -126,10 +126,13 @@ function compareCard(attribute,daily_attribute) {
     if (typeof attribute === 'string' || Array.isArray(attribute)) {
         if (attribute.includes(daily_attribute)) {
             return "yellow"
-        } else if (daily_attribute.includes(attribute)) {
+        } 
+    }
+    if (typeof daily_attribute === 'string' || Array.isArray(daily_attribute)) {
+        if (daily_attribute.includes(attribute)) {
             return "yellow"
         }
-    }
+    }    
     return "red"
 }
 
