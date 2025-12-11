@@ -13,6 +13,8 @@
 
 <h1 id="page-title">Daily Dominion</h1>
 
+
+
 <div class="topnav">
   <form>
     <label for="search-input">Card Name:</label>
@@ -21,7 +23,9 @@
     <datalist id="search-options"></datalist>
 
     <button type="submit" onclick="filterImages(event)">Guess</button>
+    <button id="dark-toggle">🌙</button>
   </form>
+  
 </div>
 
 <div class="card-images">
@@ -32,33 +36,14 @@
 
 <!-- <div id="guess-rows"></div> -->
 
-<div class="feedback">
-  <!--
-  <div class="box-wrapper">
-    <div class="label">Name</div>
-    <div class="box" id="card_name">Blank</div>
-  </div>
+<div class="feedback"></div>
 
-  <div class="box-wrapper">
-    <div class="label">Cost</div>
-    <div class="box" id="card_cost">0</div>
+<div id="game-modal" class="modal hidden">
+  <div class="modal-content">
+    <h2 id="modal-title"></h2>
+    <p id="modal-message"></p>
+    <button id="modal-close">Close</button>
   </div>
-
-  <div class="box-wrapper">
-    <div class="label">Type</div>
-    <div class="box" id="card_type">None</div>
-  </div>
-
-  <div class="box-wrapper">
-    <div class="label">Color</div>
-    <div class="box"  id="card_color">White</div>
-  </div>
-
-  <div class="box-wrapper">
-    <div class="label">Expansion</div>
-    <div class="box" id="card_expansion">None</div>
-  </div>
-  -->
 </div>
 
 <script src="script.js"></script>

@@ -1,9 +1,17 @@
 
 let daily_card;
+let guessCount = 0;
 
 
+document.getElementById("dark-toggle").onclick = () => {
+    document.body.classList.toggle("dark");
+    localStorage.setItem("darkMode", document.body.classList.contains("dark"));
+};
 
-
+// Load saved preference
+if (localStorage.getItem("darkMode") === "true") {
+    document.body.classList.add("dark");
+}
 
 function filterImages(event) {
     event.preventDefault();
@@ -78,6 +86,7 @@ function addBoxWrapper(row,label_text,id,box_text,color) {
 function addGuessRows(search) {
     const rows = document.querySelector(".feedback");
     const row = document.createElement("div");
+    guessCount += 1
 
     row.className = "guess-rows";
     console.log("Created row:", row);
@@ -114,6 +123,13 @@ function addGuessRows(search) {
             card_name.style.backgroundColor = compareCard(card["name"],daily_card["name"]);
             */
         }
+        if (card["name"] === daily_card["name"]) {
+            showModal("You Win!", `Correct — the card was ${daily_card["name"]}.`);
+        }
+        if (guessCount >= 6 && card["name"] !== daily_card["name"]) {
+            showModal("You Lose!", `The correct card was ${daily_card["name"]}.`);
+        }
+    
     });
 
     
@@ -189,5 +205,15 @@ async function init() {
   });
 }
 
+function showModal(title, message) {
+    const modal = document.getElementById("game-modal");
+    document.getElementById("modal-title").textContent = title;
+    document.getElementById("modal-message").textContent = message;
+    modal.classList.remove("hidden");
+}
+
+document.getElementById("modal-close").onclick = () => {
+    document.getElementById("game-modal").classList.add("hidden");
+};
 
 init();
