@@ -122,10 +122,13 @@ function addGuessRows(search) {
 function compareCard(attribute,daily_attribute) {
     if (attribute === daily_attribute) {
         return "green"
-    } else if (attribute.includes(daily_attribute)) {
-        return "yellow"
-    } else if (daily_attribute.includes(attribute)) {
-        return "yellow"
+    } 
+    if (typeof attribute === 'string' || Array.isArray(attribute)) {
+        if (attribute.includes(daily_attribute)) {
+            return "yellow"
+        } else if (daily_attribute.includes(attribute)) {
+            return "yellow"
+        }
     }
     return "red"
 }
