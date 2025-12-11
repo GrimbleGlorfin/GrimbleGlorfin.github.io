@@ -121,19 +121,19 @@ function addGuessRows(search) {
 
 function compareCard(attribute,daily_attribute) {
     if (attribute === daily_attribute) {
-        return "green"
+        return "#8BC79A" //"green"
     } 
     if (typeof attribute === 'string' || Array.isArray(attribute)) {
         if (attribute.includes(daily_attribute)) {
-            return "yellow"
+            return "#F1DE77"//"yellow"
         } 
     }
     if (typeof daily_attribute === 'string' || Array.isArray(daily_attribute)) {
         if (daily_attribute.includes(attribute)) {
-            return "yellow"
+            return "#F1DE77"//"yellow"
         }
     }    
-    return "red"
+    return "#E28C8C"//"red"
 }
 
 function getTodaysSeed() {
