@@ -1,6 +1,7 @@
 
 let daily_card;
 let guessCount = 0;
+const guessedCards = new Set();
 
 
 document.getElementById("dark-toggle").onclick = () => {
@@ -18,6 +19,8 @@ function filterImages(event) {
     const search = document.getElementById("search-input").value.toLowerCase();
     const images = document.querySelectorAll(".pic");
     const input = document.getElementById("search-input");
+    const easyMode = document.getElementById("easy-mode");
+    const easyToggle = document.getElementById("easy-toggle");
 
     
 
@@ -45,6 +48,19 @@ function filterImages(event) {
 
     //Put cursor back into search bar
     input.focus();
+
+    // After processing guess, hide guessed cards in Easy Mode
+    document.querySelectorAll(".easy-card").forEach(img => {
+        if (guessedCards.has(img.alt)) {
+            img.style.display = "none";
+        }
+    });
+
+
+    if (easyMode.classList.contains("open")) {
+        easyMode.classList.remove("open");
+        easyToggle.textContent = "Card Gallery ▼";
+    }
 
     
 }
@@ -126,7 +142,7 @@ function addGuessRows(search) {
         if (card["name"] === daily_card["name"]) {
             showModal("You Win!", `Correct — the card was ${daily_card["name"]}.`);
         }
-        if (guessCount >= 6 && card["name"] !== daily_card["name"]) {
+        if (guessCount >= 8 && card["name"] !== daily_card["name"]) {
             showModal("You Lose!", `The correct card was ${daily_card["name"]}.`);
         }
     
@@ -183,6 +199,7 @@ async function getTodaysCard() {
 async function init() {
   daily_card = await getTodaysCard();
   console.log(daily_card.name);
+  const easyGrid = document.getElementById("easy-grid");
 
   fetch("cards.json")
     .then(response => response.json())
@@ -201,6 +218,27 @@ async function init() {
             const option = document.createElement("option");
             option.value = cardName;
             datalist.appendChild(option);
+
+            // EASY MODE CARD
+            const easyImg = document.createElement("img");
+            easyImg.src = `cards/${cardName}.jpg`;
+            easyImg.alt = cardName;
+            easyImg.className = "easy-card";
+
+            // When clicked, auto-fill the guess and run filter
+            easyImg.onclick = () => {
+                document.getElementById("search-input").value = cardName;
+                
+                // Track that this card was guessed
+                guessedCards.add(cardName);
+
+                // Hide this card from easy mode
+                easyImg.style.display = "none";
+
+                filterImages(new Event("submit"));
+            };
+
+            easyGrid.appendChild(easyImg);
         });
   });
 }
@@ -214,6 +252,16 @@ function showModal(title, message) {
 
 document.getElementById("modal-close").onclick = () => {
     document.getElementById("game-modal").classList.add("hidden");
+};
+
+document.getElementById("easy-toggle").onclick = () => {
+    const panel = document.getElementById("easy-mode");
+    panel.classList.toggle("open");
+
+    // Update arrow
+    document.getElementById("easy-toggle").textContent =
+        panel.classList.contains("open") ?
+        "Card Gallery ▲" : "Card Gallery ▼";
 };
 
 init();

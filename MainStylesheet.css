@@ -181,3 +181,54 @@ body.dark {
     --soft-yellow: #bdae58;
     --soft-red:    #b56d6d;
 }
+
+#easy-toggle {
+    margin: 10px 0;
+    padding: 10px 16px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--card-border);
+    background: var(--card-bg);
+    color: var(--text);
+    cursor: pointer;
+}
+
+#easy-mode {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    margin-bottom: 20px;
+}
+
+#easy-mode.open {
+    max-height: 80vh;   /* takes up 80% of screen height */
+    overflow-y: auto;   /* scrolls INSIDE the curtain */
+    padding-right: 4px; /* avoids cutoff look */
+}
+
+#easy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 12px;
+    padding: 12px;
+}
+
+#easy-mode::-webkit-scrollbar {
+    width: 8px;
+}
+#easy-mode::-webkit-scrollbar-thumb {
+    background: #cfcac3;
+    border-radius: 10px;
+}
+
+.easy-card {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.10);
+    cursor: pointer;
+    transition: transform 0.15s;
+}
+
+.easy-card:hover {
+    transform: scale(1.05);
+}
