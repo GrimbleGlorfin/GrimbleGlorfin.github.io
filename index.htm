@@ -10,49 +10,49 @@
 </head>
 <body>
 
+<div id="page-container">
+  <h1 id="page-title">Daily Dominion</h1>
 
-<h1 id="page-title">Daily Dominion</h1>
 
 
+  <div class="topnav">
+    <form>
+      <label for="search-input">Card Name:</label>
+      <input type="text" id="search-input" list="search-options" placeholder="Type to search...">
 
-<div class="topnav">
-  <form>
-    <label for="search-input">Card Name:</label>
-    <input type="text" id="search-input" list="search-options" placeholder="Type to search...">
+      <datalist id="search-options"></datalist>
 
-    <datalist id="search-options"></datalist>
-
-    <button type="submit" onclick="filterImages(event)">Guess</button>
+      <button type="submit" onclick="filterImages(event)">Guess</button>
+    </form>
     <button id="dark-toggle">Dark Mode</button>
-  </form>
+    <button id="easy-toggle">Card Gallery ▼</button>
+    <div id="easy-mode" class="easy-hidden">
+        <div id="easy-grid"></div>
+    </div>
 
-  <button id="easy-toggle">Card Gallery ▼</button>
-  <div id="easy-mode" class="easy-hidden">
-      <div id="easy-grid"></div>
+  </div>
+  <div id="game-layout">
+    <div class="feedback"></div>
+    <div class="card-images">
+      <img class="pic" id="blank-card" src="cards/Blank.jpg" alt="Blank" width="200px">
+    </div>
+
+    <!--<div id="card-container"></div>-->
+
+    <!-- <div id="guess-rows"></div> -->
+
+    
+  </div>
+  <div id="game-modal" class="modal hidden">
+    <div class="modal-content">
+      <h2 id="modal-title"></h2>
+      <p id="modal-message"></p>
+      <button id="modal-close">Close</button>
+    </div>
   </div>
 
+  <script src="script.js"></script>
+
 </div>
-
-<div class="card-images">
-  <img class="pic" id="blank-card" src="cards/Blank.jpg" alt="Blank" width="200px">
-</div>
-
-<div id="card-container"></div>
-
-<!-- <div id="guess-rows"></div> -->
-
-<div class="feedback"></div>
-
-<div id="game-modal" class="modal hidden">
-  <div class="modal-content">
-    <h2 id="modal-title"></h2>
-    <p id="modal-message"></p>
-    <button id="modal-close">Close</button>
-  </div>
-</div>
-
-<script src="script.js"></script>
-
-
 </body>
 </html>

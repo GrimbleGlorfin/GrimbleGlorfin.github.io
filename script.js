@@ -30,6 +30,9 @@ function filterImages(event) {
     images.forEach(img => {
       if (img.alt.toLowerCase() === search) {
           img.style.display = "block";
+          // Track that this card was guessed
+          console.log("Added " + input.value)
+          guessedCards.add(input.value);
           found = true;
       } else {
           img.style.display = "none";
@@ -42,6 +45,14 @@ function filterImages(event) {
     if (!found) {
         document.querySelector('img[alt="Blank"]').style.display = "block";
     }
+
+    const shownCard = document.querySelector(".card-images img:not([style*='display: none'])");
+    if (shownCard) {
+        shownCard.classList.add("flip");
+
+    // Remove class after animation so it can flip again later
+    setTimeout(() => shownCard.classList.remove("flip"), 600);
+}
 
     //Clear search bar
     input.value = "";
@@ -81,7 +92,7 @@ async function findCard(cardName) {
 //    <div class="label">Name</div>
 //    <div class="box" id="card_name">Blank</div>
 
-function addBoxWrapper(row,label_text,id,box_text,color) {
+function addBoxWrapper(row,label_text,id,box_text,color,delay=0) {
     const box_wrapper = document.createElement("div");
     const label = document.createElement("div");
     const box = document.createElement("div");
@@ -91,12 +102,28 @@ function addBoxWrapper(row,label_text,id,box_text,color) {
     box.className = "box";
     box.id = id
     box.textContent = box_text
-    box.style.backgroundColor = color
+    box.style.backgroundColor = document.body.classList.contains('dark') ? '#1a1a1a' : '#e8e8e8';
+    box.style.color = document.body.classList.contains('dark') ? '#1a1a1a' : '#e8e8e8';
     label.textContent = label_text
 
     box_wrapper.appendChild(label);
     box_wrapper.appendChild(box);
     row.appendChild(box_wrapper);
+
+    setTimeout(() => {
+        box.classList.add('flip');
+        // After flip completes, set the background color permanently
+        setTimeout(() => {
+            box.style.backgroundColor = color;
+            console.log("color " + color)
+            if (color === "var(--soft-yellow)" || color.includes("yellow") || color === "#F1DE77") {
+                box.classList.add('yellow-box');
+                console.log("WAHAAA")
+            } else {
+                box.style.color = document.body.classList.contains('dark') ? '#e8e8e8' : '#1a1a1a';
+            }
+        }, 300); // Half of the 0.6s animation
+    }, delay);
 }
 
 function addGuessRows(search) {
@@ -111,42 +138,33 @@ function addGuessRows(search) {
     rows.appendChild(row);
     console.log("Appended row to feedback");
 
+    
+
     findCard(search).then(card => {
 
         if (card) {
             console.log("Found card:", card);
-            addBoxWrapper(row,"Name","name_" + Date.now(),card["name"],compareCard(card["name"],daily_card["name"]))
-            addBoxWrapper(row,"Cost","cost_" + Date.now(),card["cost"],compareCard(card["cost"],daily_card["cost"]))
-            addBoxWrapper(row,"Type","type_" + Date.now(),card["type"],compareCard(card["type"],daily_card["type"]))
-            addBoxWrapper(row,"Color","color_" + Date.now(),card["color"],compareCard(card["color"],daily_card["color"]))
-            addBoxWrapper(row,"Expansion","expansion_" + Date.now(),card["expansion"],compareCard(card["expansion"],daily_card["expansion"]))
+            addBoxWrapper(row,"Expansion","expansion_" + Date.now(),card["expansion"],compareCard(card["expansion"],daily_card["expansion"]),0)
+            addBoxWrapper(row,"Color","color_" + Date.now(),card["color"],compareCard(card["color"],daily_card["color"]),300)
+            addBoxWrapper(row,"Type","type_" + Date.now(),card["type"],compareCard(card["type"],daily_card["type"]),600)
+            addBoxWrapper(row,"Text","text_" + Date.now(),card["text"],compareCard(card["text"],daily_card["text"]),900)
+            addBoxWrapper(row,"Cost","cost_" + Date.now(),card["cost"],compareCard(card["cost"],daily_card["cost"]),1200)
+            addBoxWrapper(row,"Name","name_" + Date.now(),card["name"],compareCard(card["name"],daily_card["name"]),1500)
             console.log("Row after adding boxes:", row);
-            /*
-            const card_cost = document.getElementById("card_cost") //.textContent = card["cost"];
-            card_cost.textContent = card["cost"];
-            card_cost.style.backgroundColor = compareCard(card["cost"],daily_card["cost"]);
-            const card_type = document.getElementById("card_type")
-            card_type.textContent = card["type"];
-            card_type.style.backgroundColor = compareCard(card["type"],daily_card["type"]);
-            const card_color = document.getElementById("card_color") //.textContent = card["color"];
-            card_color.textContent = card["color"];
-            card_color.style.backgroundColor = compareCard(card["color"],daily_card["color"]);
-            const card_expansion = document.getElementById("card_expansion") //.textContent = card["expansion"];
-            card_expansion.textContent = card["expansion"];
-            card_expansion.style.backgroundColor = compareCard(card["expansion"],daily_card["expansion"]);
-            const card_name = document.getElementById("card_name") //.textContent = card["name"];
-            card_name.textContent = card["name"];
-            card_name.style.backgroundColor = compareCard(card["name"],daily_card["name"]);
-            */
         }
         if (card["name"] === daily_card["name"]) {
-            showModal("You Win!", `Correct — the card was ${daily_card["name"]}.`);
+            setTimeout(() => {
+                showModal("You Win!", `Correct – the card was ${daily_card["name"]}.`);
+            }, 1800);
         }
         if (guessCount >= 8 && card["name"] !== daily_card["name"]) {
-            showModal("You Lose!", `The correct card was ${daily_card["name"]}.`);
+            setTimeout(() => {
+                showModal("You Lose!", `The correct card was ${daily_card["name"]}.`);
+            }, 1800);
         }
     
     });
+
 
     
 }
@@ -230,6 +248,7 @@ async function init() {
                 document.getElementById("search-input").value = cardName;
                 
                 // Track that this card was guessed
+                console.log("ADDED " + cardName)
                 guessedCards.add(cardName);
 
                 // Hide this card from easy mode

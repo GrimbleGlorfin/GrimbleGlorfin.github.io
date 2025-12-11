@@ -13,6 +13,13 @@ h1 {
   text-align: center;
 }
 
+.topnav form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
 .topnav .search-container button {
   padding: 6px;
   margin-top: 8px;
@@ -38,9 +45,8 @@ h1 {
 }
 
 .card-images {
-  float: right;
-  margin-top: 5%;
-  margin-right: 15%;
+  margin-top: 0%;
+  margin-right: 0%;
 }
 
 .pic {
@@ -85,8 +91,9 @@ h1 {
   gap: 10px;
   padding: 10px;
   display: flex;
-  margin-left: 30%;
+  margin-left: 240px;
   margin-top: 50px;
+  justify-content: center;
 }
 
 .guess-rows {
@@ -99,10 +106,13 @@ h1 {
   border: 1px solid var(--card-border);
   margin-bottom: 8px;
   box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  max-width: 900px;
+  margin: auto;
 }
 
 .box-wrapper {
   text-align: center;
+  transform-style: preserve-3d;
 }
 
 .label {
@@ -121,6 +131,38 @@ h1 {
   justify-content: center;
   padding: 15px;
   background-color: #f5f5f5;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  transition: transform 0.3s ease;
+}
+
+.box.flip {
+    animation: flipBox 0.6s ease forwards;
+}
+
+.box.yellow-box {
+    color: #1a1a1a !important;
+}
+
+@keyframes flipBox {
+  0% {
+    transform: rotateX(0deg);
+    background-color: var(--bg);
+    border: var(--card-border)
+  }
+  50% {
+    transform: rotateX(90deg);
+    background-color: var(--bg);
+  }
+  51% {
+    /* Color changes when box is perpendicular */
+    /*background-color: var(--box-color);*/
+  }
+  100% {
+    transform: rotateX(0deg);
+    color: var(--text);
+    border: var(--card-border)
+  }
 }
 
 .modal {
@@ -231,4 +273,52 @@ body.dark {
 
 .easy-card:hover {
     transform: scale(1.05);
+}
+
+#page-container {
+    /*max-width: 900px;*/
+    margin: auto;
+    padding: 0 16px;
+}
+
+#game-layout {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    .feedback {
+        flex-direction: column;
+        align-items: stretch;
+        margin-left: 0px;
+    }
+
+    .guess-rows {
+        width: 100%;
+        text-align: center;
+    }
+}
+@media (max-width: 1200px) {
+    #game-layout {
+        flex-direction: column;
+        align-items: center;
+    }
+    .feedback {
+        margin-left: 0px;
+    }
+}
+
+.flip {
+    animation: flipCard 0.6s ease forwards;
+    transform-style: preserve-3d;
+}
+
+@keyframes flipCard {
+    0%   { transform: rotateY(0deg); }
+    50%  { transform: rotateY(90deg); }
+    100% { transform: rotateY(0deg); }
 }

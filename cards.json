@@ -4,1532 +4,1751 @@
     "type": "Treasure",
     "color": "Treasure",
     "cost": 0,
-    "expansion": "Dominion (Base Set)"
+    "expansion": "Dominion (Base Set)",
+    "text": "None"
   },
   {
     "name": "Silver",
     "type": "Treasure",
     "color": "Treasure",
     "cost": 3,
-    "expansion": "Dominion (Base Set)"
+    "expansion": "Dominion (Base Set)",
+    "text": "None"
   },
   {
     "name": "Gold",
     "type": "Treasure",
     "color": "Treasure",
     "cost": 6,
-    "expansion": "Dominion (Base Set)"
+    "expansion": "Dominion (Base Set)",
+    "text": "None"
   },
   {
     "name": "Estate",
     "type": "Victory",
     "color": "Victory",
     "cost": 2,
-    "expansion": "Dominion (Base Set)"
+    "expansion": "Dominion (Base Set)",
+    "text": "None"
   },
   {
     "name": "Duchy",
     "type": "Victory",
     "color": "Victory",
     "cost": 5,
-    "expansion": "Dominion (Base Set)"
+    "expansion": "Dominion (Base Set)",
+    "text": "None"
   },
   {
     "name": "Province",
     "type": "Victory",
     "color": "Victory",
     "cost": 8,
-    "expansion": "Dominion (Base Set)"
+    "expansion": "Dominion (Base Set)",
+    "text": "None"
   },
   {
     "name": "Curse",
     "type": "Curse",
     "color": "Curse",
     "cost": 0,
-    "expansion": "Dominion (Base Set)"
+    "expansion": "Dominion (Base Set)",
+    "text": "None"
   },
   {
     "name": "Cellar",
     "type": "Action",
     "color": "Action",
     "cost": 2,
-    "expansion": "Dominion (Base Set)"
+    "expansion": "Dominion (Base Set)",
+    "text": "Action"
   },
   {
     "name": "Chapel",
     "type": "Action",
     "color": "Action",
     "cost": 2,
-    "expansion": "Dominion (Base Set)"
+    "expansion": "Dominion (Base Set)",
+    "text": "None"
   },
   {
     "name": "Moat",
     "type": "Action - Reaction",
     "color": "Reaction",
     "cost": 2,
-    "expansion": "Dominion (Base Set)"
+    "expansion": "Dominion (Base Set)",
+    "text": "Card"
   },
   {
     "name": "Harbinger",
     "type": "Action",
     "color": "Action",
     "cost": 3,
-    "expansion": "Dominion (Base Set)"
+    "expansion": "Dominion (Base Set)",
+    "text": "Card - Action"
   },
   {
     "name": "Merchant",
     "type": "Action",
     "color": "Action",
     "cost": 3,
-    "expansion": "Dominion (Base Set)"
+    "expansion": "Dominion (Base Set)",
+    "text": "Card - Action - Money"
   },
   {
     "name": "Vassal",
     "type": "Action",
     "color": "Action",
     "cost": 3,
-    "expansion": "Dominion (Base Set)"
+    "expansion": "Dominion (Base Set)",
+    "text": "Money"
   },
   {
     "name": "Village",
     "type": "Action",
     "color": "Action",
     "cost": 3,
-    "expansion": "Dominion (Base Set)"
+    "expansion": "Dominion (Base Set)",
+    "text": "Card - Action"
   },
   {
     "name": "Workshop",
     "type": "Action",
     "color": "Action",
     "cost": 3,
-    "expansion": "Dominion (Base Set)"
+    "expansion": "Dominion (Base Set)",
+    "text": "None"
   },
   {
     "name": "Bureaucrat",
     "type": "Action - Attack",
     "color": "Action",
     "cost": 4,
-    "expansion": "Dominion (Base Set)"
+    "expansion": "Dominion (Base Set)",
+    "text": "None"
   },
   {
     "name": "Gardens",
     "type": "Victory",
     "color": "Victory",
     "cost": 4,
-    "expansion": "Dominion (Base Set)"
+    "expansion": "Dominion (Base Set)",
+    "text": "None"
   },
   {
     "name": "Militia",
     "type": "Action - Attack",
     "color": "Action",
     "cost": 4,
-    "expansion": "Dominion (Base Set)"
+    "expansion": "Dominion (Base Set)",
+    "text": "Money"
   },
   {
     "name": "Moneylender",
     "type": "Action",
     "color": "Action",
     "cost": 4,
-    "expansion": "Dominion (Base Set)"
+    "expansion": "Dominion (Base Set)",
+    "text": "Money"
   },
   {
     "name": "Poacher",
     "type": "Action",
     "color": "Action",
     "cost": 4,
-    "expansion": "Dominion (Base Set)"
+    "expansion": "Dominion (Base Set)",
+    "text": "Card - Action - Money"
   },
   {
     "name": "Remodel",
     "type": "Action",
     "color": "Action",
     "cost": 4,
-    "expansion": "Dominion (Base Set)"
+    "expansion": "Dominion (Base Set)",
+    "text": "None"
   },
   {
     "name": "Smithy",
     "type": "Action",
     "color": "Action",
     "cost": 4,
-    "expansion": "Dominion (Base Set)"
+    "expansion": "Dominion (Base Set)",
+    "text": "Card"
   },
   {
     "name": "Throne Room",
     "type": "Action",
     "color": "Action",
     "cost": 4,
-    "expansion": "Dominion (Base Set)"
+    "expansion": "Dominion (Base Set)",
+    "text": "None"
   },
   {
     "name": "Bandit",
     "type": "Action - Attack",
     "color": "Action",
     "cost": 5,
-    "expansion": "Dominion (Base Set)"
+    "expansion": "Dominion (Base Set)",
+    "text": "None"
   },
   {
     "name": "Council Room",
     "type": "Action",
     "color": "Action",
     "cost": 5,
-    "expansion": "Dominion (Base Set)"
+    "expansion": "Dominion (Base Set)",
+    "text": "Card - Buy"
   },
   {
     "name": "Festival",
     "type": "Action",
     "color": "Action",
     "cost": 5,
-    "expansion": "Dominion (Base Set)"
+    "expansion": "Dominion (Base Set)",
+    "text": "Action - Buy - Money"
   },
   {
     "name": "Laboratory",
     "type": "Action",
     "color": "Action",
     "cost": 5,
-    "expansion": "Dominion (Base Set)"
+    "expansion": "Dominion (Base Set)",
+    "text": "Card - Action"
   },
   {
     "name": "Library",
     "type": "Action",
     "color": "Action",
     "cost": 5,
-    "expansion": "Dominion (Base Set)"
+    "expansion": "Dominion (Base Set)",
+    "text": "None"
   },
   {
     "name": "Market",
     "type": "Action",
     "color": "Action",
     "cost": 5,
-    "expansion": "Dominion (Base Set)"
+    "expansion": "Dominion (Base Set)",
+    "text": "Card - Action - Buy - Money"
   },
   {
     "name": "Mine",
     "type": "Action",
     "color": "Action",
     "cost": 5,
-    "expansion": "Dominion (Base Set)"
+    "expansion": "Dominion (Base Set)",
+    "text": "None"
   },
   {
     "name": "Sentry",
     "type": "Action",
     "color": "Action",
     "cost": 5,
-    "expansion": "Dominion (Base Set)"
+    "expansion": "Dominion (Base Set)",
+    "text": "Card - Action"
   },
   {
     "name": "Witch",
     "type": "Action - Attack",
     "color": "Action",
     "cost": 5,
-    "expansion": "Dominion (Base Set)"
+    "expansion": "Dominion (Base Set)",
+    "text": "Card"
   },
   {
     "name": "Artisan",
     "type": "Action",
     "color": "Action",
     "cost": 6,
-    "expansion": "Dominion (Base Set)"
+    "expansion": "Dominion (Base Set)",
+    "text": "None"
   },
   {
     "name": "Amulet",
     "type": "Action - Duration",
     "color": "Duration",
     "cost": 3,
-    "expansion": "Adventures"
+    "expansion": "Adventures",
+    "text": "Money"
   },
   {
     "name": "Bridge Troll",
     "type": "Action - Attack - Duration",
     "color": "Duration",
     "cost": 5,
-    "expansion": "Adventures"
+    "expansion": "Adventures",
+    "text": "Buy"
   },
   {
     "name": "Caravan Guard",
     "type": "Action - Reaction - Duration",
     "color": "Reaction - Duration",
     "cost": 3,
-    "expansion": "Adventures"
+    "expansion": "Adventures",
+    "text": "Card - Action - Money"
   },
   {
     "name": "Coin of the Realm",
     "type": "Treasure - Reserve",
     "color": "Treasure - Reserve",
     "cost": 2,
-    "expansion": "Adventures"
+    "expansion": "Adventures",
+    "text": "Action"
   },
   {
     "name": "Distant Lands",
     "type": "Victory - Reserve",
     "color": "Victory - Reserve",
     "cost": 5,
-    "expansion": "Adventures"
+    "expansion": "Adventures",
+    "text": "None"
   },
   {
     "name": "Duplicate",
     "type": "Action - Reserve",
     "color": "Reserve",
     "cost": 4,
-    "expansion": "Adventures"
+    "expansion": "Adventures",
+    "text": "None"
   },
   {
     "name": "Dungeon",
     "type": "Action - Duration",
     "color": "Duration",
     "cost": 3,
-    "expansion": "Adventures"
+    "expansion": "Adventures",
+    "text": "Card - Action"
   },
   {
     "name": "Gear",
     "type": "Action - Duration",
     "color": "Duration",
     "cost": 3,
-    "expansion": "Adventures"
+    "expansion": "Adventures",
+    "text": "Card"
   },
   {
     "name": "Giant",
     "type": "Action - Attack",
     "color": "Action",
     "cost": 5,
-    "expansion": "Adventures"
+    "expansion": "Adventures",
+    "text": "Money"
   },
   {
     "name": "Guide",
     "type": "Action - Reserve",
     "color": "Reserve",
     "cost": 3,
-    "expansion": "Adventures"
+    "expansion": "Adventures",
+    "text": "Card - Action"
   },
   {
     "name": "Haunted Woods",
     "type": "Action - Duration - Attack",
     "color": "Duration",
     "cost": 5,
-    "expansion": "Adventures"
+    "expansion": "Adventures",
+    "text": "Card"
   },
   {
     "name": "Hireling",
     "type": "Action - Duration",
     "color": "Duration",
     "cost": 6,
-    "expansion": "Adventures"
+    "expansion": "Adventures",
+    "text": "Card"
   },
   {
     "name": "Lost City",
     "type": "Action",
     "color": "Action",
     "cost": 5,
-    "expansion": "Adventures"
+    "expansion": "Adventures",
+    "text": "Card - Action"
   },
   {
     "name": "Magpie",
     "type": "Action",
     "color": "Action",
     "cost": 4,
-    "expansion": "Adventures"
+    "expansion": "Adventures",
+    "text": "Card - Action"
   },
   {
     "name": "Messenger",
     "type": "Action",
     "color": "Action",
     "cost": 3,
-    "expansion": "Adventures"
+    "expansion": "Adventures",
+    "text": "Money"
   },
   {
     "name": "Miser",
     "type": "Action",
     "color": "Action",
     "cost": 4,
-    "expansion": "Adventures"
+    "expansion": "Adventures",
+    "text": "Money"
   },
   {
     "name": "Port",
     "type": "Action",
     "color": "Action",
     "cost": 4,
-    "expansion": "Adventures"
+    "expansion": "Adventures",
+    "text": "Card - Action"
   },
   {
     "name": "Ranger",
     "type": "Action",
     "color": "Action",
     "cost": 4,
-    "expansion": "Adventures"
+    "expansion": "Adventures",
+    "text": "Card - Buy"
   },
   {
     "name": "Ratcatcher",
     "type": "Action - Reserve",
     "color": "Reserve",
     "cost": 2,
-    "expansion": "Adventures"
+    "expansion": "Adventures",
+    "text": "Card - Action"
   },
   {
     "name": "Raze",
     "type": "Action",
     "color": "Action",
     "cost": 2,
-    "expansion": "Adventures"
+    "expansion": "Adventures",
+    "text": "Action"
   },
   {
     "name": "Relic",
     "type": "Treasure - Attack",
     "color": "Treasure",
     "cost": 5,
-    "expansion": "Adventures"
+    "expansion": "Adventures",
+    "text": "None"
   },
   {
     "name": "Royal Carriage",
     "type": "Action - Reserve",
     "color": "Reserve",
     "cost": 5,
-    "expansion": "Adventures"
+    "expansion": "Adventures",
+    "text": "Action"
   },
   {
     "name": "Storyteller",
     "type": "Action",
     "color": "Action",
     "cost": 5,
-    "expansion": "Adventures"
+    "expansion": "Adventures",
+    "text": "Action - Money"
   },
   {
     "name": "Swamp Hag",
     "type": "Action - Duration - Attack",
     "color": "Duration",
     "cost": 5,
-    "expansion": "Adventures"
+    "expansion": "Adventures",
+    "text": "Money"
   },
   {
     "name": "Transmogrify",
     "type": "Action - Reserve",
     "color": "Reserve",
     "cost": 4,
-    "expansion": "Adventures"
+    "expansion": "Adventures",
+    "text": "Action"
   },
   {
     "name": "Treasure Trove",
     "type": "Treasure",
     "color": "Treasure",
     "cost": 5,
-    "expansion": "Adventures"
+    "expansion": "Adventures",
+    "text": "None"
   },
   {
     "name": "Wine Merchant",
     "type": "Action - Reserve",
     "color": "Reserve",
     "cost": 5,
-    "expansion": "Adventures"
+    "expansion": "Adventures",
+    "text": "Buy - Money"
   },
   {
     "name": "Page",
     "type": "Action - Traveller",
     "color": "Action",
     "cost": 2,
-    "expansion": "Adventures"
+    "expansion": "Adventures",
+    "text": "Card - Action"
   },
   {
     "name": "Treasure Hunter",
     "type": "Action - Traveller",
     "color": "Action",
     "cost": 3,
-    "expansion": "Adventures"
+    "expansion": "Adventures",
+    "text": "Action - Money"
   },
   {
     "name": "Warrior",
     "type": "Action - Attack - Traveller",
     "color": "Action",
     "cost": 4,
-    "expansion": "Adventures"
+    "expansion": "Adventures",
+    "text": "Card"
   },
   {
     "name": "Hero",
     "type": "Action - Traveller",
     "color": "Action",
     "cost": 5,
-    "expansion": "Adventures"
+    "expansion": "Adventures",
+    "text": "Money"
   },
   {
     "name": "Champion",
     "type": "Action - Duration",
     "color": "Duration",
     "cost": 6,
-    "expansion": "Adventures"
+    "expansion": "Adventures",
+    "text": "Action"
   },
   {
     "name": "Peasant",
     "type": "Action - Traveller",
     "color": "Action",
     "cost": 2,
-    "expansion": "Adventures"
+    "expansion": "Adventures",
+    "text": "Buy - Money"
   },
   {
     "name": "Soldier",
     "type": "Action - Attack - Traveller",
     "color": "Action",
     "cost": 3,
-    "expansion": "Adventures"
+    "expansion": "Adventures",
+    "text": "Money"
   },
   {
     "name": "Fugitive",
     "type": "Action - Traveller",
     "color": "Action",
     "cost": 4,
-    "expansion": "Adventures"
+    "expansion": "Adventures",
+    "text": "Card - Action"
   },
   {
     "name": "Disciple",
     "type": "Action - Traveller",
     "color": "Action",
     "cost": 5,
-    "expansion": "Adventures"
+    "expansion": "Adventures",
+    "text": "None"
   },
   {
     "name": "Teacher",
     "type": "Action - Reserve",
     "color": "Reserve",
     "cost": 6,
-    "expansion": "Adventures"
+    "expansion": "Adventures",
+    "text": "None"
   },
   {
     "name": "Haven",
     "type": "Action - Duration",
     "color": "Duration",
     "cost": 2,
-    "expansion": "Seaside"
+    "expansion": "Seaside",
+    "text": "Card - Action"
   },
   {
     "name": "Lighthouse",
     "type": "Action - Duration",
     "color": "Duration",
     "cost": 2,
-    "expansion": "Seaside"
+    "expansion": "Seaside",
+    "text": "Action - Money"
   },
   {
     "name": "Native Village",
     "type": "Action",
     "color": "Action",
     "cost": 2,
-    "expansion": "Seaside"
+    "expansion": "Seaside",
+    "text": "Action"
   },
   {
     "name": "Astrolabe",
     "type": "Action - Duration",
     "color": "Duration",
     "cost": 3,
-    "expansion": "Seaside"
+    "expansion": "Seaside",
+    "text": "Buy"
   },
   {
     "name": "Fishing Village",
     "type": "Action - Duration",
     "color": "Duration",
     "cost": 3,
-    "expansion": "Seaside"
+    "expansion": "Seaside",
+    "text": "Action - Money"
   },
   {
     "name": "Lookout",
     "type": "Action",
     "color": "Action",
     "cost": 3,
-    "expansion": "Seaside"
+    "expansion": "Seaside",
+    "text": "Action"
   },
   {
     "name": "Monkey",
     "type": "Action - Duration",
     "color": "Duration",
     "cost": 3,
-    "expansion": "Seaside"
+    "expansion": "Seaside",
+    "text": "Card"
   },
   {
     "name": "Sea Chart",
     "type": "Action",
     "color": "Action",
     "cost": 3,
-    "expansion": "Seaside"
+    "expansion": "Seaside",
+    "text": "Card - Action"
   },
   {
     "name": "Smugglers",
     "type": "Action",
     "color": "Action",
     "cost": 3,
-    "expansion": "Seaside"
+    "expansion": "Seaside",
+    "text": "None"
   },
   {
     "name": "Warehouse",
     "type": "Action",
     "color": "Action",
     "cost": 3,
-    "expansion": "Seaside"
+    "expansion": "Seaside",
+    "text": "Card - Action"
   },
   {
     "name": "Blockade",
     "type": "Action - Duration - Attack",
     "color": "Duration",
     "cost": 4,
-    "expansion": "Seaside"
+    "expansion": "Seaside",
+    "text": "None"
   },
   {
     "name": "Caravan",
     "type": "Action - Duration",
     "color": "Duration",
     "cost": 4,
-    "expansion": "Seaside"
+    "expansion": "Seaside",
+    "text": "Card - Action"
   },
   {
     "name": "Cutpurse",
     "type": "Action - Attack",
     "color": "Action",
     "cost": 4,
-    "expansion": "Seaside"
+    "expansion": "Seaside",
+    "text": "Money"
   },
   {
     "name": "Island",
     "type": "Action - Victory",
     "color": "Victory",
     "cost": 4,
-    "expansion": "Seaside"
+    "expansion": "Seaside",
+    "text": "None"
   },
   {
     "name": "Sailor",
     "type": "Action - Duration",
     "color": "Duration",
     "cost": 4,
-    "expansion": "Seaside"
+    "expansion": "Seaside",
+    "text": "Action - Money"
   },
   {
     "name": "Salvager",
     "type": "Action",
     "color": "Action",
     "cost": 4,
-    "expansion": "Seaside"
+    "expansion": "Seaside",
+    "text": "Buy - Money"
   },
   {
     "name": "Tide Pools",
     "type": "Action - Duration",
     "color": "Duration",
     "cost": 4,
-    "expansion": "Seaside"
+    "expansion": "Seaside",
+    "text": "Card - Action"
   },
   {
     "name": "Treasure Map",
     "type": "Action",
     "color": "Action",
     "cost": 4,
-    "expansion": "Seaside"
+    "expansion": "Seaside",
+    "text": "None"
   },
   {
     "name": "Bazaar",
     "type": "Action",
     "color": "Action",
     "cost": 5,
-    "expansion": "Seaside"
+    "expansion": "Seaside",
+    "text": "Card - Action - Money"
   },
   {
     "name": "Corsair",
     "type": "Action - Duration - Attack",
     "color": "Duration",
     "cost": 5,
-    "expansion": "Seaside"
+    "expansion": "Seaside",
+    "text": "Card - Money"
   },
   {
     "name": "Merchant Ship",
     "type": "Action - Duration",
     "color": "Duration",
     "cost": 5,
-    "expansion": "Seaside"
+    "expansion": "Seaside",
+    "text": "Money"
   },
   {
     "name": "Outpost",
     "type": "Action - Duration",
     "color": "Duration",
     "cost": 5,
-    "expansion": "Seaside"
+    "expansion": "Seaside",
+    "text": "None"
   },
   {
     "name": "Pirate",
     "type": "Action - Duration - Reaction",
     "color": "Reaction - Duration",
     "cost": 5,
-    "expansion": "Seaside"
+    "expansion": "Seaside",
+    "text": "None"
   },
   {
     "name": "Sea Witch",
     "type": "Action - Duration - Attack",
     "color": "Duration",
     "cost": 5,
-    "expansion": "Seaside"
+    "expansion": "Seaside",
+    "text": "Card"
   },
   {
     "name": "Tactician",
     "type": "Action - Duration",
     "color": "Duration",
     "cost": 5,
-    "expansion": "Seaside"
+    "expansion": "Seaside",
+    "text": "Card - Action - Buy"
   },
   {
     "name": "Treasury",
     "type": "Action",
     "color": "Action",
     "cost": 5,
-    "expansion": "Seaside"
+    "expansion": "Seaside",
+    "text": "Card - Action - Money"
   },
   {
     "name": "Wharf",
     "type": "Action - Duration",
     "color": "Duration",
     "cost": 5,
-    "expansion": "Seaside"
+    "expansion": "Seaside",
+    "text": "Card - Buy"
   },
   {
     "name": "Engineer",
     "type": "Action",
     "color": "Action",
     "cost": "4D",
-    "expansion": "Empires"
+    "expansion": "Empires",
+    "text": "None"
   },
   {
     "name": "City Quarter",
     "type": "Action",
     "color": "Action",
     "cost": "8D",
-    "expansion": "Empires"
+    "expansion": "Empires",
+    "text": "Card - Action"
   },
   {
     "name": "Overlord",
     "type": "Action - Command",
     "color": "Action",
     "cost": "8D",
-    "expansion": "Empires"
+    "expansion": "Empires",
+    "text": "None"
   },
   {
     "name": "Royal Blacksmith",
     "type": "Action",
     "color": "Action",
     "cost": "8D",
-    "expansion": "Empires"
+    "expansion": "Empires",
+    "text": "Card"
   },
   {
     "name": "Encampment",
     "type": "Action",
     "color": "Action",
     "cost": 2,
-    "expansion": "Empires"
+    "expansion": "Empires",
+    "text": "Card - Action"
   },
   {
     "name": "Plunder",
     "type": "Treasure",
     "color": "Treasure",
     "cost": 5,
-    "expansion": "Empires"
+    "expansion": "Empires",
+    "text": "VP"
   },
   {
     "name": "Patrician",
     "type": "Action",
     "color": "Action",
     "cost": 2,
-    "expansion": "Empires"
+    "expansion": "Empires",
+    "text": "Card - Action"
   },
   {
     "name": "Emporium",
     "type": "Action",
     "color": "Action",
     "cost": 5,
-    "expansion": "Empires"
+    "expansion": "Empires",
+    "text": "Card - Action - Money - VP"
   },
   {
     "name": "Settlers",
     "type": "Action",
     "color": "Action",
     "cost": 2,
-    "expansion": "Empires"
+    "expansion": "Empires",
+    "text": "Card - Action"
   },
   {
     "name": "Bustling Village",
     "type": "Action",
     "color": "Action",
     "cost": 5,
-    "expansion": "Empires"
+    "expansion": "Empires",
+    "text": "Card - Action"
   },
   {
     "name": "Catapult",
     "type": "Action - Attack",
     "color": "Action",
     "cost": 3,
-    "expansion": "Empires"
+    "expansion": "Empires",
+    "text": "Money"
   },
   {
     "name": "Rocks",
     "type": "Treasure",
     "color": "Treasure",
     "cost": 4,
-    "expansion": "Empires"
+    "expansion": "Empires",
+    "text": "None"
   },
   {
     "name": "Chariot Race",
     "type": "Action",
     "color": "Action",
     "cost": 3,
-    "expansion": "Empires"
+    "expansion": "Empires",
+    "text": "Action - Money - VP"
   },
   {
     "name": "Enchantress",
     "type": "Action - Duration - Attack",
     "color": "Duration",
     "cost": 3,
-    "expansion": "Empires"
+    "expansion": "Empires",
+    "text": "Card"
   },
   {
     "name": "Farmers' Market",
     "type": "Action - Gathering",
     "color": "Action",
     "cost": 3,
-    "expansion": "Empires"
+    "expansion": "Empires",
+    "text": "Money - VP"
   },
   {
     "name": "Gladiator",
     "type": "Action",
     "color": "Action",
     "cost": 3,
-    "expansion": "Empires"
+    "expansion": "Empires",
+    "text": "Money"
   },
   {
     "name": "Fortune",
     "type": "Treasure",
     "color": "Treasure",
     "cost": "8+8D",
-    "expansion": "Empires"
+    "expansion": "Empires",
+    "text": "Buy - Money"
   },
   {
     "name": "Sacrifice",
     "type": "Action",
     "color": "Action",
     "cost": 4,
-    "expansion": "Empires"
+    "expansion": "Empires",
+    "text": "Card - Action - Money - VP"
   },
   {
     "name": "Temple",
     "type": "Action - Gathering",
     "color": "Action",
     "cost": 4,
-    "expansion": "Empires"
+    "expansion": "Empires",
+    "text": "VP"
   },
   {
     "name": "Villa",
     "type": "Action",
     "color": "Action",
     "cost": 4,
-    "expansion": "Empires"
+    "expansion": "Empires",
+    "text": "Action - Buy - Money"
   },
   {
     "name": "Archive",
     "type": "Action - Duration",
     "color": "Duration",
     "cost": 5,
-    "expansion": "Empires"
+    "expansion": "Empires",
+    "text": "Action"
   },
   {
     "name": "Capital",
     "type": "Treasure",
     "color": "Treasure",
     "cost": 5,
-    "expansion": "Empires"
+    "expansion": "Empires",
+    "text": "Buy"
   },
   {
     "name": "Charm",
     "type": "Treasure",
     "color": "Treasure",
     "cost": 5,
-    "expansion": "Empires"
+    "expansion": "Empires",
+    "text": "Buy - Money"
   },
   {
     "name": "Crown",
     "type": "Action - Treasure",
     "color": "Action - Treasure",
     "cost": 5,
-    "expansion": "Empires"
+    "expansion": "Empires",
+    "text": "None"
   },
   {
     "name": "Forum",
     "type": "Action",
     "color": "Action",
     "cost": 5,
-    "expansion": "Empires"
+    "expansion": "Empires",
+    "text": "Card - Action"
   },
   {
     "name": "Groundskeeper",
     "type": "Action",
     "color": "Action",
     "cost": 5,
-    "expansion": "Empires"
+    "expansion": "Empires",
+    "text": "Card - Action - VP"
   },
   {
     "name": "Legionary",
     "type": "Action - Attack",
     "color": "Action",
     "cost": 5,
-    "expansion": "Empires"
+    "expansion": "Empires",
+    "text": "Money"
   },
   {
     "name": "Wild Hunt",
     "type": "Action - Gathering",
     "color": "Action",
     "cost": 5,
-    "expansion": "Empires"
+    "expansion": "Empires",
+    "text": "Card - VP"
   },
   {
     "name": "Humble Castle",
     "type": "Treasure - Victory - Castle",
     "color": "Victory - Treasure",
     "cost": 3,
-    "expansion": "Empires"
+    "expansion": "Empires",
+    "text": "None"
   },
   {
     "name": "Crumbling Castle",
     "type": "Victory - Castle",
     "color": "Victory",
     "cost": 4,
-    "expansion": "Empires"
+    "expansion": "Empires",
+    "text": "VP"
   },
   {
     "name": "Small Castle",
     "type": "Action - Victory - Castle",
     "color": "Victory",
     "cost": 5,
-    "expansion": "Empires"
+    "expansion": "Empires",
+    "text": "None"
   },
   {
     "name": "Haunted Castle",
     "type": "Victory - Castle",
     "color": "Victory",
     "cost": 6,
-    "expansion": "Empires"
+    "expansion": "Empires",
+    "text": "None"
   },
   {
     "name": "Opulent Castle",
     "type": "Action - Victory - Castle",
     "color": "Victory",
     "cost": 7,
-    "expansion": "Empires"
+    "expansion": "Empires",
+    "text": "Money"
   },
   {
     "name": "Sprawling Castle",
     "type": "Victory - Castle",
     "color": "Victory",
     "cost": 8,
-    "expansion": "Empires"
+    "expansion": "Empires",
+    "text": "None"
   },
   {
     "name": "Grand Castle",
     "type": "Victory - Castle",
     "color": "Victory",
     "cost": 9,
-    "expansion": "Empires"
+    "expansion": "Empires",
+    "text": "VP"
   },
   {
     "name": "King's Castle",
     "type": "Victory - Castle",
     "color": "Victory",
     "cost": 10,
-    "expansion": "Empires"
+    "expansion": "Empires",
+    "text": "None"
   },
   {
     "name": "Poor House",
     "type": "Action",
     "color": "Action",
     "cost": 1,
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "Money"
   },
   {
     "name": "Beggar",
     "type": "Action - Reaction",
     "color": "Reaction",
     "cost": 2,
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "None"
   },
   {
     "name": "Squire",
     "type": "Action",
     "color": "Action",
     "cost": 2,
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "Action - Buy - Money"
   },
   {
     "name": "Vagrant",
     "type": "Action",
     "color": "Action",
     "cost": 2,
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "Card - Action"
   },
   {
     "name": "Forager",
     "type": "Action",
     "color": "Action",
     "cost": 3,
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "Action - Buy - Money"
   },
   {
     "name": "Hermit",
     "type": "Action",
     "color": "Action",
     "cost": 3,
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "None"
   },
   {
     "name": "Market Square",
     "type": "Action - Reaction",
     "color": "Reaction",
     "cost": 3,
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "Card - Action"
   },
   {
     "name": "Sage",
     "type": "Action",
     "color": "Action",
     "cost": 3,
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "Action"
   },
   {
     "name": "Storeroom",
     "type": "Action",
     "color": "Action",
     "cost": 3,
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "Buy - Money"
   },
   {
     "name": "Urchin",
     "type": "Action - Attack",
     "color": "Action",
     "cost": 3,
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "Card - Action"
   },
   {
     "name": "Armory",
     "type": "Action",
     "color": "Action",
     "cost": 4,
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "None"
   },
   {
     "name": "Death Cart",
     "type": "Action - Looter",
     "color": "Action",
     "cost": 4,
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "Money"
   },
   {
     "name": "Feodum",
     "type": "Victory",
     "color": "Victory",
     "cost": 4,
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "None"
   },
   {
     "name": "Fortress",
     "type": "Action",
     "color": "Action",
     "cost": 4,
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "Card - Action"
   },
   {
     "name": "Ironmonger",
     "type": "Action",
     "color": "Action",
     "cost": 4,
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "Card - Action - Money"
   },
   {
     "name": "Marauder",
     "type": "Action - Attack - Looter",
     "color": "Action",
     "cost": 4,
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "None"
   },
   {
     "name": "Procession",
     "type": "Action",
     "color": "Action",
     "cost": 4,
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "None"
   },
   {
     "name": "Rats",
     "type": "Action",
     "color": "Action",
     "cost": 4,
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "Card - Action"
   },
   {
     "name": "Scavenger",
     "type": "Action",
     "color": "Action",
     "cost": 4,
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "Money"
   },
   {
     "name": "Wandering Minstrel",
     "type": "Action",
     "color": "Action",
     "cost": 4,
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "Card - Action"
   },
   {
     "name": "Band of Misfits",
     "type": "Action - Command",
     "color": "Action",
     "cost": 5,
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "None"
   },
   {
     "name": "Bandit Camp",
     "type": "Action",
     "color": "Action",
     "cost": 5,
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "Card - Action"
   },
   {
     "name": "Catacombs",
     "type": "Action",
     "color": "Action",
     "cost": 5,
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "Card"
   },
   {
     "name": "Count",
     "type": "Action",
     "color": "Action",
     "cost": 5,
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "Money"
   },
   {
     "name": "Counterfeit",
     "type": "Treasure",
     "color": "Treasure",
     "cost": 5,
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "Buy"
   },
   {
     "name": "Cultist",
     "type": "Action - Attack - Looter",
     "color": "Action",
     "cost": 5,
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "Card"
   },
   {
     "name": "Graverobber",
     "type": "Action",
     "color": "Action",
     "cost": 5,
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "None"
   },
   {
     "name": "Junk Dealer",
     "type": "Action",
     "color": "Action",
     "cost": 5,
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "Card - Action - Money"
   },
   {
     "name": "Mystic",
     "type": "Action",
     "color": "Action",
     "cost": 5,
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "Action - Money"
   },
   {
     "name": "Pillage",
     "type": "Action - Attack",
     "color": "Action",
     "cost": 5,
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "None"
   },
   {
     "name": "Rebuild",
     "type": "Action",
     "color": "Action",
     "cost": 5,
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "Action"
   },
   {
     "name": "Rogue",
     "type": "Action - Attack",
     "color": "Action",
     "cost": 5,
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "Money"
   },
   {
     "name": "Altar",
     "type": "Action",
     "color": "Action",
     "cost": 6,
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "None"
   },
   {
     "name": "Hunting Grounds",
     "type": "Action",
     "color": "Action",
     "cost": 6,
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "Card"
   },
   {
     "name": "Abandoned Mine",
     "type": "Action - Ruins",
     "color": "Ruins",
     "cost": 0,
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "Money"
   },
   {
     "name": "Ruined Library",
     "type": "Action - Ruins",
     "color": "Ruins",
     "cost": 0,
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "Card"
   },
   {
     "name": "Ruined Market",
     "type": "Action - Ruins",
     "color": "Ruins",
     "cost": 0,
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "Buy"
   },
   {
     "name": "Ruined Village",
     "type": "Action - Ruins",
     "color": "Ruins",
     "cost": 0,
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "Action"
   },
   {
     "name": "Survivors",
     "type": "Action - Ruins",
     "color": "Ruins",
     "cost": 0,
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "None"
   },
   {
     "name": "Dame Anna",
     "type": "Action - Attack - Knight",
     "color": "Action",
     "cost": 5,
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "None"
   },
   {
     "name": "Dame Josephine",
     "type": "Action - Victory - Knight",
     "color": "Victory",
     "cost": 5,
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "None"
   },
   {
     "name": "Dame Molly",
     "type": "Action - Attack - Knight",
     "color": "Action",
     "cost": 5,
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "Action"
   },
   {
     "name": "Dame Natalie",
     "type": "Action - Attack - Knight",
     "color": "Action",
     "cost": 5,
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "None"
   },
   {
     "name": "Dame Sylvia",
     "type": "Action - Attack - Knight",
     "color": "Action",
     "cost": 5,
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "Money"
   },
   {
     "name": "Sir Bailey",
     "type": "Action - Attack - Knight",
     "color": "Action",
     "cost": 5,
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "Card - Action"
   },
   {
     "name": "Sir Destry",
     "type": "Action - Attack - Knight",
     "color": "Action",
     "cost": 5,
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "Card"
   },
   {
     "name": "Sir Martin",
     "type": "Action - Attack - Knight",
     "color": "Action",
     "cost": 5,
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "Buy"
   },
   {
     "name": "Sir Michael",
     "type": "Action - Attack - Knight",
     "color": "Action",
     "cost": 5,
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "None"
   },
   {
     "name": "Sir Vander",
     "type": "Action - Attack - Knight",
     "color": "Action",
     "cost": 5,
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "None"
   },
   {
     "name": "Hovel",
     "type": "Reaction - Shelter",
     "color": "Shelter",
     "cost": 1,
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "None"
   },
   {
     "name": "Necropolis",
     "type": "Action - Shelter",
     "color": "Shelter",
     "cost": 1,
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "Action"
   },
   {
     "name": "Overgrown Estate",
     "type": "Victory - Shelter",
     "color": "Shelter",
     "cost": 1,
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "Card"
   },
   {
     "name": "Madman",
     "type": "Action",
     "color": "Action",
     "cost": "0*",
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "Card - Action"
   },
   {
     "name": "Mercenary",
     "type": "Action - Attack",
     "color": "Action",
     "cost": "0*",
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "Card - Money"
   },
   {
     "name": "Spoils",
     "type": "Treasure",
     "color": "Treasure",
     "cost": "0*",
-    "expansion": "Dark Ages"
+    "expansion": "Dark Ages",
+    "text": "None"
   },
   {
     "name": "Black Cat",
     "type": "Action - Reaction",
     "color": "Reaction",
     "cost": 2,
-    "expansion": "Menagerie"
+    "expansion": "Menagerie",
+    "text": "Card"
   },
   {
     "name": "Sleigh",
     "type": "Action - Reaction",
     "color": "Reaction",
     "cost": 2,
-    "expansion": "Menagerie"
+    "expansion": "Menagerie",
+    "text": "None"
   },
   {
     "name": "Supplies",
     "type": "Treasure",
     "color": "Treasure",
     "cost": 2,
-    "expansion": "Menagerie"
+    "expansion": "Menagerie",
+    "text": "None"
   },
   {
     "name": "Camel Train",
     "type": "Action",
     "color": "Action",
     "cost": 3,
-    "expansion": "Menagerie"
+    "expansion": "Menagerie",
+    "text": "None"
   },
   {
     "name": "Goatherd",
     "type": "Action",
     "color": "Action",
     "cost": 3,
-    "expansion": "Menagerie"
+    "expansion": "Menagerie",
+    "text": "Action"
   },
   {
     "name": "Scrap",
     "type": "Action",
     "color": "Action",
     "cost": 3,
-    "expansion": "Menagerie"
+    "expansion": "Menagerie",
+    "text": "Card - Action - Buy - Money"
   },
   {
     "name": "Sheepdog",
     "type": "Action - Reaction",
     "color": "Reaction",
     "cost": 3,
-    "expansion": "Menagerie"
+    "expansion": "Menagerie",
+    "text": "Card"
   },
   {
     "name": "Snowy Village",
     "type": "Action",
     "color": "Action",
     "cost": 3,
-    "expansion": "Menagerie"
+    "expansion": "Menagerie",
+    "text": "Card - Action - Buy"
   },
   {
     "name": "Stockpile",
     "type": "Treasure",
     "color": "Treasure",
     "cost": 3,
-    "expansion": "Menagerie"
+    "expansion": "Menagerie",
+    "text": "Buy"
   },
   {
     "name": "Bounty Hunter",
     "type": "Action",
     "color": "Action",
     "cost": 4,
-    "expansion": "Menagerie"
+    "expansion": "Menagerie",
+    "text": "Action - Money"
   },
   {
     "name": "Cardinal",
     "type": "Action - Attack",
     "color": "Action",
     "cost": 4,
-    "expansion": "Menagerie"
+    "expansion": "Menagerie",
+    "text": "Money"
   },
   {
     "name": "Cavalry",
     "type": "Action",
     "color": "Action",
     "cost": 4,
-    "expansion": "Menagerie"
+    "expansion": "Menagerie",
+    "text": "Card - Buy"
   },
   {
     "name": "Groom",
     "type": "Action",
     "color": "Action",
     "cost": 4,
-    "expansion": "Menagerie"
+    "expansion": "Menagerie",
+    "text": "Card - Action"
   },
   {
     "name": "Hostelry",
     "type": "Action",
     "color": "Action",
     "cost": 4,
-    "expansion": "Menagerie"
+    "expansion": "Menagerie",
+    "text": "Card - Action"
   },
   {
     "name": "Village Green",
     "type": "Action - Reaction",
     "color": "Reaction",
     "cost": 4,
-    "expansion": "Menagerie"
+    "expansion": "Menagerie",
+    "text": "Card - Action"
   },
   {
     "name": "Barge",
     "type": "Action - Duration",
     "color": "Duration",
     "cost": 5,
-    "expansion": "Menagerie"
+    "expansion": "Menagerie",
+    "text": "Card - Buy"
   },
   {
     "name": "Coven",
     "type": "Action - Attack - Duration",
     "color": "Duration",
     "cost": 5,
-    "expansion": "Menagerie"
+    "expansion": "Menagerie",
+    "text": "Action - Money"
   },
   {
     "name": "Displace",
     "type": "Action",
     "color": "Action",
     "cost": 5,
-    "expansion": "Menagerie"
+    "expansion": "Menagerie",
+    "text": "None"
   },
   {
     "name": "Falconer",
     "type": "Action - Reaction",
     "color": "Reaction",
     "cost": 5,
-    "expansion": "Menagerie"
+    "expansion": "Menagerie",
+    "text": "None"
   },
   {
     "name": "Gatekeeper",
     "type": "Action - Duration - Attack",
     "color": "Duration",
     "cost": 5,
-    "expansion": "Menagerie"
+    "expansion": "Menagerie",
+    "text": "Money"
   },
   {
     "name": "Hunting Lodge",
     "type": "Action",
     "color": "Action",
     "cost": 5,
-    "expansion": "Menagerie"
+    "expansion": "Menagerie",
+    "text": "Card - Action"
   },
   {
     "name": "Kiln",
     "type": "Action",
     "color": "Action",
     "cost": 5,
-    "expansion": "Menagerie"
+    "expansion": "Menagerie",
+    "text": "Money"
   },
   {
     "name": "Livery",
     "type": "Action",
     "color": "Action",
     "cost": 5,
-    "expansion": "Menagerie"
+    "expansion": "Menagerie",
+    "text": "Money"
   },
   {
     "name": "Mastermind",
     "type": "Action - Duration",
     "color": "Duration",
     "cost": 5,
-    "expansion": "Menagerie"
+    "expansion": "Menagerie",
+    "text": "None"
   },
   {
     "name": "Paddock",
     "type": "Action",
     "color": "Action",
     "cost": 5,
-    "expansion": "Menagerie"
+    "expansion": "Menagerie",
+    "text": "Action - Money"
   },
   {
     "name": "Sanctuary",
     "type": "Action",
     "color": "Action",
     "cost": 5,
-    "expansion": "Menagerie"
+    "expansion": "Menagerie",
+    "text": "Card - Action - Buy"
   },
   {
     "name": "Fisherman",
     "type": "Action",
     "color": "Action",
     "cost": "5*",
-    "expansion": "Menagerie"
+    "expansion": "Menagerie",
+    "text": "Card - Action - Money"
   },
   {
     "name": "Destrier",
     "type": "Action",
     "color": "Action",
     "cost": "6*",
-    "expansion": "Menagerie"
+    "expansion": "Menagerie",
+    "text": "Card - Action"
   },
   {
     "name": "Wayfarer",
     "type": "Action",
     "color": "Action",
     "cost": "6*",
-    "expansion": "Menagerie"
+    "expansion": "Menagerie",
+    "text": "Card"
   },
   {
     "name": "Animal Fair",
     "type": "Action",
     "color": "Action",
     "cost": "7*",
-    "expansion": "Menagerie"
+    "expansion": "Menagerie",
+    "text": "Buy - Money"
   },
   {
     "name": "Horse",
     "type": "Action",
     "color": "Action",
     "cost": "3*",
-    "expansion": "Menagerie"
+    "expansion": "Menagerie",
+    "text": "Card - Action"
   }
 ]
