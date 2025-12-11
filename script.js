@@ -118,7 +118,6 @@ function addBoxWrapper(row,label_text,id,box_text,color,delay=0) {
             console.log("color " + color)
             if (color === "var(--soft-yellow)" || color.includes("yellow") || color === "#F1DE77") {
                 box.classList.add('yellow-box');
-                console.log("WAHAAA")
             } else {
                 box.style.color = document.body.classList.contains('dark') ? '#e8e8e8' : '#1a1a1a';
             }
@@ -203,6 +202,30 @@ function seededRandom(seed) {
   return x - Math.floor(x);
 }
 
+function parseCost(cost) {
+    // Convert to string in case the JSON mixes numbers/strings
+    cost = String(cost).trim();
+
+    // Potion cost (if you ever add Alchemy cards)
+    if (cost.includes("P")) {
+        return { coins: Number(cost.replace("P","")), potion: 1, star: 0, debt: 0};
+    }
+
+    // Debt cost 
+    if (cost.includes("D")) {
+        if (cost.includes("-")) {return {coins: 8, potion: 0, star: 0, debt: Number(cost.replace("D",""))}};
+        return { coins: 0, potion: 0, star: 0, debt: Number(cost.replace("D","")) };
+    }
+
+    // Star costs "5*" or "7*"
+    if (cost.includes("*")) {
+        return { coins: Number(cost.replace("*","")), potion: 0, star: 1, debt: 0 };
+    }
+
+    // Normal numeric cost
+    return { coins: Number(cost), potion: 0, star: 0, debt: 0 };
+}
+
 async function getTodaysCard() {
   const response = await fetch('cards.json');
   const cards = await response.json();
@@ -224,6 +247,36 @@ async function init() {
     .then(cards => {
         const container = document.querySelector(".card-images");
         const datalist = document.getElementById("search-options");
+
+        cards.sort((a, b) => {
+            // 1. Sort by expansion
+            const expCompare = a.expansion.localeCompare(b.expansion);
+            if (expCompare !== 0) return expCompare;
+
+            // 2. Parse costs
+            const costA = parseCost(a.cost);
+            const costB = parseCost(b.cost);
+
+            // First compare coins
+            if (costA.coins !== costB.coins)
+                return costA.coins - costB.coins;
+
+            // Then debt cost
+            if (costA.debt !== costB.debt)
+                return costA.debt - costB.debt;
+
+            // Then potion cost
+            if (costA.potion !== costB.potion)
+                return costA.potion - costB.potion;
+
+            // Then star cost ("*")
+            if (costA.star !== costB.star)
+                return costA.star - costB.star;
+
+            // 3. Finally sort by name
+            return a.name.localeCompare(b.name);
+        });
+
         cards.forEach(card => {
             const cardName = card["name"];
 

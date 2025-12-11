@@ -379,7 +379,7 @@
     "name": "Messenger",
     "type": "Action",
     "color": "Action",
-    "cost": 3,
+    "cost": 4,
     "expansion": "Adventures",
     "text": "Money"
   },
@@ -491,7 +491,7 @@
     "name": "Treasure Hunter",
     "type": "Action - Traveller",
     "color": "Action",
-    "cost": 3,
+    "cost": "3*",
     "expansion": "Adventures",
     "text": "Action - Money"
   },
@@ -499,7 +499,7 @@
     "name": "Warrior",
     "type": "Action - Attack - Traveller",
     "color": "Action",
-    "cost": 4,
+    "cost": "4*",
     "expansion": "Adventures",
     "text": "Card"
   },
@@ -507,7 +507,7 @@
     "name": "Hero",
     "type": "Action - Traveller",
     "color": "Action",
-    "cost": 5,
+    "cost": "5*",
     "expansion": "Adventures",
     "text": "Money"
   },
@@ -515,7 +515,7 @@
     "name": "Champion",
     "type": "Action - Duration",
     "color": "Duration",
-    "cost": 6,
+    "cost": "6*",
     "expansion": "Adventures",
     "text": "Action"
   },
@@ -531,7 +531,7 @@
     "name": "Soldier",
     "type": "Action - Attack - Traveller",
     "color": "Action",
-    "cost": 3,
+    "cost": "3*",
     "expansion": "Adventures",
     "text": "Money"
   },
@@ -539,7 +539,7 @@
     "name": "Fugitive",
     "type": "Action - Traveller",
     "color": "Action",
-    "cost": 4,
+    "cost": "4*",
     "expansion": "Adventures",
     "text": "Card - Action"
   },
@@ -547,7 +547,7 @@
     "name": "Disciple",
     "type": "Action - Traveller",
     "color": "Action",
-    "cost": 5,
+    "cost": "5*",
     "expansion": "Adventures",
     "text": "None"
   },
@@ -555,7 +555,7 @@
     "name": "Teacher",
     "type": "Action - Reserve",
     "color": "Reserve",
-    "cost": 6,
+    "cost": "6*",
     "expansion": "Adventures",
     "text": "None"
   },
@@ -907,7 +907,7 @@
     "name": "Fortune",
     "type": "Treasure",
     "color": "Treasure",
-    "cost": "8+8D",
+    "cost": "8 - 8D",
     "expansion": "Empires",
     "text": "Buy - Money"
   },
