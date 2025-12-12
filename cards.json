@@ -1750,5 +1750,2575 @@
     "cost": "3*",
     "expansion": "Menagerie",
     "text": "Card - Action"
+  },
+  {
+    "name": "Bauble",
+    "type": "Treasure - Liaison",
+    "color": "Treasure",
+    "cost": 2,
+    "expansion": "Allies",
+    "text": "Buy - Money"
+  },
+  {
+    "name": "Sycophant",
+    "type": "Action - Liaison",
+    "color": "Action",
+    "cost": 2,
+    "expansion": "Allies",
+    "text": "Action - Money"
+  },
+  {
+    "name": "Importer",
+    "type": "Action - Duration - Liaison",
+    "color": "Action",
+    "cost": 3,
+    "expansion": "Allies",
+    "text": "None"
+  },
+  {
+    "name": "Merchant Camp",
+    "type": "Action",
+    "color": "Duration",
+    "cost": 3,
+    "expansion": "Allies",
+    "text": "Action - Money"
+  },
+  {
+    "name": "Sentinel",
+    "type": "Action",
+    "color": "Action",
+    "cost": 3,
+    "expansion": "Allies",
+    "text": "None"
+  },
+  {
+    "name": "Underling",
+    "type": "Action - Liaison",
+    "color": "Action",
+    "cost": 3,
+    "expansion": "Allies",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Broker",
+    "type": "Action - Liaison",
+    "color": "Action",
+    "cost": 4,
+    "expansion": "Allies",
+    "text": "Card - Action - Money"
+  },
+  {
+    "name": "Carpenter",
+    "type": "Action",
+    "color": "Action",
+    "cost": 4,
+    "expansion": "Allies",
+    "text": "Action"
+  },
+  {
+    "name": "Courier",
+    "type": "Action",
+    "color": "Action",
+    "cost": 4,
+    "expansion": "Allies",
+    "text": "Money"
+  },
+  {
+    "name": "Innkeeper",
+    "type": "Action",
+    "color": "Action",
+    "cost": 4,
+    "expansion": "Allies",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Royal Galley",
+    "type": "Action - Duration",
+    "color": "Duration",
+    "cost": 4,
+    "expansion": "Allies",
+    "text": "Card"
+  },
+  {
+    "name": "Town",
+    "type": "Action",
+    "color": "Action",
+    "cost": 4,
+    "expansion": "Allies",
+    "text": "Card - Action - Buy - Money"
+  },
+  {
+    "name": "Barbarian",
+    "type": "Action - Attack",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Allies",
+    "text": "Money"
+  },
+  {
+    "name": "Capital City",
+    "type": "Action",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Allies",
+    "text": "Card - Action - Money"
+  },
+  {
+    "name": "Contract",
+    "type": "Treasure - Duration - Liaison",
+    "color": "Treasure - Duration",
+    "cost": 5,
+    "expansion": "Allies",
+    "text": "None"
+  },
+  {
+    "name": "Emissary",
+    "type": "Action - Liaison",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Allies",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Galleria",
+    "type": "Action",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Allies",
+    "text": "Buy - Money"
+  },
+  {
+    "name": "Guildmaster",
+    "type": "Action - Liaison",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Allies",
+    "text": "Money"
+  },
+  {
+    "name": "Highwayman",
+    "type": "Action - Duration - Attack",
+    "color": "Duration",
+    "cost": 5,
+    "expansion": "Allies",
+    "text": "Card"
+  },
+  {
+    "name": "Hunter",
+    "type": "Action",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Allies",
+    "text": "Action"
+  },
+  {
+    "name": "Modify",
+    "type": "Action",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Allies",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Skirmisher",
+    "type": "Action - Attack",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Allies",
+    "text": "Card - Action - Money"
+  },
+  {
+    "name": "Specialist",
+    "type": "Action",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Allies",
+    "text": "None"
+  },
+  {
+    "name": "Swap",
+    "type": "Action",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Allies",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Marquis",
+    "type": "Action",
+    "color": "Action",
+    "cost": 6,
+    "expansion": "Allies",
+    "text": "Card - Buy"
+  },
+  {
+    "name": "Town Crier",
+    "type": "Action - Townsfolk",
+    "color": "Action",
+    "cost": 2,
+    "expansion": "Allies",
+    "text": "Card - Action - Money"
+  },
+  {
+    "name": "Herb Gatherer",
+    "type": "Action - Augur",
+    "color": "Action",
+    "cost": 3,
+    "expansion": "Allies",
+    "text": "Buy"
+  },
+  {
+    "name": "Old Map",
+    "type": "Action - Odyssey",
+    "color": "Action",
+    "cost": 3,
+    "expansion": "Allies",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Blacksmith",
+    "type": "Action - Townfolk",
+    "color": "Action",
+    "cost": 3,
+    "expansion": "Allies",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Student",
+    "type": "Action - Wizard",
+    "color": "Action",
+    "cost": 3,
+    "expansion": "Allies",
+    "text": "Action"
+  },
+  {
+    "name": "Tent",
+    "type": "Action - Fort",
+    "color": "Action",
+    "cost": 3,
+    "expansion": "Allies",
+    "text": "Money"
+  },
+  {
+    "name": "Battle Plan",
+    "type": "Action - Clash",
+    "color": "Action",
+    "cost": 3,
+    "expansion": "Allies",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Acolyte",
+    "type": "Action - Augur",
+    "color": "Action",
+    "cost": 4,
+    "expansion": "Allies",
+    "text": "None"
+  },
+  {
+    "name": "Voyage",
+    "type": "Action - Duration - Odyssey",
+    "color": "Duration",
+    "cost": 4,
+    "expansion": "Allies",
+    "text": "Action"
+  },
+  {
+    "name": "Miller",
+    "type": "Action - Townsfolk",
+    "color": "Action",
+    "cost": 4,
+    "expansion": "Allies",
+    "text": "Action"
+  },
+  {
+    "name": "Conjurer",
+    "type": "Action - Duration - Wizard",
+    "color": "Duration",
+    "cost": 4,
+    "expansion": "Allies",
+    "text": "None"
+  },
+  {
+    "name": "Garrison",
+    "type": "Action - Duration - Fort",
+    "color": "Duration",
+    "cost": 4,
+    "expansion": "Allies",
+    "text": "Card - Money"
+  },
+  {
+    "name": "Archer",
+    "type": "Action - Attack - Clash",
+    "color": "Action",
+    "cost": 4,
+    "expansion": "Allies",
+    "text": "Money"
+  },
+  {
+    "name": "Sorceress",
+    "type": "Action - Attack - Augur",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Allies",
+    "text": "Action"
+  },
+  {
+    "name": "Sunken Treasure",
+    "type": "Treasure - Odyssey",
+    "color": "Treasure",
+    "cost": 5,
+    "expansion": "Allies",
+    "text": "None"
+  },
+  {
+    "name": "Elder",
+    "type": "Action - Townsfolk",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Allies",
+    "text": "Money"
+  },
+  {
+    "name": "Sorcerer",
+    "type": "Action - Attack - Wizard",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Allies",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Hill Fort",
+    "type": "Action - Fort",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Allies",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Warlord",
+    "type": "Action - Duration - Attack - Clash",
+    "color": "Duration",
+    "cost": 5,
+    "expansion": "Allies",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Sibyl",
+    "type": "Action - Augur",
+    "color": "Action",
+    "cost": 6,
+    "expansion": "Allies",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Distant Shore",
+    "type": "Action - Victory - Odyssey",
+    "color": "Victory - Duration",
+    "cost": 6,
+    "expansion": "Allies",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Lich",
+    "type": "Action - Wizard",
+    "color": "Action",
+    "cost": 6,
+    "expansion": "Allies",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Stronghold",
+    "type": "Action - Victory - Duration - Fort",
+    "color": "Victory - Duration",
+    "cost": 6,
+    "expansion": "Allies",
+    "text": "Card - Money"
+  },
+  {
+    "name": "Territory",
+    "type": "Victory - Clash",
+    "color": "Victory",
+    "cost": 6,
+    "expansion": "Allies",
+    "text": "None"
+  },
+  {
+    "name": "Cage",
+    "type": "Treasure - Duration",
+    "color": "Treasure - Duration",
+    "cost": 2,
+    "expansion": "Plunder",
+    "text": "None"
+  },
+  {
+    "name": "Grotto",
+    "type": "Action - Duration",
+    "color": "Duration",
+    "cost": 2,
+    "expansion": "Plunder",
+    "text": "Action"
+  },
+  {
+    "name": "Jewelled Egg",
+    "type": "Treasure",
+    "color": "Treasure",
+    "cost": 2,
+    "expansion": "Plunder",
+    "text": "Buy"
+  },
+  {
+    "name": "Search",
+    "type": "Action - Duration",
+    "color": "Duration",
+    "cost": 2,
+    "expansion": "Plunder",
+    "text": "Money"
+  },
+  {
+    "name": "Shaman",
+    "type": "Action",
+    "color": "Action",
+    "cost": 2,
+    "expansion": "Plunder",
+    "text": "Action - Money"
+  },
+  {
+    "name": "Secluded Shrine",
+    "type": "Action - Duration",
+    "color": "Duration",
+    "cost": 3,
+    "expansion": "Plunder",
+    "text": "Money"
+  },
+  {
+    "name": "Siren",
+    "type": "Action - Duration - Attack",
+    "color": "Duration",
+    "cost": 3,
+    "expansion": "Plunder",
+    "text": "None"
+  },
+  {
+    "name": "Stowaway",
+    "type": "Action - Duration - Reaction",
+    "color": "Reaction - Duration",
+    "cost": 3,
+    "expansion": "Plunder",
+    "text": "Card"
+  },
+  {
+    "name": "Taskmaster",
+    "type": "Action - Duration",
+    "color": "Duration",
+    "cost": 3,
+    "expansion": "Plunder",
+    "text": "Action - Money"
+  },
+  {
+    "name": "Abundance",
+    "type": "Treasure - Duration",
+    "color": "Treasure - Duration",
+    "cost": 4,
+    "expansion": "Plunder",
+    "text": "Buy - Money"
+  },
+  {
+    "name": "Cabin Boy",
+    "type": "Action - Duration",
+    "color": "Duration",
+    "cost": 4,
+    "expansion": "Plunder",
+    "text": "Card - Action - Money"
+  },
+  {
+    "name": "Crucible",
+    "type": "Treasure",
+    "color": "Treasure",
+    "cost": 4,
+    "expansion": "Plunder",
+    "text": "Money"
+  },
+  {
+    "name": "Flagship",
+    "type": "Action - Duration - Command",
+    "color": "Duration",
+    "cost": 4,
+    "expansion": "Plunder",
+    "text": "Money"
+  },
+  {
+    "name": "Fortune Hunter",
+    "type": "Action",
+    "color": "Action",
+    "cost": 4,
+    "expansion": "Plunder",
+    "text": "Money"
+  },
+  {
+    "name": "Gondola",
+    "type": "Treasure - Duration",
+    "color": "Treasure - Duration",
+    "cost": 4,
+    "expansion": "Plunder",
+    "text": "Money"
+  },
+  {
+    "name": "Harbor Village",
+    "type": "Action",
+    "color": "Action",
+    "cost": 4,
+    "expansion": "Plunder",
+    "text": "Card - Action - Money"
+  },
+  {
+    "name": "Landing Party",
+    "type": "Action - Duration",
+    "color": "Duration",
+    "cost": 4,
+    "expansion": "Plunder",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Mapmaker",
+    "type": "Action - Reaction",
+    "color": "Reaction",
+    "cost": 4,
+    "expansion": "Plunder",
+    "text": "None"
+  },
+  {
+    "name": "Maroon",
+    "type": "Action",
+    "color": "Action",
+    "cost": 4,
+    "expansion": "Plunder",
+    "text": "Card"
+  },
+  {
+    "name": "Rope",
+    "type": "Treasure - Duration",
+    "color": "Treasure - Duration",
+    "cost": 4,
+    "expansion": "Plunder",
+    "text": "Card - Buy"
+  },
+  {
+    "name": "Swamp Shacks",
+    "type": "Action",
+    "color": "Action",
+    "cost": 4,
+    "expansion": "Plunder",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Tools",
+    "type": "Treasure",
+    "color": "Treasure",
+    "cost": 4,
+    "expansion": "Plunder",
+    "text": "None"
+  },
+  {
+    "name": "Buried Treasure",
+    "type": "Treasure - Duration",
+    "color": "Treasure - Duration",
+    "cost": 5,
+    "expansion": "Plunder",
+    "text": "Buy - Money"
+  },
+  {
+    "name": "Crew",
+    "type": "Action - Duration",
+    "color": "Duration",
+    "cost": 5,
+    "expansion": "Plunder",
+    "text": "Card"
+  },
+  {
+    "name": "Cutthroat",
+    "type": "Action - Duration - Attack",
+    "color": "Duration",
+    "cost": 5,
+    "expansion": "Plunder",
+    "text": "None"
+  },
+  {
+    "name": "Enlarge",
+    "type": "Action - Duration",
+    "color": "Duration",
+    "cost": 5,
+    "expansion": "Plunder",
+    "text": "None"
+  },
+  {
+    "name": "Figurine",
+    "type": "Treasure",
+    "color": "Treasure",
+    "cost": 5,
+    "expansion": "Plunder",
+    "text": "Card - Buy - Money"
+  },
+  {
+    "name": "First Mate",
+    "type": "Action",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Plunder",
+    "text": "None"
+  },
+  {
+    "name": "Frigate",
+    "type": "Action - Duration - Attack",
+    "color": "Duration",
+    "cost": 5,
+    "expansion": "Plunder",
+    "text": "Money"
+  },
+  {
+    "name": "Longship",
+    "type": "Action - Duration",
+    "color": "Duration",
+    "cost": 5,
+    "expansion": "Plunder",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Mining Road",
+    "type": "Action",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Plunder",
+    "text": "Action - Buy - Money"
+  },
+  {
+    "name": "Pendant",
+    "type": "Treasure",
+    "color": "Treasure",
+    "cost": 5,
+    "expansion": "Plunder",
+    "text": "Money"
+  },
+  {
+    "name": "Pickaxe",
+    "type": "Treasure",
+    "color": "Treasure",
+    "cost": 5,
+    "expansion": "Plunder",
+    "text": "None"
+  },
+  {
+    "name": "Pilgrim",
+    "type": "Action",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Plunder",
+    "text": "Card"
+  },
+  {
+    "name": "Quartermaster",
+    "type": "Action - Duration",
+    "color": "Duration",
+    "cost": 5,
+    "expansion": "Plunder",
+    "text": "None"
+  },
+  {
+    "name": "Silver Mine",
+    "type": "Treasure",
+    "color": "Treasure",
+    "cost": 5,
+    "expansion": "Plunder",
+    "text": "None"
+  },
+  {
+    "name": "Trickster",
+    "type": "Action - Attack",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Plunder",
+    "text": "None"
+  },
+  {
+    "name": "Wealthy Village",
+    "type": "Action",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Plunder",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Sack of Loot",
+    "type": "Treasure",
+    "color": "Treasure",
+    "cost": 6,
+    "expansion": "Plunder",
+    "text": "Buy"
+  },
+  {
+    "name": "King's Cache",
+    "type": "Treasure",
+    "color": "Treasure",
+    "cost": 7,
+    "expansion": "Plunder",
+    "text": "None"
+  },
+  {
+    "name": "Amphora",
+    "type": "Treasure - Loot",
+    "color": "Treasure",
+    "cost": "7*",
+    "expansion": "Plunder",
+    "text": "Buy - Money"
+  },
+  {
+    "name": "Doubloons",
+    "type": "Treasure - Loot",
+    "color": "Treasure",
+    "cost": "7*",
+    "expansion": "Plunder",
+    "text": "None"
+  },
+  {
+    "name": "Endless Chalice",
+    "type": "Treasure - Duration - Loot",
+    "color": "Treasure - Duration",
+    "cost": "7*",
+    "expansion": "Plunder",
+    "text": "Buy - Money"
+  },
+  {
+    "name": "Figurehead",
+    "type": "Treasure - Duration - Loot",
+    "color": "Treasure - Duration",
+    "cost": "7*",
+    "expansion": "Plunder",
+    "text": "Card"
+  },
+  {
+    "name": "Hammer",
+    "type": "Treasure - Loot",
+    "color": "Treasure",
+    "cost": "7*",
+    "expansion": "Plunder",
+    "text": "None"
+  },
+  {
+    "name": "Insignia",
+    "type": "Treasure - Loot",
+    "color": "Treasure",
+    "cost": "7*",
+    "expansion": "Plunder",
+    "text": "None"
+  },
+  {
+    "name": "Jewels",
+    "type": "Treasure - Duration - Loot",
+    "color": "Treasure - Duration",
+    "cost": "7*",
+    "expansion": "Plunder",
+    "text": "Buy"
+  },
+  {
+    "name": "Orb",
+    "type": "Treasure - Loot",
+    "color": "Treasure",
+    "cost": "7*",
+    "expansion": "Plunder",
+    "text": "Buy - Money"
+  },
+  {
+    "name": "Prize Goat",
+    "type": "Treasure - Loot",
+    "color": "Treasure",
+    "cost": "7*",
+    "expansion": "Plunder",
+    "text": "Buy"
+  },
+  {
+    "name": "Puzzle Box",
+    "type": "Treasure - Loot",
+    "color": "Treasure",
+    "cost": "7*",
+    "expansion": "Plunder",
+    "text": "Buy"
+  },
+  {
+    "name": "Sextant",
+    "type": "Treasure - Loot",
+    "color": "Treasure",
+    "cost": "7*",
+    "expansion": "Plunder",
+    "text": "Buy"
+  },
+  {
+    "name": "Shield",
+    "type": "Treasure - Reaction - Loot",
+    "color": "Treasure - Reaction",
+    "cost": "7*",
+    "expansion": "Plunder",
+    "text": "Buy"
+  },
+  {
+    "name": "Spell Scroll",
+    "type": "Action - Treasure - Loot",
+    "color": "Action - Treasure",
+    "cost": "7*",
+    "expansion": "Plunder",
+    "text": "None"
+  },
+  {
+    "name": "Staff",
+    "type": "Treasure - Loot",
+    "color": "Treasure",
+    "cost": "7*",
+    "expansion": "Plunder",
+    "text": "Buy"
+  },
+  {
+    "name": "Sword",
+    "type": "Treasure - Attack - Loot",
+    "color": "Treasure",
+    "cost": "7*",
+    "expansion": "Plunder",
+    "text": "Buy"
+  },
+  {
+    "name": "Border Guard",
+    "type": "Action",
+    "color": "Action",
+    "cost": 2,
+    "expansion": "Renaissance",
+    "text": "Action"
+  },
+  {
+    "name": "Ducat",
+    "type": "Treasure",
+    "color": "Treasure",
+    "cost": 2,
+    "expansion": "Renaissance",
+    "text": "Buy"
+  },
+  {
+    "name": "Lackeys",
+    "type": "Action",
+    "color": "Action",
+    "cost": 2,
+    "expansion": "Renaissance",
+    "text": "Card"
+  },
+  {
+    "name": "Acting Troupe",
+    "type": "Action",
+    "color": "Action",
+    "cost": 3,
+    "expansion": "Renaissance",
+    "text": "None"
+  },
+  {
+    "name": "Cargo Ship",
+    "type": "Action - Duration",
+    "color": "Duration",
+    "cost": 3,
+    "expansion": "Renaissance",
+    "text": "Money"
+  },
+  {
+    "name": "Experiment",
+    "type": "Action",
+    "color": "Action",
+    "cost": 3,
+    "expansion": "Renaissance",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Improve",
+    "type": "Action",
+    "color": "Action",
+    "cost": 3,
+    "expansion": "Renaissance",
+    "text": "Money"
+  },
+  {
+    "name": "Flag Bearer",
+    "type": "Action",
+    "color": "Action",
+    "cost": 4,
+    "expansion": "Renaissance",
+    "text": "Money"
+  },
+  {
+    "name": "Hideout",
+    "type": "Action",
+    "color": "Action",
+    "cost": 4,
+    "expansion": "Renaissance",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Inventor",
+    "type": "Action",
+    "color": "Action",
+    "cost": 4,
+    "expansion": "Renaissance",
+    "text": "None"
+  },
+  {
+    "name": "Mountain Village",
+    "type": "Action",
+    "color": "Action",
+    "cost": 4,
+    "expansion": "Renaissance",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Patron",
+    "type": "Action - Reaction",
+    "color": "Reaction",
+    "cost": 4,
+    "expansion": "Renaissance",
+    "text": "Money"
+  },
+  {
+    "name": "Priest",
+    "type": "Action",
+    "color": "Action",
+    "cost": 4,
+    "expansion": "Renaissance",
+    "text": "Money"
+  },
+  {
+    "name": "Research",
+    "type": "Action - Duration",
+    "color": "Duration",
+    "cost": 4,
+    "expansion": "Renaissance",
+    "text": "Action"
+  },
+  {
+    "name": "Silk Merchant",
+    "type": "Action",
+    "color": "Action",
+    "cost": 4,
+    "expansion": "Renaissance",
+    "text": "Card - Buy"
+  },
+  {
+    "name": "Old Witch",
+    "type": "Action - Attack",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Renaissance",
+    "text": "Card"
+  },
+  {
+    "name": "Recruiter",
+    "type": "Action",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Renaissance",
+    "text": "Card"
+  },
+  {
+    "name": "Scepter",
+    "type": "Treasure - Command",
+    "color": "Treasure",
+    "cost": 5,
+    "expansion": "Renaissance",
+    "text": "Money"
+  },
+  {
+    "name": "Scholar",
+    "type": "Action",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Renaissance",
+    "text": "Card"
+  },
+  {
+    "name": "Sculptor",
+    "type": "Action",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Renaissance",
+    "text": "None"
+  },
+  {
+    "name": "Seer",
+    "type": "Action",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Renaissance",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Spices",
+    "type": "Treasure",
+    "color": "Treasure",
+    "cost": 5,
+    "expansion": "Renaissance",
+    "text": "Buy"
+  },
+  {
+    "name": "Swashbuckler",
+    "type": "Action",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Renaissance",
+    "text": "Card"
+  },
+  {
+    "name": "Treasurer",
+    "type": "Action",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Renaissance",
+    "text": "Money"
+  },
+  {
+    "name": "Villain",
+    "type": "Action - Attack",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Renaissance",
+    "text": "None"
+  },
+  {
+    "name": "Fairgrounds",
+    "type": "Victory",
+    "color": "Victory",
+    "cost": "6",
+    "expansion": "Cornucopia",
+    "text": "None"
+  },
+  {
+    "name": "Farming Village",
+    "type": "Action",
+    "color": "Action",
+    "cost": "4",
+    "expansion": "Cornucopia",
+    "text": "Action"
+  },
+  {
+    "name": "Fortune Teller",
+    "type": "Action - Attack",
+    "color": "Action",
+    "cost": "3",
+    "expansion": "Cornucopia",
+    "text": "Money"
+  },
+  {
+    "name": "Hamlet",
+    "type": "Action",
+    "color": "Action",
+    "cost": "2",
+    "expansion": "Cornucopia",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Harvest",
+    "type": "Action",
+    "color": "Action",
+    "cost": "5",
+    "expansion": "Cornucopia",
+    "text": "Money"
+  },
+  {
+    "name": "Horn of Plenty",
+    "type": "Treasure",
+    "color": "Treasure",
+    "cost": "5",
+    "expansion": "Cornucopia",
+    "text": "None"
+  },
+  {
+    "name": "Horse Traders",
+    "type": "Action - Reaction",
+    "color": "Reaction",
+    "cost": "4",
+    "expansion": "Cornucopia",
+    "text": "Buy - Money"
+  },
+  {
+    "name": "Hunting Party",
+    "type": "Action",
+    "color": "Action",
+    "cost": "5",
+    "expansion": "Cornucopia",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Jester",
+    "type": "Action - Attack",
+    "color": "Action",
+    "cost": "5",
+    "expansion": "Cornucopia",
+    "text": "Money"
+  },
+  {
+    "name": "Menagerie",
+    "type": "Action",
+    "color": "Action",
+    "cost": "3",
+    "expansion": "Cornucopia",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Remake",
+    "type": "Action",
+    "color": "Action",
+    "cost": "4",
+    "expansion": "Cornucopia",
+    "text": "None"
+  },
+  {
+    "name": "Tournament",
+    "type": "Action",
+    "color": "Action",
+    "cost": "4",
+    "expansion": "Cornucopia",
+    "text": "Action"
+  },
+  {
+    "name": "Young Witch",
+    "type": "Action - Attack",
+    "color": "Action",
+    "cost": "4",
+    "expansion": "Cornucopia",
+    "text": "Card"
+  },
+  {
+    "name": "Advisor",
+    "type": "Action",
+    "color": "Action",
+    "cost": "4",
+    "expansion": "Guilds",
+    "text": "Acion"
+  },
+  {
+    "name": "Baker",
+    "type": "Action",
+    "color": "Action",
+    "cost": "5",
+    "expansion": "Guilds",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Butcher",
+    "type": "Action",
+    "color": "Action",
+    "cost": "5",
+    "expansion": "Guilds",
+    "text": "None"
+  },
+  {
+    "name": "Candlestick Maker",
+    "type": "Action",
+    "color": "Action",
+    "cost": "2",
+    "expansion": "Guilds",
+    "text": "Action - Buy"
+  },
+  {
+    "name": "Doctor",
+    "type": "Action",
+    "color": "Action",
+    "cost": "3",
+    "expansion": "Guilds",
+    "text": "None"
+  },
+  {
+    "name": "Herald",
+    "type": "Action",
+    "color": "Action",
+    "cost": "4",
+    "expansion": "Guilds",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Journeyman",
+    "type": "Action",
+    "color": "Action",
+    "cost": "5",
+    "expansion": "Guilds",
+    "text": "None"
+  },
+  {
+    "name": "Masterpiece",
+    "type": "Treasure",
+    "color": "Treasure",
+    "cost": "3",
+    "expansion": "Guilds",
+    "text": "None"
+  },
+  {
+    "name": "Merchant Guild",
+    "type": "Action",
+    "color": "Action",
+    "cost": "5",
+    "expansion": "Guilds",
+    "text": "Buy - Money"
+  },
+  {
+    "name": "Plaza",
+    "type": "Action",
+    "color": "Action",
+    "cost": "4",
+    "expansion": "Guilds",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Soothsayer",
+    "type": "Action - Attack",
+    "color": "Action",
+    "cost": "5",
+    "expansion": "Guilds",
+    "text": "None"
+  },
+  {
+    "name": "Stonemason",
+    "type": "Action",
+    "color": "Action",
+    "cost": "2",
+    "expansion": "Guilds",
+    "text": "None"
+  },
+  {
+    "name": "Taxman",
+    "type": "Action - Attack",
+    "color": "Action",
+    "cost": "4",
+    "expansion": "Guilds",
+    "text": "None"
+  },
+  {
+    "name": "Alchemist",
+    "type": "Action",
+    "color": "Action",
+    "cost": "3P",
+    "expansion": "Alchemy",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Apothecary",
+    "type": "Action",
+    "color": "Action",
+    "cost": "2P",
+    "expansion": "Alchemy",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Apprentice",
+    "type": "Action",
+    "color": "Action",
+    "cost": "5",
+    "expansion": "Alchemy",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Familiar",
+    "type": "Action - Attack",
+    "color": "Action",
+    "cost": "3P",
+    "expansion": "Alchemy",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Golem",
+    "type": "Action",
+    "color": "Action",
+    "cost": "4P",
+    "expansion": "Alchemy",
+    "text": "None"
+  },
+  {
+    "name": "Herbalist",
+    "type": "Action",
+    "color": "Action",
+    "cost": "2",
+    "expansion": "Alchemy",
+    "text": "Buy - Money"
+  },
+  {
+    "name": "Philosopher's Stone",
+    "type": "Treasure",
+    "color": "Treasure",
+    "cost": "3P",
+    "expansion": "Alchemy",
+    "text": "Money"
+  },
+  {
+    "name": "Possession",
+    "type": "Action",
+    "color": "Action",
+    "cost": "6P",
+    "expansion": "Alchemy",
+    "text": "None"
+  },
+  {
+    "name": "Scrying Pool",
+    "type": "Action - Attack",
+    "color": "Action",
+    "cost": "2P",
+    "expansion": "Alchemy",
+    "text": "Action"
+  },
+  {
+    "name": "Transmute",
+    "type": "Action",
+    "color": "Action",
+    "cost": "0P",
+    "expansion": "Alchemy",
+    "text": "None"
+  },
+  {
+    "name": "University",
+    "type": "Action",
+    "color": "Action",
+    "cost": "2P",
+    "expansion": "Alchemy",
+    "text": "Action"
+  },
+  {
+    "name": "Vineyard",
+    "type": "Victory",
+    "color": "Victory",
+    "cost": "0P",
+    "expansion": "Alchemy",
+    "text": "None"
+  },
+  {
+    "name": "Bard",
+    "type": "Action - Fate",
+    "color": "Action",
+    "cost": "4",
+    "expansion": "Nocturne",
+    "text": "Money"
+  },
+  {
+    "name": "Blessed Village",
+    "type": "Action - Fate",
+    "color": "Action",
+    "cost": "4",
+    "expansion": "Nocturne",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Cemetery",
+    "type": "Victory",
+    "color": "Victory",
+    "cost": "4",
+    "expansion": "Nocturne",
+    "text": "None"
+  },
+  {
+    "name": "Changeling",
+    "type": "Night",
+    "color": "Night",
+    "cost": "3",
+    "expansion": "Nocturne",
+    "text": "None"
+  },
+  {
+    "name": "Cobbler",
+    "type": "Night - Duration",
+    "color": "Night - Duration",
+    "cost": "5",
+    "expansion": "Nocturne",
+    "text": "None"
+  },
+
+  {
+    "name": "Conclave",
+    "type": "Action",
+    "color": "Action",
+    "cost": "4",
+    "expansion": "Nocturne",
+    "text": "Money"
+  },
+
+  {
+    "name": "Cursed Village",
+    "type": "Action - Doom",
+    "color": "Action",
+    "cost": "5",
+    "expansion": "Nocturne",
+    "text": "Action"
+  },
+
+  {
+    "name": "Den of Sin",
+    "type": "Night - Duration",
+    "color": "Night - Duration",
+    "cost": "5",
+    "expansion": "Nocturne",
+    "text": "Card"
+  },
+
+  {
+    "name": "Devil's Workshop",
+    "type": "Night",
+    "color": "Night",
+    "cost": "4",
+    "expansion": "Nocturne",
+    "text": "None"
+  },
+
+  {
+    "name": "Druid",
+    "type": "Action - Fate",
+    "color": "Action",
+    "cost": "2",
+    "expansion": "Nocturne",
+    "text": "Buy"
+  },
+
+  {
+    "name": "Exorcist",
+    "type": "Night",
+    "color": "Night",
+    "cost": "4",
+    "expansion": "Nocturne",
+    "text": "None"
+  },
+
+  {
+    "name": "Faithful Hound",
+    "type": "Action - Reaction",
+    "color": "Reaction",
+    "cost": "2",
+    "expansion": "Nocturne",
+    "text": "Card"
+  },
+
+  {
+    "name": "Fool",
+    "type": "Action - Fate",
+    "color": "Action",
+    "cost": "3",
+    "expansion": "Nocturne",
+    "text": "None"
+  },
+
+  {
+    "name": "Ghost Town",
+    "type": "Night - Duration",
+    "color": "Night - Duration",
+    "cost": "3",
+    "expansion": "Nocturne",
+    "text": "Card - Action"
+  },
+
+  {
+    "name": "Guardian",
+    "type": "Night - Duration",
+    "color": "Night - Duration",
+    "cost": "2",
+    "expansion": "Nocturne",
+    "text": "Money"
+  },
+ {
+    "name": "Idol",
+    "type": "Treasure - Fate",
+    "color": "Treasure",
+    "cost": "5",
+    "expansion": "Nocturne",
+    "text": "None"
+  },
+
+  {
+    "name": "Imp",
+    "type": "Action - Spirit",
+    "color": "Action",
+    "cost": "2*",
+    "expansion": "Nocturne",
+    "text": "Card"
+  },
+
+  {
+    "name": "Leprechaun",
+    "type": "Action - Doom",
+    "color": "Action",
+    "cost": "3",
+    "expansion": "Nocturne",
+    "text": "None"
+  },
+
+  {
+    "name": "Monastery",
+    "type": "Night",
+    "color": "Night",
+    "cost": "2",
+    "expansion": "Nocturne",
+    "text": "None"
+  },
+
+  {
+    "name": "Necromancer",
+    "type": "Action",
+    "color": "Action",
+    "cost": "4",
+    "expansion": "Nocturne",
+    "text": "None"
+  },
+
+  {
+    "name": "Night Watchman",
+    "type": "Night",
+    "color": "Night",
+    "cost": "3",
+    "expansion": "Nocturne",
+    "text": "None"
+  },
+
+  {
+    "name": "Pooka",
+    "type": "Action",
+    "color": "Action",
+    "cost": "5",
+    "expansion": "Nocturne",
+    "text": "Card"
+  },
+
+  {
+    "name": "Raider",
+    "type": "Night - Duration - Attack",
+    "color": "Night - Duration",
+    "cost": "6",
+    "expansion": "Nocturne",
+    "text": "Money"
+  },
+
+  {
+    "name": "Sacred Grove",
+    "type": "Action - Fate",
+    "color": "Action",
+    "cost": "5",
+    "expansion": "Nocturne",
+    "text": "Buy - Money"
+  },
+
+  {
+    "name": "Secret Cave",
+    "type": "Action - Duration",
+    "color": "Duration",
+    "cost": "3",
+    "expansion": "Nocturne",
+    "text": "Card - Action - Money"
+  },
+
+  {
+    "name": "Shepherd",
+    "type": "Action",
+    "color": "Action",
+    "cost": "4",
+    "expansion": "Nocturne",
+    "text": "Card - Action"
+  },
+
+  {
+    "name": "Skulk",
+    "type": "Action - Attack - Doom",
+    "color": "Action",
+    "cost": "4",
+    "expansion": "Nocturne",
+    "text": "Buy"
+  },
+
+  {
+    "name": "Tormentor",
+    "type": "Action - Attack - Doom",
+    "color": "Action",
+    "cost": "5",
+    "expansion": "Nocturne",
+    "text": "Money"
+  },
+
+  {
+    "name": "Tracker",
+    "type": "Action - Fate",
+    "color": "Action",
+    "cost": "2",
+    "expansion": "Nocturne",
+    "text": "Money"
+  },
+
+  {
+    "name": "Tragic Hero",
+    "type": "Action",
+    "color": "Action",
+    "cost": "5",
+    "expansion": "Nocturne",
+    "text": "Card"
+  },
+
+  {
+    "name": "Vampire",
+    "type": "Night - Attack - Doom",
+    "color": "Night",
+    "cost": "5",
+    "expansion": "Nocturne",
+    "text": "None"
+  },
+
+  {
+    "name": "Werewolf",
+    "type": "Action - Night - Attack - Doom",
+    "color": "Night",
+    "cost": "5",
+    "expansion": "Nocturne",
+    "text": "Card"
+  },
+  {
+    "name": "Platinum",
+    "type": "Treasure",
+    "color": "Treasure",
+    "cost": 9,
+    "expansion": "Prosperity",
+    "text": "None"
+  },
+  {
+    "name": "Colony",
+    "type": "Victory",
+    "color": "Victory",
+    "cost": 11,
+    "expansion": "Prosperity",
+    "text": "None"
+  },
+  {
+    "name": "Loan",
+    "type": "Treasure",
+    "color": "Treasure",
+    "cost": 3,
+    "expansion": "Prosperity",
+    "text": "None"
+  },
+  {
+    "name": "Trade Route",
+    "type": "Action",
+    "color": "Action",
+    "cost": 3,
+    "expansion": "Prosperity",
+    "text": "Buy - Money"
+  },
+  {
+    "name": "Watchtower",
+    "type": "Action - Reaction",
+    "color": "Reaction",
+    "cost": 3,
+    "expansion": "Prosperity",
+    "text": "None"
+  },
+  {
+    "name": "Bishop",
+    "type": "Action",
+    "color": "Action",
+    "cost": 4,
+    "expansion": "Prosperity",
+    "text": "Money - VP"
+  },
+  {
+    "name": "Monument",
+    "type": "Action",
+    "color": "Action",
+    "cost": 4,
+    "expansion": "Prosperity",
+    "text": "Money - VP."
+  },
+  {
+    "name": "Quarry",
+    "type": "Treasure",
+    "color": "Treasure",
+    "cost": 4,
+    "expansion": "Prosperity",
+    "text": "None"
+  },
+  {
+    "name": "Talisman",
+    "type": "Treasure",
+    "color": "Treasure",
+    "cost": 4,
+    "expansion": "Prosperity",
+    "text": "None"
+  },
+  {
+    "name": "Worker's Village",
+    "type": "Action",
+    "color": "Action",
+    "cost": 4,
+    "expansion": "Prosperity",
+    "text": "Card - Actions - Buy."
+  },
+  {
+    "name": "City",
+    "type": "Action",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Prosperity",
+    "text": "Card - Action - Buy - Money"
+  },
+  {
+    "name": "Contraband",
+    "type": "Treasure",
+    "color": "Treasure",
+    "cost": 5,
+    "expansion": "Prosperity",
+    "text": "Buy"
+  },
+  {
+    "name": "Counting House",
+    "type": "Action",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Prosperity",
+    "text": "None"
+  },
+  {
+    "name": "Mint",
+    "type": "Action",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Prosperity",
+    "text": "None"
+  },
+  {
+    "name": "Mountebank",
+    "type": "Action - Attack",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Prosperity",
+    "text": "Money"
+  },
+  {
+    "name": "Rabble",
+    "type": "Action - Attack",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Prosperity",
+    "text": "Card"
+  },
+  {
+    "name": "Royal Seal",
+    "type": "Treasure",
+    "color": "Treasure",
+    "cost": 5,
+    "expansion": "Prosperity",
+    "text": "None"
+  },
+  {
+    "name": "Vault",
+    "type": "Action",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Prosperity",
+    "text": "Card"
+  },
+  {
+    "name": "Venture",
+    "type": "Treasure",
+    "color": "Treasure",
+    "cost": 5,
+    "expansion": "Prosperity",
+    "text": "None"
+  },
+  {
+    "name": "Goons",
+    "type": "Action - Attack",
+    "color": "Action",
+    "cost": 6,
+    "expansion": "Prosperity",
+    "text": "Buy - Money - VP"
+  },
+  {
+    "name": "Grand Market",
+    "type": "Action",
+    "color": "Action",
+    "cost": 6,
+    "expansion": "Prosperity",
+    "text": "Card - Action - Buy - Money"
+  },
+  {
+    "name": "Hoard",
+    "type": "Treasure",
+    "color": "Treasure",
+    "cost": 6,
+    "expansion": "Prosperity",
+    "text": "None"
+  },
+  {
+    "name": "Bank",
+    "type": "Treasure",
+    "color": "Treasure",
+    "cost": 7,
+    "expansion": "Prosperity",
+    "text": "None"
+  },
+  {
+    "name": "Expand",
+    "type": "Action",
+    "color": "Action",
+    "cost": 7,
+    "expansion": "Prosperity",
+    "text": "None"
+  },
+  {
+    "name": "Forge",
+    "type": "Action",
+    "color": "Action",
+    "cost": 7,
+    "expansion": "Prosperity",
+    "text": "None"
+  },
+  {
+    "name": "King's Court",
+    "type": "Action",
+    "color": "Action",
+    "cost": 7,
+    "expansion": "Prosperity",
+    "text": "None"
+  },
+  {
+    "name": "Peddler",
+    "type": "Action",
+    "color": "Action",
+    "cost": "8*",
+    "expansion": "Prosperity",
+    "text": "Card - Action - Money"
+  },
+  {
+        "name": "Coppersmith",
+        "type": "Action",
+        "color": "Action",
+        "cost": 4,
+        "expansion": "Intrigue",
+        "text": "None"
+    },
+    {
+        "name": "Great Hall",
+        "type": "Action - Victory",
+        "color": "Action - Victory",
+        "cost": 3,
+        "expansion": "Intrigue",
+        "text": "Card - Action"
+    },
+    {
+        "name": "Saboteur",
+        "type": "Action - Attack",
+        "color": "Attack",
+        "cost": 5,
+        "expansion": "Intrigue",
+        "text": "None"
+    },
+    {
+        "name": "Scout",
+        "type": "Action",
+        "color": "Action",
+        "cost": 4,
+        "expansion": "Intrigue",
+        "text": "Action"
+    },
+    {
+        "name": "Secret Chamber",
+        "type": "Action - Reaction",
+        "color": "Reaction",
+        "cost": 2,
+        "expansion": "Intrigue",
+        "text": "Money"
+    },
+    {
+        "name": "Tribute",
+        "type": "Action",
+        "color": "Action",
+        "cost": 5,
+        "expansion": "Intrigue",
+        "text": "Card - Action - Money"
+    },
+    {
+        "name": "Courtier",
+        "type": "Action",
+        "color": "Action",
+        "cost": 5,
+        "expansion": "Intrigue",
+        "text": "Action - Buy - Money"
+    },
+    {
+        "name": "Diplomat",
+        "type": "Action - Reaction",
+        "color": "Reaction",
+        "cost": 4,
+        "expansion": "Intrigue",
+        "text": "Card - Action"
+    },
+    {
+        "name": "Lurker",
+        "type": "Action",
+        "color": "Action",
+        "cost": 2,
+        "expansion": "Intrigue",
+        "text": "Action"
+    },
+    {
+        "name": "Mill",
+        "type": "Action - Victory",
+        "color": "Action - Victory",
+        "cost": 4,
+        "expansion": "Intrigue",
+        "text": "Card - Action - Money"
+    },
+    {
+        "name": "Patrol",
+        "type": "Action",
+        "color": "Action",
+        "cost": 5,
+        "expansion": "Intrigue",
+        "text": "Card"
+    },
+    {
+        "name": "Replace",
+        "type": "Action - Attack",
+        "color": "Action",
+        "cost": 5,
+        "expansion": "Intrigue",
+        "text": "None"
+    },
+    {
+        "name": "Pawn",
+        "type": "Action",
+        "color": "Action",
+        "cost": 2,
+        "expansion": "Intrigue",
+        "text": "Card - Action - Buy - Money"
+    },
+    {
+        "name": "Courtyard",
+        "type": "Action",
+        "color": "Action",
+        "cost": 2,
+        "expansion": "Intrigue",
+        "text": "Card"
+    },
+    {
+        "name": "Masquerade",
+        "type": "Action",
+        "color": "Action",
+        "cost": 3,
+        "expansion": "Intrigue",
+        "text": "Card"
+    },
+    {
+        "name": "Shanty Town",
+        "type": "Action",
+        "color": "Action",
+        "cost": 3,
+        "expansion": "Intrigue",
+        "text": "Card - Action"
+    },
+    {
+        "name": "Steward",
+        "type": "Action",
+        "color": "Action",
+        "cost": 3,
+        "expansion": "Intrigue",
+        "text": "Card - Money"
+    },
+    {
+        "name": "Swindler",
+        "type": "Action - Attack",
+        "color": "Action",
+        "cost": 3,
+        "expansion": "Intrigue",
+        "text": "Money"
+    },
+    {
+        "name": "Wishing Well",
+        "type": "Action",
+        "color": "Action",
+        "cost": 3,
+        "expansion": "Intrigue",
+        "text": "Card - Action"
+    },
+    {
+        "name": "Baron",
+        "type": "Action",
+        "color": "Action",
+        "cost": 4,
+        "expansion": "Intrigue",
+        "text": "Buy - Money"
+    },
+    {
+        "name": "Bridge",
+        "type": "Action",
+        "color": "Action",
+        "cost": 4,
+        "expansion": "Intrigue",
+        "text": "Buy - Money"
+    },
+    {
+        "name": "Conspirator",
+        "type": "Action",
+        "color": "Action",
+        "cost": 4,
+        "expansion": "Intrigue",
+        "text": "Card - Action - Money"
+    },
+    {
+        "name": "Ironworks",
+        "type": "Action",
+        "color": "Action",
+        "cost": 4,
+        "expansion": "Intrigue",
+        "text": "Action - Money"
+    },
+    {
+        "name": "Mining Village",
+        "type": "Action",
+        "color": "Action",
+        "cost": 4,
+        "expansion": "Intrigue",
+        "text": "Card - Action - Money"
+    },
+    {
+        "name": "Secret Passage",
+        "type": "Action",
+        "color": "Action",
+        "cost": 4,
+        "expansion": "Intrigue",
+        "text": "Card - Action"
+    },
+    {
+        "name": "Duke",
+        "type": "Victory",
+        "color": "Victory",
+        "cost": 5,
+        "expansion": "Intrigue",
+        "text": "None"
+    },
+    {
+        "name": "Minion",
+        "type": "Action - Attack",
+        "color": "Action",
+        "cost": 5,
+        "expansion": "Intrigue",
+        "text": "Card - Action - Money"
+    },
+    {
+        "name": "Torturer",
+        "type": "Action - Attack",
+        "color": "Action",
+        "cost": 5,
+        "expansion": "Intrigue",
+        "text": "Card"
+    },
+    {
+        "name": "Trading Post",
+        "type": "Action",
+        "color": "Action",
+        "cost": 5,
+        "expansion": "Intrigue",
+        "text": "None"
+    },
+    {
+        "name": "Upgrade",
+        "type": "Action",
+        "color": "Action",
+        "cost": 5,
+        "expansion": "Intrigue",
+        "text": "Card - Action"
+    },
+    {
+        "name": "Harem",
+        "type": "Treasure - Victory",
+        "color": "Treasure - Victory",
+        "cost": 6,
+        "expansion": "Intrigue",
+        "text": "None"
+    },
+    {
+        "name": "Nobles",
+        "type": "Action - Victory",
+        "color": "Action - Victory",
+        "cost": 6,
+        "expansion": "Intrigue",
+        "text": "Card - Action"
+    },
+  {
+    "name": "Alley",
+    "type": "Action - Shadow",
+    "color": "Action",
+    "cost": 3,
+    "expansion": "Rising Sun",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Aristocrat",
+    "type": "Action",
+    "color": "Action",
+    "cost": 3,
+    "expansion": "Rising Sun",
+    "text": "Action - Card - Buy - Money"
+  },
+  {
+    "name": "Artist",
+    "type": "Action",
+    "color": "Action",
+    "cost": "8D",
+    "expansion": "Rising Sun",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Change",
+    "type": "Action",
+    "color": "Action",
+    "cost": 4,
+    "expansion": "Rising Sun",
+    "text": "Money"
+  },
+  {
+    "name": "Craftsman",
+    "type": "Action",
+    "color": "Action",
+    "cost": 3,
+    "expansion": "Rising Sun",
+    "text": "None"
+  },
+  {
+    "name": "Daimyo",
+    "type": "Action - Command",
+    "color": "Action",
+    "cost": "6D",
+    "expansion": "Rising Sun",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Fishmonger",
+    "type": "Action - Shadow",
+    "color": "Action",
+    "cost": 2,
+    "expansion": "Rising Sun",
+    "text": "Buy - Money"
+  },
+  {
+    "name": "Gold Mine",
+    "type": "Action",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Rising Sun",
+    "text": "Card - Action - Buy"
+  },
+  {
+    "name": "Imperial Envoy",
+    "type": "Action",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Rising Sun",
+    "text": "Card - Buy"
+  },
+  {
+    "name": "Kitsune",
+    "type": "Action - Attack - Omen",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Rising Sun",
+    "text": "Action - Money"
+  },
+  {
+    "name": "Litter",
+    "type": "Action",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Rising Sun",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Mountain Shrine",
+    "type": "Action - Omen",
+    "color": "Action",
+    "cost": "5D",
+    "expansion": "Rising Sun",
+    "text": "Card - Money"
+  },
+  {
+    "name": "Ninja",
+    "type": "Action - Attack - Shadow",
+    "color": "Action",
+    "cost": 4,
+    "expansion": "Rising Sun",
+    "text": "Card"
+  },
+  {
+    "name": "Poet",
+    "type": "Action - Omen",
+    "color": "Action",
+    "cost": 3,
+    "expansion": "Rising Sun",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Rice",
+    "type": "Treasure",
+    "color": "Treasure",
+    "cost": 7,
+    "expansion": "Rising Sun",
+    "text": "Buy - Money"
+  },
+  {
+    "name": "Rice Broker",
+    "type": "Action",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Rising Sun",
+    "text": "Card - Action"
+  },
+  {
+    "name": "River Shrine",
+    "type": "Action - Omen",
+    "color": "Action",
+    "cost": 4,
+    "expansion": "Rising Sun",
+    "text": "None"
+  },
+  {
+    "name": "Riverboat",
+    "type": "Action - Duration",
+    "color": "Duration",
+    "cost": 4,
+    "expansion": "Rising Sun",
+    "text": "None"
+  },
+  {
+    "name": "Ronin",
+    "type": "Action - Shadow",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Rising Sun",
+    "text": "None"
+  },
+  {
+    "name": "Root Cellar",
+    "type": "Action",
+    "color": "Action",
+    "cost": 3,
+    "expansion": "Rising Sun",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Rustic Village",
+    "type": "Action - Omen",
+    "color": "Action",
+    "cost": 4,
+    "expansion": "Rising Sun",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Samurai",
+    "type": "Action - Duration - Attack",
+    "color": "Duration",
+    "cost": 6,
+    "expansion": "Rising Sun",
+    "text": "Money"
+  },
+  {
+    "name": "Snake Witch",
+    "type": "Action - Attack",
+    "color": "Action",
+    "cost": 2,
+    "expansion": "Rising Sun",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Tanuki",
+    "type": "Action - Shadow",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Rising Sun",
+    "text": "None"
+  },
+  {
+    "name": "Tea House",
+    "type": "Action",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Rising Sun",
+    "text": "Card - Action - Money"
+  },
+  {
+    "name": "Berserker",
+    "type": "Action - Attack",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Hinterlands",
+    "text": "None"
+  },
+  {
+    "name": "Border Village",
+    "type": "Action",
+    "color": "Action",
+    "cost": 6,
+    "expansion": "Hinterlands",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Cache",
+    "type": "Treasure",
+    "color": "Treasure",
+    "cost": 5,
+    "expansion": "Hinterlands",
+    "text": "None"
+  },
+  {
+    "name": "Cartographer",
+    "type": "Action",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Hinterlands",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Cauldron",
+    "type": "Treasure - Attack",
+    "color": "Treasure",
+    "cost": 5,
+    "expansion": "Hinterlands",
+    "text": "Buy"
+  },
+  {
+    "name": "Crossroads",
+    "type": "Action",
+    "color": "Action",
+    "cost": 2,
+    "expansion": "Hinterlands",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Develop",
+    "type": "Action",
+    "color": "Action",
+    "cost": 3,
+    "expansion": "Hinterlands",
+    "text": "None"
+  },
+  {
+    "name": "Duchess",
+    "type": "Action",
+    "color": "Action",
+    "cost": 2,
+    "expansion": "Hinterlands",
+    "text": "Money"
+  },
+  {
+    "name": "Embassy",
+    "type": "Action",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Hinterlands",
+    "text": "Card"
+  },
+  {
+    "name": "Farmland",
+    "type": "Victory",
+    "color": "Victory",
+    "cost": 6,
+    "expansion": "Hinterlands",
+    "text": "None"
+  },
+  {
+    "name": "Fool's Gold",
+    "type": "Treasure - Reaction",
+    "color": "Treasure - Reaction",
+    "cost": 2,
+    "expansion": "Hinterlands",
+    "text": "None"
+  },
+  {
+    "name": "Guard Dog",
+    "type": "Action - Reaction",
+    "color": "Reaction",
+    "cost": 3,
+    "expansion": "Hinterlands",
+    "text": "Card"
+  },
+  {
+    "name": "Haggler",
+    "type": "Action",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Hinterlands",
+    "text": "Money"
+  },
+  {
+    "name": "Highway",
+    "type": "Action",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Hinterlands",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Ill-Gotten Gains",
+    "type": "Treasure",
+    "color": "Treasure",
+    "cost": 5,
+    "expansion": "Hinterlands",
+    "text": "Money"
+  },
+  {
+    "name": "Inn",
+    "type": "Action",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Hinterlands",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Jack of All Trades",
+    "type": "Action",
+    "color": "Action",
+    "cost": 4,
+    "expansion": "Hinterlands",
+    "text": "None"
+  },
+  {
+    "name": "Mandarin",
+    "type": "Action",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Hinterlands",
+    "text": "Money"
+  },
+  {
+    "name": "Margrave",
+    "type": "Action - Attack",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Hinterlands",
+    "text": "Card - Buy"
+  },
+  {
+    "name": "Noble Brigand",
+    "type": "Action - Attack",
+    "color": "Action",
+    "cost": 4,
+    "expansion": "Hinterlands",
+    "text": "Money"
+  },
+  {
+    "name": "Nomad Camp",
+    "type": "Action",
+    "color": "Action",
+    "cost": 4,
+    "expansion": "Hinterlands",
+    "text": "Buy - Money"
+  },
+  {
+    "name": "Nomads",
+    "type": "Action",
+    "color": "Action",
+    "cost": 4,
+    "expansion": "Hinterlands",
+    "text": "Money - Buy"
+  },
+  {
+    "name": "Oasis",
+    "type": "Action",
+    "color": "Action",
+    "cost": 3,
+    "expansion": "Hinterlands",
+    "text": "Card - Action - Money"
+  },
+  {
+    "name": "Oracle",
+    "type": "Action - Attack",
+    "color": "Action",
+    "cost": 3,
+    "expansion": "Hinterlands",
+    "text": "None"
+  },
+  {
+    "name": "Scheme",
+    "type": "Action",
+    "color": "Action",
+    "cost": 3,
+    "expansion": "Hinterlands",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Silk Road",
+    "type": "Victory",
+    "color": "Victory",
+    "cost": 4,
+    "expansion": "Hinterlands",
+    "text": "None"
+  },
+  {
+    "name": "Souk",
+    "type": "Action",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Hinterlands",
+    "text": "Buy - Money"
+  },
+  {
+    "name": "Spice Merchant",
+    "type": "Action",
+    "color": "Action",
+    "cost": 4,
+    "expansion": "Hinterlands",
+    "text": "Card - Action - Buy - Money"
+  },
+  {
+    "name": "Stables",
+    "type": "Action",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Hinterlands",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Trader",
+    "type": "Action - Reaction",
+    "color": "Reaction",
+    "cost": 4,
+    "expansion": "Hinterlands",
+    "text": "None"
+  },
+  {
+    "name": "Trail",
+    "type": "Action - Reaction",
+    "color": "Reaction",
+    "cost": 4,
+    "expansion": "Hinterlands",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Tunnel",
+    "type": "Victory - Reaction",
+    "color": "Victory - Reaction",
+    "cost": 3,
+    "expansion": "Hinterlands",
+    "text": "None"
+  },
+  {
+    "name": "Weaver",
+    "type": "Action - Reaction",
+    "color": "Reaction",
+    "cost": 4,
+    "expansion": "Hinterlands",
+    "text": "None"
+  },
+  {
+    "name": "Wheelwright",
+    "type": "Action",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Hinterlands",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Witch's Hut",
+    "type": "Action - Attack",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Hinterlands",
+    "text": "Card"
   }
 ]
