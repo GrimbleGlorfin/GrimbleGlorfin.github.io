@@ -168,9 +168,9 @@ function addGuessRows(search) {
 
         if (card) {
             console.log("Found card:", card);
-            addBoxWrapper(row,"Expansion","expansion_" + Date.now(),card["expansion"],compareCard(card["expansion"],daily_card["expansion"]),0)
-            addBoxWrapper(row,"Color","color_" + Date.now(),card["color"],compareCard(card["color"],daily_card["color"]),300)
-            addBoxWrapper(row,"Type","type_" + Date.now(),card["type"],compareCard(card["type"],daily_card["type"]),600)
+            addBoxWrapper(row,"Color","color_" + Date.now(),card["color"],compareCard(card["color"],daily_card["color"]),0)
+            addBoxWrapper(row,"Type","type_" + Date.now(),card["type"],compareCard(card["type"],daily_card["type"]),300)
+            addBoxWrapper(row,"Expansion","expansion_" + Date.now(),card["expansion"],compareCard(card["expansion"],daily_card["expansion"]),600)
             addBoxWrapper(row,"Text","text_" + Date.now(),card["text"],compareCard(card["text"],daily_card["text"]),900)
             addBoxWrapper(row,"Cost","cost_" + Date.now(),card["cost"],compareCard(card["cost"],daily_card["cost"]),1200)
             addBoxWrapper(row,"Name","name_" + Date.now(),card["name"],compareCard(card["name"],daily_card["name"]),1500)
