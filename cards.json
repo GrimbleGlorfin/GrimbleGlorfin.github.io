@@ -4,7 +4,7 @@
     "type": "Treasure",
     "color": "Treasure",
     "cost": 0,
-    "expansion": "Dominion (Base Set)",
+    "expansion": "Base",
     "text": "None"
   },
   {
@@ -12,7 +12,7 @@
     "type": "Treasure",
     "color": "Treasure",
     "cost": 3,
-    "expansion": "Dominion (Base Set)",
+    "expansion": "Base",
     "text": "None"
   },
   {
@@ -20,7 +20,7 @@
     "type": "Treasure",
     "color": "Treasure",
     "cost": 6,
-    "expansion": "Dominion (Base Set)",
+    "expansion": "Base",
     "text": "None"
   },
   {
@@ -28,7 +28,7 @@
     "type": "Victory",
     "color": "Victory",
     "cost": 2,
-    "expansion": "Dominion (Base Set)",
+    "expansion": "Base",
     "text": "None"
   },
   {
@@ -36,7 +36,7 @@
     "type": "Victory",
     "color": "Victory",
     "cost": 5,
-    "expansion": "Dominion (Base Set)",
+    "expansion": "Base",
     "text": "None"
   },
   {
@@ -44,7 +44,7 @@
     "type": "Victory",
     "color": "Victory",
     "cost": 8,
-    "expansion": "Dominion (Base Set)",
+    "expansion": "Base",
     "text": "None"
   },
   {
@@ -52,7 +52,7 @@
     "type": "Curse",
     "color": "Curse",
     "cost": 0,
-    "expansion": "Dominion (Base Set)",
+    "expansion": "Base",
     "text": "None"
   },
   {
@@ -60,7 +60,7 @@
     "type": "Action",
     "color": "Action",
     "cost": 2,
-    "expansion": "Dominion (Base Set)",
+    "expansion": "Base",
     "text": "Action"
   },
   {
@@ -68,7 +68,7 @@
     "type": "Action",
     "color": "Action",
     "cost": 2,
-    "expansion": "Dominion (Base Set)",
+    "expansion": "Base",
     "text": "None"
   },
   {
@@ -76,7 +76,7 @@
     "type": "Action - Reaction",
     "color": "Reaction",
     "cost": 2,
-    "expansion": "Dominion (Base Set)",
+    "expansion": "Base",
     "text": "Card"
   },
   {
@@ -84,7 +84,7 @@
     "type": "Action",
     "color": "Action",
     "cost": 3,
-    "expansion": "Dominion (Base Set)",
+    "expansion": "Base",
     "text": "Card - Action"
   },
   {
@@ -92,7 +92,7 @@
     "type": "Action",
     "color": "Action",
     "cost": 3,
-    "expansion": "Dominion (Base Set)",
+    "expansion": "Base",
     "text": "Card - Action - Money"
   },
   {
@@ -100,7 +100,7 @@
     "type": "Action",
     "color": "Action",
     "cost": 3,
-    "expansion": "Dominion (Base Set)",
+    "expansion": "Base",
     "text": "Money"
   },
   {
@@ -108,7 +108,7 @@
     "type": "Action",
     "color": "Action",
     "cost": 3,
-    "expansion": "Dominion (Base Set)",
+    "expansion": "Base",
     "text": "Card - Action"
   },
   {
@@ -116,7 +116,7 @@
     "type": "Action",
     "color": "Action",
     "cost": 3,
-    "expansion": "Dominion (Base Set)",
+    "expansion": "Base",
     "text": "None"
   },
   {
@@ -124,7 +124,7 @@
     "type": "Action - Attack",
     "color": "Action",
     "cost": 4,
-    "expansion": "Dominion (Base Set)",
+    "expansion": "Base",
     "text": "None"
   },
   {
@@ -132,7 +132,7 @@
     "type": "Victory",
     "color": "Victory",
     "cost": 4,
-    "expansion": "Dominion (Base Set)",
+    "expansion": "Base",
     "text": "None"
   },
   {
@@ -140,7 +140,7 @@
     "type": "Action - Attack",
     "color": "Action",
     "cost": 4,
-    "expansion": "Dominion (Base Set)",
+    "expansion": "Base",
     "text": "Money"
   },
   {
@@ -148,7 +148,7 @@
     "type": "Action",
     "color": "Action",
     "cost": 4,
-    "expansion": "Dominion (Base Set)",
+    "expansion": "Base",
     "text": "Money"
   },
   {
@@ -156,7 +156,7 @@
     "type": "Action",
     "color": "Action",
     "cost": 4,
-    "expansion": "Dominion (Base Set)",
+    "expansion": "Base",
     "text": "Card - Action - Money"
   },
   {
@@ -164,7 +164,7 @@
     "type": "Action",
     "color": "Action",
     "cost": 4,
-    "expansion": "Dominion (Base Set)",
+    "expansion": "Base",
     "text": "None"
   },
   {
@@ -172,7 +172,7 @@
     "type": "Action",
     "color": "Action",
     "cost": 4,
-    "expansion": "Dominion (Base Set)",
+    "expansion": "Base",
     "text": "Card"
   },
   {
@@ -180,7 +180,7 @@
     "type": "Action",
     "color": "Action",
     "cost": 4,
-    "expansion": "Dominion (Base Set)",
+    "expansion": "Base",
     "text": "None"
   },
   {
@@ -188,7 +188,7 @@
     "type": "Action - Attack",
     "color": "Action",
     "cost": 5,
-    "expansion": "Dominion (Base Set)",
+    "expansion": "Base",
     "text": "None"
   },
   {
@@ -196,7 +196,7 @@
     "type": "Action",
     "color": "Action",
     "cost": 5,
-    "expansion": "Dominion (Base Set)",
+    "expansion": "Base",
     "text": "Card - Buy"
   },
   {
@@ -204,7 +204,7 @@
     "type": "Action",
     "color": "Action",
     "cost": 5,
-    "expansion": "Dominion (Base Set)",
+    "expansion": "Base",
     "text": "Action - Buy - Money"
   },
   {
@@ -212,7 +212,7 @@
     "type": "Action",
     "color": "Action",
     "cost": 5,
-    "expansion": "Dominion (Base Set)",
+    "expansion": "Base",
     "text": "Card - Action"
   },
   {
@@ -220,7 +220,7 @@
     "type": "Action",
     "color": "Action",
     "cost": 5,
-    "expansion": "Dominion (Base Set)",
+    "expansion": "Base",
     "text": "None"
   },
   {
@@ -228,7 +228,7 @@
     "type": "Action",
     "color": "Action",
     "cost": 5,
-    "expansion": "Dominion (Base Set)",
+    "expansion": "Base",
     "text": "Card - Action - Buy - Money"
   },
   {
@@ -236,7 +236,7 @@
     "type": "Action",
     "color": "Action",
     "cost": 5,
-    "expansion": "Dominion (Base Set)",
+    "expansion": "Base",
     "text": "None"
   },
   {
@@ -244,7 +244,7 @@
     "type": "Action",
     "color": "Action",
     "cost": 5,
-    "expansion": "Dominion (Base Set)",
+    "expansion": "Base",
     "text": "Card - Action"
   },
   {
@@ -252,7 +252,7 @@
     "type": "Action - Attack",
     "color": "Action",
     "cost": 5,
-    "expansion": "Dominion (Base Set)",
+    "expansion": "Base",
     "text": "Card"
   },
   {
@@ -260,7 +260,7 @@
     "type": "Action",
     "color": "Action",
     "cost": 6,
-    "expansion": "Dominion (Base Set)",
+    "expansion": "Base",
     "text": "None"
   },
   {
@@ -4422,7 +4422,7 @@
     "type": "Action",
     "color": "Action",
     "cost": 3,
-    "expansion": "Base Set",
+    "expansion": "Base",
     "text": "Money"
   },
   {
@@ -4430,7 +4430,7 @@
     "type": "Action",
     "color": "Action",
     "cost": 3,
-    "expansion": "Base Set",
+    "expansion": "Base",
     "text": "Buy - Money"
   },
   {
@@ -4438,7 +4438,7 @@
     "type": "Action",
     "color": "Action",
     "cost": 4,
-    "expansion": "Base Set",
+    "expansion": "Base",
     "text": "None"
   },
   {
@@ -4446,7 +4446,7 @@
     "type": "Action - Attack",
     "color": "Action",
     "cost": 4,
-    "expansion": "Base Set",
+    "expansion": "Base",
     "text": "Card - Action"
   },
   {
@@ -4454,7 +4454,7 @@
     "type": "Action - Attack",
     "color": "Action",
     "cost": 4,
-    "expansion": "Base Set",
+    "expansion": "Base",
     "text": "None"
   },
   {
@@ -4462,7 +4462,7 @@
     "type": "Action",
     "color": "Action",
     "cost": 6,
-    "expansion": "Base Set",
+    "expansion": "Base",
     "text": "None"
   },
   {
