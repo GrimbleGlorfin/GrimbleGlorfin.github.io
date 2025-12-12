@@ -281,8 +281,8 @@
   },
   {
     "name": "Caravan Guard",
-    "type": "Action - Reaction - Duration",
-    "color": "Reaction - Duration",
+    "type": "Action - Duration - Reaction",
+    "color": "Duration - Reaction",
     "cost": 3,
     "expansion": "Adventures",
     "text": "Card - Action - Money"
@@ -738,7 +738,7 @@
   {
     "name": "Pirate",
     "type": "Action - Duration - Reaction",
-    "color": "Reaction - Duration",
+    "color": "Duration - Reaction",
     "cost": 5,
     "expansion": "Seaside",
     "text": "None"
@@ -2202,7 +2202,7 @@
   {
     "name": "Stowaway",
     "type": "Action - Duration - Reaction",
-    "color": "Reaction - Duration",
+    "color": "Duration - Reaction",
     "cost": 3,
     "expansion": "Plunder",
     "text": "Card"
