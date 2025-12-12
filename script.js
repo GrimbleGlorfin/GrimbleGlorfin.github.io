@@ -27,6 +27,8 @@ function resetGuesses() {
     const guessContainer = document.getElementById("guess-list");
     guessContainer.innerHTML = "";
     console.log("Feedback: " + guessContainer)
+    guessCount = 0
+    guessedCards.clear() 
 }
 
 function showBlankCard() {
