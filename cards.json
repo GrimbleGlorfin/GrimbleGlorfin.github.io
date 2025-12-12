@@ -2787,7 +2787,7 @@
     "name": "Fairgrounds",
     "type": "Victory",
     "color": "Victory",
-    "cost": "6",
+    "cost": 6,
     "expansion": "Cornucopia",
     "text": "None"
   },
@@ -2795,7 +2795,7 @@
     "name": "Farming Village",
     "type": "Action",
     "color": "Action",
-    "cost": "4",
+    "cost": 4,
     "expansion": "Cornucopia",
     "text": "Action"
   },
@@ -2803,7 +2803,7 @@
     "name": "Fortune Teller",
     "type": "Action - Attack",
     "color": "Action",
-    "cost": "3",
+    "cost": 3,
     "expansion": "Cornucopia",
     "text": "Money"
   },
@@ -2811,7 +2811,7 @@
     "name": "Hamlet",
     "type": "Action",
     "color": "Action",
-    "cost": "2",
+    "cost": 2,
     "expansion": "Cornucopia",
     "text": "Card - Action"
   },
@@ -2819,7 +2819,7 @@
     "name": "Harvest",
     "type": "Action",
     "color": "Action",
-    "cost": "5",
+    "cost": 5,
     "expansion": "Cornucopia",
     "text": "Money"
   },
@@ -2827,7 +2827,7 @@
     "name": "Horn of Plenty",
     "type": "Treasure",
     "color": "Treasure",
-    "cost": "5",
+    "cost": 5,
     "expansion": "Cornucopia",
     "text": "None"
   },
@@ -2835,7 +2835,7 @@
     "name": "Horse Traders",
     "type": "Action - Reaction",
     "color": "Reaction",
-    "cost": "4",
+    "cost": 4,
     "expansion": "Cornucopia",
     "text": "Buy - Money"
   },
@@ -2843,7 +2843,7 @@
     "name": "Hunting Party",
     "type": "Action",
     "color": "Action",
-    "cost": "5",
+    "cost": 5,
     "expansion": "Cornucopia",
     "text": "Card - Action"
   },
@@ -2851,7 +2851,7 @@
     "name": "Jester",
     "type": "Action - Attack",
     "color": "Action",
-    "cost": "5",
+    "cost": 5,
     "expansion": "Cornucopia",
     "text": "Money"
   },
@@ -2859,7 +2859,7 @@
     "name": "Menagerie",
     "type": "Action",
     "color": "Action",
-    "cost": "3",
+    "cost": 3,
     "expansion": "Cornucopia",
     "text": "Card - Action"
   },
@@ -2867,7 +2867,7 @@
     "name": "Remake",
     "type": "Action",
     "color": "Action",
-    "cost": "4",
+    "cost": 4,
     "expansion": "Cornucopia",
     "text": "None"
   },
@@ -2875,7 +2875,7 @@
     "name": "Tournament",
     "type": "Action",
     "color": "Action",
-    "cost": "4",
+    "cost": 4,
     "expansion": "Cornucopia",
     "text": "Action"
   },
@@ -2883,7 +2883,7 @@
     "name": "Young Witch",
     "type": "Action - Attack",
     "color": "Action",
-    "cost": "4",
+    "cost": 4,
     "expansion": "Cornucopia",
     "text": "Card"
   },
@@ -2891,7 +2891,7 @@
     "name": "Advisor",
     "type": "Action",
     "color": "Action",
-    "cost": "4",
+    "cost": 4,
     "expansion": "Guilds",
     "text": "Acion"
   },
@@ -2899,7 +2899,7 @@
     "name": "Baker",
     "type": "Action",
     "color": "Action",
-    "cost": "5",
+    "cost": 5,
     "expansion": "Guilds",
     "text": "Card - Action"
   },
@@ -2907,7 +2907,7 @@
     "name": "Butcher",
     "type": "Action",
     "color": "Action",
-    "cost": "5",
+    "cost": 5,
     "expansion": "Guilds",
     "text": "None"
   },
@@ -2915,7 +2915,7 @@
     "name": "Candlestick Maker",
     "type": "Action",
     "color": "Action",
-    "cost": "2",
+    "cost": 2,
     "expansion": "Guilds",
     "text": "Action - Buy"
   },
@@ -2923,7 +2923,7 @@
     "name": "Doctor",
     "type": "Action",
     "color": "Action",
-    "cost": "3",
+    "cost": 3,
     "expansion": "Guilds",
     "text": "None"
   },
@@ -2931,7 +2931,7 @@
     "name": "Herald",
     "type": "Action",
     "color": "Action",
-    "cost": "4",
+    "cost": 4,
     "expansion": "Guilds",
     "text": "Card - Action"
   },
@@ -2939,7 +2939,7 @@
     "name": "Journeyman",
     "type": "Action",
     "color": "Action",
-    "cost": "5",
+    "cost": 5,
     "expansion": "Guilds",
     "text": "None"
   },
@@ -2947,7 +2947,7 @@
     "name": "Masterpiece",
     "type": "Treasure",
     "color": "Treasure",
-    "cost": "3",
+    "cost": 3,
     "expansion": "Guilds",
     "text": "None"
   },
@@ -2955,7 +2955,7 @@
     "name": "Merchant Guild",
     "type": "Action",
     "color": "Action",
-    "cost": "5",
+    "cost": 5,
     "expansion": "Guilds",
     "text": "Buy - Money"
   },
@@ -2963,7 +2963,7 @@
     "name": "Plaza",
     "type": "Action",
     "color": "Action",
-    "cost": "4",
+    "cost": 4,
     "expansion": "Guilds",
     "text": "Card - Action"
   },
@@ -2971,7 +2971,7 @@
     "name": "Soothsayer",
     "type": "Action - Attack",
     "color": "Action",
-    "cost": "5",
+    "cost": 5,
     "expansion": "Guilds",
     "text": "None"
   },
@@ -2979,7 +2979,7 @@
     "name": "Stonemason",
     "type": "Action",
     "color": "Action",
-    "cost": "2",
+    "cost": 2,
     "expansion": "Guilds",
     "text": "None"
   },
@@ -2987,7 +2987,7 @@
     "name": "Taxman",
     "type": "Action - Attack",
     "color": "Action",
-    "cost": "4",
+    "cost": 4,
     "expansion": "Guilds",
     "text": "None"
   },
@@ -3011,7 +3011,7 @@
     "name": "Apprentice",
     "type": "Action",
     "color": "Action",
-    "cost": "5",
+    "cost": 5,
     "expansion": "Alchemy",
     "text": "Card - Action"
   },
@@ -3035,7 +3035,7 @@
     "name": "Herbalist",
     "type": "Action",
     "color": "Action",
-    "cost": "2",
+    "cost": 2,
     "expansion": "Alchemy",
     "text": "Buy - Money"
   },
@@ -3091,7 +3091,7 @@
     "name": "Bard",
     "type": "Action - Fate",
     "color": "Action",
-    "cost": "4",
+    "cost": 4,
     "expansion": "Nocturne",
     "text": "Money"
   },
@@ -3099,7 +3099,7 @@
     "name": "Blessed Village",
     "type": "Action - Fate",
     "color": "Action",
-    "cost": "4",
+    "cost": 4,
     "expansion": "Nocturne",
     "text": "Card - Action"
   },
@@ -3107,7 +3107,7 @@
     "name": "Cemetery",
     "type": "Victory",
     "color": "Victory",
-    "cost": "4",
+    "cost": 4,
     "expansion": "Nocturne",
     "text": "None"
   },
@@ -3115,7 +3115,7 @@
     "name": "Changeling",
     "type": "Night",
     "color": "Night",
-    "cost": "3",
+    "cost": 3,
     "expansion": "Nocturne",
     "text": "None"
   },
@@ -3123,7 +3123,7 @@
     "name": "Cobbler",
     "type": "Night - Duration",
     "color": "Night - Duration",
-    "cost": "5",
+    "cost": 5,
     "expansion": "Nocturne",
     "text": "None"
   },
@@ -3132,7 +3132,7 @@
     "name": "Conclave",
     "type": "Action",
     "color": "Action",
-    "cost": "4",
+    "cost": 4,
     "expansion": "Nocturne",
     "text": "Money"
   },
@@ -3141,7 +3141,7 @@
     "name": "Cursed Village",
     "type": "Action - Doom",
     "color": "Action",
-    "cost": "5",
+    "cost": 5,
     "expansion": "Nocturne",
     "text": "Action"
   },
@@ -3150,7 +3150,7 @@
     "name": "Den of Sin",
     "type": "Night - Duration",
     "color": "Night - Duration",
-    "cost": "5",
+    "cost": 5,
     "expansion": "Nocturne",
     "text": "Card"
   },
@@ -3159,7 +3159,7 @@
     "name": "Devil's Workshop",
     "type": "Night",
     "color": "Night",
-    "cost": "4",
+    "cost": 4,
     "expansion": "Nocturne",
     "text": "None"
   },
@@ -3168,7 +3168,7 @@
     "name": "Druid",
     "type": "Action - Fate",
     "color": "Action",
-    "cost": "2",
+    "cost": 2,
     "expansion": "Nocturne",
     "text": "Buy"
   },
@@ -3177,7 +3177,7 @@
     "name": "Exorcist",
     "type": "Night",
     "color": "Night",
-    "cost": "4",
+    "cost": 4,
     "expansion": "Nocturne",
     "text": "None"
   },
@@ -3186,7 +3186,7 @@
     "name": "Faithful Hound",
     "type": "Action - Reaction",
     "color": "Reaction",
-    "cost": "2",
+    "cost": 2,
     "expansion": "Nocturne",
     "text": "Card"
   },
@@ -3195,7 +3195,7 @@
     "name": "Fool",
     "type": "Action - Fate",
     "color": "Action",
-    "cost": "3",
+    "cost": 3,
     "expansion": "Nocturne",
     "text": "None"
   },
@@ -3204,7 +3204,7 @@
     "name": "Ghost Town",
     "type": "Night - Duration",
     "color": "Night - Duration",
-    "cost": "3",
+    "cost": 3,
     "expansion": "Nocturne",
     "text": "Card - Action"
   },
@@ -3213,7 +3213,7 @@
     "name": "Guardian",
     "type": "Night - Duration",
     "color": "Night - Duration",
-    "cost": "2",
+    "cost": 2,
     "expansion": "Nocturne",
     "text": "Money"
   },
@@ -3221,7 +3221,7 @@
     "name": "Idol",
     "type": "Treasure - Fate",
     "color": "Treasure",
-    "cost": "5",
+    "cost": 5,
     "expansion": "Nocturne",
     "text": "None"
   },
@@ -3239,7 +3239,7 @@
     "name": "Leprechaun",
     "type": "Action - Doom",
     "color": "Action",
-    "cost": "3",
+    "cost": 3,
     "expansion": "Nocturne",
     "text": "None"
   },
@@ -3248,7 +3248,7 @@
     "name": "Monastery",
     "type": "Night",
     "color": "Night",
-    "cost": "2",
+    "cost": 2,
     "expansion": "Nocturne",
     "text": "None"
   },
@@ -3257,7 +3257,7 @@
     "name": "Necromancer",
     "type": "Action",
     "color": "Action",
-    "cost": "4",
+    "cost": 4,
     "expansion": "Nocturne",
     "text": "None"
   },
@@ -3266,7 +3266,7 @@
     "name": "Night Watchman",
     "type": "Night",
     "color": "Night",
-    "cost": "3",
+    "cost": 3,
     "expansion": "Nocturne",
     "text": "None"
   },
@@ -3275,7 +3275,7 @@
     "name": "Pooka",
     "type": "Action",
     "color": "Action",
-    "cost": "5",
+    "cost": 5,
     "expansion": "Nocturne",
     "text": "Card"
   },
@@ -3284,7 +3284,7 @@
     "name": "Raider",
     "type": "Night - Duration - Attack",
     "color": "Night - Duration",
-    "cost": "6",
+    "cost": 6,
     "expansion": "Nocturne",
     "text": "Money"
   },
@@ -3293,7 +3293,7 @@
     "name": "Sacred Grove",
     "type": "Action - Fate",
     "color": "Action",
-    "cost": "5",
+    "cost": 5,
     "expansion": "Nocturne",
     "text": "Buy - Money"
   },
@@ -3302,7 +3302,7 @@
     "name": "Secret Cave",
     "type": "Action - Duration",
     "color": "Duration",
-    "cost": "3",
+    "cost": 3,
     "expansion": "Nocturne",
     "text": "Card - Action - Money"
   },
@@ -3311,7 +3311,7 @@
     "name": "Shepherd",
     "type": "Action",
     "color": "Action",
-    "cost": "4",
+    "cost": 4,
     "expansion": "Nocturne",
     "text": "Card - Action"
   },
@@ -3320,7 +3320,7 @@
     "name": "Skulk",
     "type": "Action - Attack - Doom",
     "color": "Action",
-    "cost": "4",
+    "cost": 4,
     "expansion": "Nocturne",
     "text": "Buy"
   },
@@ -3329,7 +3329,7 @@
     "name": "Tormentor",
     "type": "Action - Attack - Doom",
     "color": "Action",
-    "cost": "5",
+    "cost": 5,
     "expansion": "Nocturne",
     "text": "Money"
   },
@@ -3338,7 +3338,7 @@
     "name": "Tracker",
     "type": "Action - Fate",
     "color": "Action",
-    "cost": "2",
+    "cost": 2,
     "expansion": "Nocturne",
     "text": "Money"
   },
@@ -3347,7 +3347,7 @@
     "name": "Tragic Hero",
     "type": "Action",
     "color": "Action",
-    "cost": "5",
+    "cost": 5,
     "expansion": "Nocturne",
     "text": "Card"
   },
@@ -3356,7 +3356,7 @@
     "name": "Vampire",
     "type": "Night - Attack - Doom",
     "color": "Night",
-    "cost": "5",
+    "cost": 5,
     "expansion": "Nocturne",
     "text": "None"
   },
@@ -3365,7 +3365,7 @@
     "name": "Werewolf",
     "type": "Action - Night - Attack - Doom",
     "color": "Night",
-    "cost": "5",
+    "cost": 5,
     "expansion": "Nocturne",
     "text": "Card"
   },
