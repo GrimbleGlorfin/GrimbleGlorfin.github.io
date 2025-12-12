@@ -9,9 +9,32 @@ document.getElementById("dark-toggle").onclick = () => {
     localStorage.setItem("darkMode", document.body.classList.contains("dark"));
 };
 
+document.getElementById("new-card").addEventListener("click", () => {
+    getNewCard().then((card) => {
+        daily_card = card
+    });
+    resetGuesses();
+    showBlankCard();
+    console.log("Daily Card: " + daily_card.value)
+});
+
 // Load saved preference
 if (localStorage.getItem("darkMode") === "true") {
     document.body.classList.add("dark");
+}
+
+function resetGuesses() {
+    const guessContainer = document.getElementById("guess-list");
+    guessContainer.innerHTML = "";
+    console.log("Feedback: " + guessContainer)
+}
+
+function showBlankCard() {
+    const images = document.querySelectorAll(".pic");
+    images.forEach(img => {
+        img.style.display = "none";
+    });
+    document.querySelector('img[alt="Blank"]').style.display = "block";
 }
 
 function filterImages(event) {
@@ -200,6 +223,15 @@ function seededRandom(seed) {
   // Simple seeded random number generator
   const x = Math.sin(seed) * 10000;
   return x - Math.floor(x);
+}
+
+async function getNewCard() {
+  const response = await fetch('cards.json');
+  const cards = await response.json();
+  
+  const index = Math.floor(Math.random() * cards.length);
+  
+  return cards[index];
 }
 
 function parseCost(cost) {
