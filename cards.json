@@ -4320,5 +4320,349 @@
     "cost": 5,
     "expansion": "Hinterlands",
     "text": "Card"
+  },
+  {
+    "name": "Envoy",
+    "type": "Action",
+    "color": "Action",
+    "cost": 4,
+    "expansion": "Promo",
+    "text": "None"
+  },
+  {
+    "name": "Black Market",
+    "type": "Action",
+    "color": "Action",
+    "cost": 3,
+    "expansion": "Promo",
+    "text": "Money"
+  },
+  {
+    "name": "Stash",
+    "type": "Treasure",
+    "color": "Treasure",
+    "cost": 5,
+    "expansion": "Promo",
+    "text": "None"
+  },
+  {
+    "name": "Walled Village",
+    "type": "Action",
+    "color": "Action",
+    "cost": 4,
+    "expansion": "Promo",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Governor",
+    "type": "Action",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Promo",
+    "text": "Action"
+  },
+  {
+    "name": "Prince",
+    "type": "Action",
+    "color": "Action",
+    "cost": 8,
+    "expansion": "Promo",
+    "text": "None"
+  },
+  {
+    "name": "Sauna",
+    "type": "Action",
+    "color": "Action",
+    "cost": 4,
+    "expansion": "Promo",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Avanto",
+    "type": "Action",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Promo",
+    "text": "Card"
+  },
+  {
+    "name": "Dismantle",
+    "type": "Action",
+    "color": "Action",
+    "cost": 4,
+    "expansion": "Promo",
+    "text": "None"
+  },
+  {
+    "name": "Church",
+    "type": "Action - Duration",
+    "color": "Duration",
+    "cost": 3,
+    "expansion": "Promo",
+    "text": "Action"
+  },
+  {
+    "name": "Captain",
+    "type": "Action - Duration - Command",
+    "color": "Duration",
+    "cost": 6,
+    "expansion": "Promo",
+    "text": "None"
+  },
+  {
+    "name": "Marchland",
+    "type": "Victory",
+    "color": "Victory",
+    "cost": 5,
+    "expansion": "Promo",
+    "text": "Buy - Money"
+  },
+  {
+    "name": "Chancellor",
+    "type": "Action",
+    "color": "Action",
+    "cost": 3,
+    "expansion": "Base Set",
+    "text": "Money"
+  },
+  {
+    "name": "Woodcutter",
+    "type": "Action",
+    "color": "Action",
+    "cost": 3,
+    "expansion": "Base Set",
+    "text": "Buy - Money"
+  },
+  {
+    "name": "Feast",
+    "type": "Action",
+    "color": "Action",
+    "cost": 4,
+    "expansion": "Base Set",
+    "text": "None"
+  },
+  {
+    "name": "Spy",
+    "type": "Action - Attack",
+    "color": "Action",
+    "cost": 4,
+    "expansion": "Base Set",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Thief",
+    "type": "Action - Attack",
+    "color": "Action",
+    "cost": 4,
+    "expansion": "Base Set",
+    "text": "None"
+  },
+  {
+    "name": "Adventurer",
+    "type": "Action",
+    "color": "Action",
+    "cost": 6,
+    "expansion": "Base Set",
+    "text": "None"
+  },
+  {
+    "name": "Anvil",
+    "type": "Treasure",
+    "color": "Treasure",
+    "cost": 3,
+    "expansion": "Prosperity",
+    "text": "None"
+  },
+  {
+    "name": "Charlatan",
+    "type": "Action - Attack",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Prosperity",
+    "text": "Money"
+  },
+  {
+    "name": "Anvil",
+    "type": "Action - Attack - Reaction",
+    "color": "Reaction",
+    "cost": 4,
+    "expansion": "Prosperity",
+    "text": "Money"
+  },
+  {
+    "name": "Collection",
+    "type": "Treasure",
+    "color": "Treasure",
+    "cost": 5,
+    "expansion": "Prosperity",
+    "text": "Buy - VP"
+  },
+  {
+    "name": "Crystal Ball",
+    "type": "Treasure",
+    "color": "Treasure",
+    "cost": 5,
+    "expansion": "Prosperity",
+    "text": "None"
+  },
+  {
+    "name": "Investment",
+    "type": "Treasure",
+    "color": "Treasure",
+    "cost": 4,
+    "expansion": "Prosperity",
+    "text": "Money - VP"
+  },
+  {
+    "name": "Magnate",
+    "type": "Action",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Prosperity",
+    "text": "Card"
+  },
+  {
+    "name": "Tiara",
+    "type": "Treasure",
+    "color": "Treasure",
+    "cost": 4,
+    "expansion": "Prosperity",
+    "text": "Buy"
+  },
+  {
+    "name": "War Chest",
+    "type": "Treasure",
+    "color": "Treasure",
+    "cost": 5,
+    "expansion": "Prosperity",
+    "text": "None"
+  },
+  {
+    "name": "Carnival",
+    "type": "Action",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Cornucopia - Guilds",
+    "text": "None"
+  },
+  {
+    "name": "Farmhands",
+    "type": "Action",
+    "color": "Action",
+    "cost": 4,
+    "expansion": "Cornucopia - Guilds",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Farrier",
+    "type": "Action",
+    "color": "Action",
+    "cost": "2*",
+    "expansion": "Cornucopia - Guilds",
+    "text": "Card - Action - Buy"
+  },
+  {
+    "name": "Ferryman",
+    "type": "Action",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Cornucopia - Guilds",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Footpad",
+    "type": "Action - Attack",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Cornucopia - Guilds",
+    "text": "Card"
+  },
+  {
+    "name": "Infirmary",
+    "type": "Action",
+    "color": "Action",
+    "cost": "3*",
+    "expansion": "Cornucopia - Guilds",
+    "text": "Card"
+  },
+  {
+    "name": "Joust",
+    "type": "Action",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Cornucopia - Guilds",
+    "text": "Card - Action - Money"
+  },
+  {
+    "name": "Shop",
+    "type": "Action",
+    "color": "Action",
+    "cost": 3,
+    "expansion": "Cornucopia - Guilds",
+    "text": "Card - Money"
+  },
+  {
+    "name": "Ambassador",
+    "type": "Action - Attack",
+    "color": "Attack",
+    "cost": 3,
+    "expansion": "Seaside",
+    "text": "None"
+  },
+  {
+    "name": "Embargo",
+    "type": "Action",
+    "color": "Action",
+    "cost": 2,
+    "expansion": "Seaside",
+    "text": "Money"
+  },
+  {
+    "name": "Explorer",
+    "type": "Action",
+    "color": "Action",
+    "cost": 5,
+    "expansion": "Seaside",
+    "text": "None"
+  },
+  {
+    "name": "Ghost Ship",
+    "type": "Action - Attack",
+    "color": "Attack",
+    "cost": 5,
+    "expansion": "Seaside",
+    "text": "Card"
+  },
+  {
+    "name": "Navigator",
+    "type": "Action",
+    "color": "Action",
+    "cost": 4,
+    "expansion": "Seaside",
+    "text": "Money"
+  },
+  {
+    "name": "Pearl Diver",
+    "type": "Action",
+    "color": "Action",
+    "cost": 2,
+    "expansion": "Seaside",
+    "text": "Card - Action"
+  },
+  {
+    "name": "Pirate Ship",
+    "type": "Action - Attack",
+    "color": "Attack",
+    "cost": 4,
+    "expansion": "Seaside=",
+    "text": "Money"
+  },
+  {
+    "name": "Sea Hag",
+    "type": "Action - Attack",
+    "color": "Attack",
+    "cost": 4,
+    "expansion": "Seaside",
+    "text": "None"
   }
 ]
