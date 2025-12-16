@@ -27,6 +27,7 @@
     <button id="dark-toggle">Dark Mode</button>
     <button id="new-card">New Card</button>
     <button id="easy-toggle">Card Gallery ▼</button>
+    <button id="stats-btn">Stats</button>
     <div id="easy-mode" class="easy-hidden">
         <div id="easy-grid"></div>
     </div>
@@ -44,6 +45,26 @@
 
     
   </div>
+
+  <!-- Stats Modal -->
+  <div id="stats-modal" class="modal hidden">
+    <div class="s-modal-content">
+      <span class="close" id="close-stats">&times;</span>
+
+      <h2>Statistics</h2>
+
+      <div class="stats-overview">
+        <div><strong id="stat-played">0</strong><br>Played</div>
+        <div><strong id="stat-winrate">0%</strong><br>Win %</div>
+        <div><strong id="stat-streak">0</strong><br>Current Streak</div>
+        <div><strong id="stat-maxstreak">0</strong><br>Max Streak</div>
+      </div>
+
+      <h3>Guess Distribution</h3>
+      <div id="guess-histogram"></div>
+    </div>
+  </div>
+
   <div id="game-modal" class="modal hidden">
     <div class="modal-content">
       <h2 id="modal-title"></h2>

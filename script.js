@@ -1,8 +1,33 @@
 
 let daily_card;
 let guessCount = 0;
+const todayKey = getTodaysSeed();
 const guessedCards = new Set();
 
+function loadStats() {
+  return JSON.parse(localStorage.getItem("stats")) || {
+    totalGames: 0,
+    wins: 0,
+    guessDistribution: [0,0,0,0,0,0,0,0,0], // 1–8 guesses , fails
+    streak: 0,
+    maxStreak: 0,
+    lastWinDate: null
+  };
+}
+
+function saveStats(stats) {
+  localStorage.setItem("stats", JSON.stringify(stats));
+}
+
+
+document.getElementById("stats-btn").onclick = () => {
+  renderStats();
+  document.getElementById("stats-modal").classList.remove("hidden");
+};
+
+document.getElementById("close-stats").onclick = () => {
+  document.getElementById("stats-modal").classList.add("hidden");
+};
 
 document.getElementById("dark-toggle").onclick = () => {
     document.body.classList.toggle("dark");
@@ -165,7 +190,7 @@ function addGuessRows(search) {
     
 
     findCard(search).then(card => {
-
+        const stats = loadStats();
         if (card) {
             console.log("Found card:", card);
             addBoxWrapper(row,"Color","color_" + Date.now(),card["color"],compareCard(card["color"],daily_card["color"]),0)
@@ -177,14 +202,36 @@ function addGuessRows(search) {
             console.log("Row after adding boxes:", row);
         }
         if (card["name"] === daily_card["name"]) {
-            setTimeout(() => {
-                showModal("You Win!", `Correct – the card was ${daily_card["name"]}.`);
-            }, 1800);
+            if (!localStorage.getItem(`guesses-${todayKey}`)) {
+                localStorage.setItem(`guesses-${todayKey}`, guessCount);
+                stats.totalGames++;
+                stats.wins++;
+                stats.guessDistribution[guessCount - 1]++; // e.g., stats[3]++ for 4 guesses
+                if (stats.lastWinDate === getYesterdayKey()) {
+                    stats.streak++;
+                } else {
+                    stats.streak = 1;
+                }
+                stats.lastWinDate = todayKey;
+                stats.maxStreak = Math.max(stats.maxStreak, stats.streak);
+                saveStats(stats);
+                setTimeout(() => {
+                    showModal("You Win!", `Correct - the card was ${daily_card["name"]}.`);
+                }, 1800);
+            } 
         }
         if (guessCount >= 8 && card["name"] !== daily_card["name"]) {
-            setTimeout(() => {
-                showModal("You Lose!", `The correct card was ${daily_card["name"]}.`);
-            }, 1800);
+            if (!localStorage.getItem(`guesses-${todayKey}`)) {
+                localStorage.setItem(`guesses-${todayKey}`, guessCount);
+                stats.totalGames++;
+                stats.guessDistribution[8]++;
+                stats.streak = 0;
+                stats.maxStreak = Math.max(stats.maxStreak, stats.streak);
+                saveStats(stats);
+                setTimeout(() => {
+                    showModal("You Lose!", `The correct card was ${daily_card["name"]}.`);
+                }, 1800);
+            } 
         }
     
     });
@@ -210,6 +257,41 @@ function compareCard(attribute,daily_attribute) {
     return "#E28C8C"//"red"
 }
 
+function renderStats() {
+  const stats = loadStats();
+  document.getElementById("stat-played").textContent = stats.totalGames;
+  document.getElementById("stat-winrate").textContent =
+    stats.totalGames ? Math.round((stats.wins / stats.totalGames) * 100) + "%" : "0%";
+  document.getElementById("stat-streak").textContent = stats.streak;
+  document.getElementById("stat-maxstreak").textContent = stats.maxStreak;
+
+  const container = document.getElementById("guess-histogram");
+  container.innerHTML = "";
+
+  const max = Math.max(...stats.guessDistribution, 1);
+
+  stats.guessDistribution.forEach((count, i) => {
+    const row = document.createElement("div");
+    row.className = "histogram-row";
+
+    const label = document.createElement("div");
+    label.className = "histogram-label";
+    label.textContent = i + 1;
+    if (i === 8) {
+        label.textContent = "Fail"
+    }
+
+    const bar = document.createElement("div");
+    bar.className = "histogram-bar";
+    bar.style.width = `${(count / max) * 100}%`;
+    bar.textContent = count;
+
+    row.appendChild(label);
+    row.appendChild(bar);
+    container.appendChild(row);
+  });
+}
+
 function getTodaysSeed() {
   const today = new Date();
   // Use year, month, and day to create a unique number for today
@@ -218,6 +300,19 @@ function getTodaysSeed() {
   const day = today.getDate();
   
   // Combine into a single number (e.g., 20231215 for Dec 15, 2023)
+  return year * 10000 + month * 100 + day;
+}
+
+function getYesterdayKey() {
+  const today = new Date();
+  // Use year, month, and day to create a unique number for yesterday
+  const year = today.getFullYear();
+  const month = today.getMonth();
+  const day = today.getDate() - 1;
+  if (day === 0) {
+    day = 30;
+  }
+  
   return year * 10000 + month * 100 + day;
 }
 
@@ -348,6 +443,8 @@ async function init() {
         });
   });
 }
+
+
 
 function showModal(title, message) {
     const modal = document.getElementById("game-modal");
