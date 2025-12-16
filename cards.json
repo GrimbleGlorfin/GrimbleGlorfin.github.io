@@ -4604,7 +4604,7 @@
   {
     "name": "Ambassador",
     "type": "Action - Attack",
-    "color": "Attack",
+    "color": "Action",
     "cost": 3,
     "expansion": "Seaside",
     "text": "None"
@@ -4628,7 +4628,7 @@
   {
     "name": "Ghost Ship",
     "type": "Action - Attack",
-    "color": "Attack",
+    "color": "Action",
     "cost": 5,
     "expansion": "Seaside",
     "text": "Card"
@@ -4652,15 +4652,15 @@
   {
     "name": "Pirate Ship",
     "type": "Action - Attack",
-    "color": "Attack",
+    "color": "Action",
     "cost": 4,
-    "expansion": "Seaside=",
+    "expansion": "Seaside",
     "text": "Money"
   },
   {
     "name": "Sea Hag",
     "type": "Action - Attack",
-    "color": "Attack",
+    "color": "Action",
     "cost": 4,
     "expansion": "Seaside",
     "text": "None"
