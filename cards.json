@@ -1458,7 +1458,7 @@
   {
     "name": "Hovel",
     "type": "Reaction - Shelter",
-    "color": "Shelter",
+    "color": "Reaction - Shelter",
     "cost": 1,
     "expansion": "Dark Ages",
     "text": "None"
@@ -1466,7 +1466,7 @@
   {
     "name": "Necropolis",
     "type": "Action - Shelter",
-    "color": "Shelter",
+    "color": "Action - Shelter",
     "cost": 1,
     "expansion": "Dark Ages",
     "text": "Action"
@@ -1474,7 +1474,7 @@
   {
     "name": "Overgrown Estate",
     "type": "Victory - Shelter",
-    "color": "Shelter",
+    "color": "Victory - Shelter",
     "cost": 1,
     "expansion": "Dark Ages",
     "text": "Card"
@@ -3767,7 +3767,7 @@
         "color": "Action",
         "cost": 4,
         "expansion": "Intrigue",
-        "text": "Action - Money"
+        "text": "Card - Action - Money"
     },
     {
         "name": "Mining Village",
@@ -4482,7 +4482,7 @@
     "text": "Money"
   },
   {
-    "name": "Anvil",
+    "name": "Clerk",
     "type": "Action - Attack - Reaction",
     "color": "Reaction",
     "cost": 4,
