@@ -123,8 +123,32 @@ function filterImages(event) {
         easyToggle.textContent = "Card Gallery ▼";
     }
 
-    
+    applyAllFilters();
 }
+
+async function filterCards(expansions,types,colors,costs,text) {
+    const response = await fetch('cards.json');
+    const cards = await response.json();
+    const filtered_cards = []
+    cards.forEach(card => {
+        if (card["expansion"] in expansions) {
+            filtered_cards.append(card)
+        }
+    }
+
+    )
+
+    document.querySelectorAll(".easy-card").forEach(img => {
+        if (guessedCards.has(img.alt)) {
+            img.style.display = "none";
+        }
+    });
+
+
+}
+
+
+
 
 async function findCard(cardName) {
   const response = await fetch('cards.json');
@@ -442,9 +466,80 @@ async function init() {
             easyGrid.appendChild(easyImg);
         });
   });
+
+    const expContainer = document.getElementById("expansion-filters");
+
+    const expansions = [...new Set(cards.map(c => c.expansion))].sort();
+
+    expansions.forEach(exp => {
+        const label = document.createElement("label");
+
+        const cb = document.createElement("input");
+        cb.type = "checkbox";
+        cb.value = exp;
+        cb.checked = true;
+
+        cb.addEventListener("change", applyAllFilters);
+
+        label.appendChild(cb);
+        label.append(` ${exp}`);
+
+        expContainer.appendChild(label);
+    });
 }
 
+function getSelectedExpansions() {
+    return Array.from(
+        document.querySelectorAll(
+            "#expansion-filters input:checked"
+        )
+    ).map(cb => cb.value);
+}
 
+function shouldShowCard(img) {
+    const selectedExpansions = getSelectedExpansions();
+
+    // Expansion filter
+    if (
+        selectedExpansions.length &&
+        !selectedExpansions.includes(img.dataset.expansion)
+    ) {
+        return false;
+    }
+
+    // Easy mode: hide guessed cards
+    if (
+        img.classList.contains("easy-card") &&
+        guessedCards.has(img.alt)
+    ) {
+        return false;
+    }
+
+    return true;
+}
+
+function applyAllFilters() {
+    document
+      .querySelectorAll(".pic, .easy-card")
+      .forEach(img => {
+          img.style.display = shouldShowCard(img)
+              ? "block"
+              : "none";
+      });
+}
+
+document.addEventListener("click", e => {
+    const btn = e.target.closest(".filter-toggle");
+    if (!btn) return;
+
+    const targetId = btn.dataset.target;
+    const panel = document.getElementById(targetId);
+
+    panel.classList.toggle("open");
+    btn.textContent = btn.textContent.includes("▾")
+        ? btn.textContent.replace("▾", "▸")
+        : btn.textContent.replace("▸", "▾");
+});
 
 function showModal(title, message) {
     const modal = document.getElementById("game-modal");
@@ -465,6 +560,7 @@ document.getElementById("easy-toggle").onclick = () => {
     document.getElementById("easy-toggle").textContent =
         panel.classList.contains("open") ?
         "Card Gallery ▲" : "Card Gallery ▼";
+    applyAllFilters();
 };
 
 init();
