@@ -342,6 +342,47 @@ body.dark {
     margin-top: 20px;
 }
 
+.filters {
+  width: 220px;
+  padding: 12px;
+  border-right: 1px solid #ccc;
+  background: var(--bg, #f7f7f7);
+}
+
+.filters h3 {
+  margin-top: 0;
+}
+
+.filter-group {
+  margin-bottom: 12px;
+}
+
+.filter-toggle {
+  width: 100%;
+  background: none;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: left;
+}
+
+.filter-content {
+  margin-top: 6px;
+  padding-left: 8px;
+  display: none;
+}
+
+.filter-content.open {
+  display: block;
+}
+
+.filter-content label {
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+
 @media (max-width: 600px) {
     .feedback {
         flex-direction: column;
