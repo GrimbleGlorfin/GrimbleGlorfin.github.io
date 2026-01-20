@@ -519,6 +519,7 @@ function shouldShowCard(img) {
 }
 
 function applyAllFilters() {
+    /*
     document
       .querySelectorAll(".pic, .easy-card")
       .forEach(img => {
@@ -526,6 +527,7 @@ function applyAllFilters() {
               ? "block"
               : "none";
       });
+    */
 }
 
 document.addEventListener("click", e => {
