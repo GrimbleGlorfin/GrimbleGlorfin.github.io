@@ -1633,8 +1633,8 @@
   },
   {
     "name": "Coven",
-    "type": "Action - Attack - Duration",
-    "color": "Duration",
+    "type": "Action - Attack",
+    "color": "Action",
     "cost": 5,
     "expansion": "Menagerie",
     "text": "Action - Money"
@@ -1770,7 +1770,7 @@
   {
     "name": "Importer",
     "type": "Action - Duration - Liaison",
-    "color": "Action",
+    "color": "Duration",
     "cost": 3,
     "expansion": "Allies",
     "text": "None"
@@ -2114,7 +2114,7 @@
   {
     "name": "Distant Shore",
     "type": "Action - Victory - Odyssey",
-    "color": "Victory - Duration",
+    "color": "Action - Victory",
     "cost": 6,
     "expansion": "Allies",
     "text": "Card - Action"
@@ -3949,7 +3949,7 @@
     "name": "Poet",
     "type": "Action - Omen",
     "color": "Action",
-    "cost": 3,
+    "cost": 4,
     "expansion": "Rising Sun",
     "text": "Card - Action"
   },
@@ -4363,8 +4363,8 @@
   },
   {
     "name": "Prince",
-    "type": "Action",
-    "color": "Action",
+    "type": "Action - Duration - Command",
+    "color": "Duration",
     "cost": 8,
     "expansion": "Promo",
     "text": "None"

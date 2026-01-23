@@ -91,7 +91,7 @@ h1 {
   gap: 10px;
   padding: 10px;
   display: flex;
-  margin-left: 240px;
+  margin-left: 40px; /*240*/
   margin-top: 50px;
   justify-content: center;
 }
@@ -311,7 +311,7 @@ body.dark {
     width: 8px;
 }
 #easy-mode::-webkit-scrollbar-thumb {
-    background: #cfcac3;
+    background: var(--bg); /*was white*/
     border-radius: 10px;
 }
 
@@ -342,44 +342,57 @@ body.dark {
     margin-top: 20px;
 }
 
-.filters {
-  width: 220px;
-  padding: 12px;
-  border-right: 1px solid #ccc;
-  background: var(--bg, #f7f7f7);
+.layout {
+  display: grid;
+  grid-template-columns: 260px 1fr; /* content | sidebar */
+  height: 100vh;
 }
 
-.filters h3 {
-  margin-top: 0;
+/* Sidebar */
+.sidebar {
+  padding: 1rem;
+  border-right: 1px solid var(--modal-bg);
 }
 
-.filter-group {
-  margin-bottom: 12px;
-}
-
-.filter-toggle {
-  width: 100%;
-  background: none;
-  border: none;
-  font-weight: bold;
+.sidebar label {
+  display: block;
+  margin-bottom: 0.5rem;
   cursor: pointer;
-  text-align: left;
 }
 
-.filter-content {
-  margin-top: 6px;
-  padding-left: 8px;
+details {
+  border: 1px solid var(--modal-bg);
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  background: var(--bg);
+}
+
+summary {
+  padding: 0.6rem;
+  cursor: pointer;
+  font-weight: bold;
+  list-style: none;
+}
+
+summary::-webkit-details-marker {
   display: none;
 }
 
-.filter-content.open {
-  display: block;
+/* Custom arrow */
+summary::after {
+  content: "▸";
+  float: right;
+  transition: transform 0.2s ease;
 }
 
-.filter-content label {
+details[open] summary::after {
+  transform: rotate(90deg);
+}
+
+details label {
   display: block;
+  padding: 0.4rem 0.6rem;
   cursor: pointer;
-  user-select: none;
 }
 
 

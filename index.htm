@@ -31,19 +31,330 @@
     <div id="easy-mode" class="easy-hidden">
         <div id="easy-grid"></div>
     </div>
-
   </div>
-  <div id="game-layout">
-    <div class="feedback" id="guess-list"></div>
-    <div class="card-images">
-      <img class="pic" id="blank-card" src="cards/Blank.jpg" alt="Blank" width="200px">
-    </div>
+  <div class="layout">
+    <aside class="sidebar">
+      <details>
+        <summary>Color</summary>
+        <label>
+          <input type="checkbox" class="colorCheckBox"  name="color" value="Action">
+          Action
+        </label>
+        <label>
+          <input type="checkbox" class="colorCheckBox" name="color" value="Duration">
+          Duration
+        </label>
+        <label>
+          <input type="checkbox" class="colorCheckBox" name="color" value="Night">
+          Night
+        </label>
+        <label>
+          <input type="checkbox" class="colorCheckBox" name="color" value="Reaction">
+          Reaction
+        </label>
+        <label>
+          <input type="checkbox" class="colorCheckBox" name="color" value="Reserve">
+          Reserve
+        </label>
+        <label>
+          <input type="checkbox" class="colorCheckBox" name="color" value="Ruins">
+          Ruins
+        </label>
+        <label>
+          <input type="checkbox" class="colorCheckBox" name="color" value="Shelter">
+          Shelter
+        </label>
+        <label>
+          <input type="checkbox" class="colorCheckBox" name="color" value="Treasure">
+          Treasure
+        </label>
+        <label>
+          <input type="checkbox" class="colorCheckBox" name="color" value="Victory">
+          Victory
+        </label>
+      </details>
+      <details>
+        <summary>Type</summary>
+        <label>
+          <input type="checkbox" class="typeCheckBox"  name="type" value="Action">
+          Action
+        </label>
+        <label>
+          <input type="checkbox" class="typeCheckBox"  name="type" value="Attack">
+          Attack
+        </label>
+        <label>
+          <input type="checkbox" class="typeCheckBox"  name="type" value="Augur">
+          Augur
+        </label>
+        <label>
+          <input type="checkbox" class="typeCheckBox"  name="type" value="Castle">
+          Castle
+        </label>
+        <label>
+          <input type="checkbox" class="typeCheckBox"  name="type" value="Clash">
+          Clash
+        </label>
+        <label>
+          <input type="checkbox" class="typeCheckBox"  name="type" value="Command">
+          Command
+        </label>
+        <label>
+          <input type="checkbox" class="typeCheckBox"  name="type" value="Doom">
+          Doom
+        </label>
+        <label>
+          <input type="checkbox" class="typeCheckBox" name="type" value="Duration">
+          Duration
+        </label>
+        <label>
+          <input type="checkbox" class="typeCheckBox" name="type" value="Fate">
+          Fate
+        </label>
+        <label>
+          <input type="checkbox" class="typeCheckBox" name="type" value="Gathering">
+          Gathering
+        </label>
+        <label>
+          <input type="checkbox" class="typeCheckBox" name="type" value="Knight">
+          Knight
+        </label>
+        <label>
+          <input type="checkbox" class="typeCheckBox" name="type" value="Liaison">
+          Liaison
+        </label>
+        <label>
+          <input type="checkbox" class="typeCheckBox" name="type" value="Loot">
+          Loot
+        </label>
+        <label>
+          <input type="checkbox" class="typeCheckBox" name="type" value="Looter">
+          Looter
+        </label>
+        <label>
+          <input type="checkbox" class="typeCheckBox" name="type" value="Night">
+          Night
+        </label>
+        <label>
+          <input type="checkbox" class="typeCheckBox" name="type" value="Odyssey">
+          Odyssey
+        </label>
+        <label>
+          <input type="checkbox" class="typeCheckBox" name="type" value="Omen">
+          Omen
+        </label>
+        <label>
+          <input type="checkbox" class="typeCheckBox" name="type" value="Reaction">
+          Reaction
+        </label>
+        <label>
+          <input type="checkbox" class="typeCheckBox" name="type" value="Reserve">
+          Reserve
+        </label>
+        <label>
+          <input type="checkbox" class="typeCheckBox" name="type" value="Ruins">
+          Ruins
+        </label>
+        <label>
+          <input type="checkbox" class="typeCheckBox" name="type" value="Shadow">
+          Shadow
+        </label>
+        <label>
+          <input type="checkbox" class="typeCheckBox" name="type" value="Shelter">
+          Shelter
+        </label>
+        <label>
+          <input type="checkbox" class="typeCheckBox" name="type" value="Townsfolk">
+          Townsfolk
+        </label>
+        <label>
+          <input type="checkbox" class="typeCheckBox" name="type" value="Traveller">
+          Traveller
+        </label>
+        <label>
+          <input type="checkbox" class="typeCheckBox" name="type" value="Treasure">
+          Treasure
+        </label>
+        <label>
+          <input type="checkbox" class="typeCheckBox" name="type" value="Victory">
+          Victory
+        </label>
+        <label>
+          <input type="checkbox" class="typeCheckBox" name="type" value="Wizard">
+          Wizard
+        </label>
+      </details>
+      <details>
+        <summary>Expansions</summary>
+        <label>
+          <input type="checkbox" class="expansionCheckBox" name="expansion" value="Adventures" checked>
+          Adventures
+        </label>
+        <label>
+          <input type="checkbox" class="expansionCheckBox"  name="expansion" value="Alchemy" checked>
+          Alchemy
+        </label>
+        <label>
+          <input type="checkbox" class="expansionCheckBox"  name="expansion" value="Allies" checked>
+          Allies
+        </label>
+        <label>
+          <input type="checkbox" class="expansionCheckBox"  name="expansion" value="Base" checked>
+          Base
+        </label>
+        <label>
+          <input type="checkbox" class="expansionCheckBox"  name="expansion" value="Cornucopia" checked>
+          Cornucopia
+        </label>
+        <label>
+          <input type="checkbox" class="expansionCheckBox"  name="expansion" value="Dark Ages" checked>
+          Dark Ages
+        </label>
+        <label>
+          <input type="checkbox" class="expansionCheckBox"  name="expansion" value="Empires" checked>
+          Empires
+        </label>
+        <label>
+          <input type="checkbox" class="expansionCheckBox"  name="expansion" value="Guilds" checked>
+          Guilds
+        </label>
+        <label>
+          <input type="checkbox" class="expansionCheckBox"  name="expansion" value="Hinterlands" checked>
+          Hinterlands
+        </label>
+        <label>
+          <input type="checkbox" class="expansionCheckBox"  name="expansion" value="Intrigue" checked>
+          Intrigue
+        </label>
+        <label>
+          <input type="checkbox" class="expansionCheckBox"  name="expansion" value="Menagerie" checked>
+          Menagerie
+        </label>
+        <label>
+          <input type="checkbox" class="expansionCheckBox"  name="expansion" value="Nocturne" checked>
+          Nocturne
+        </label>
+        <label>
+          <input type="checkbox" class="expansionCheckBox"  name="expansion" value="Plunder" checked>
+          Plunder
+        </label>
+        <label>
+          <input type="checkbox" class="expansionCheckBox"  name="expansion" value="Promo" checked>
+          Promo
+        </label>
+        <label>
+          <input type="checkbox" class="expansionCheckBox"  name="expansion" value="Prosperity" checked>
+          Prosperity
+        </label>
+        <label>
+          <input type="checkbox" class="expansionCheckBox"  name="expansion" value="Renaissance" checked>
+          Renaissance
+        </label>
+        <label>
+          <input type="checkbox" class="expansionCheckBox"  name="expansion" value="Rising Sun" checked>
+          Rising Sun
+        </label>
+        <label>
+          <input type="checkbox" class="expansionCheckBox"  name="expansion" value="Seaside" checked>
+          Seaside
+        </label>
+        <label>
+          <input type="checkbox" class="expansionCheckBox"  name="expansion" value="Cornucopia - Guilds" checked>
+          Cornucopia/Guilds 2E
+        </label>
+      </details>
+      <details>
+        <summary>Text</summary>
+        <label>
+          <input type="checkbox" class="textCheckBox"  name="text" value="Card">
+          Card
+        </label>
+        <label>
+          <input type="checkbox" class="textCheckBox" name="text" value="Action">
+          Action
+        </label>
+        <label>
+          <input type="checkbox" class="textCheckBox" name="text" value="Buy">
+          Buy
+        </label>
+        <label>
+          <input type="checkbox" class="textCheckBox" name="text" value="Money">
+          Money
+        </label>
+        <label>
+          <input type="checkbox" class="textCheckBox" name="text" value="VP">
+          VP
+        </label>
+        <label>
+          <input type="checkbox" class="textCheckBox" name="text" value="None">
+          None
+        </label>
+      </details>
+      <details>
+        <summary>Cost</summary>
+        <label>
+          <input type="checkbox" class="costCheckBox"  name="cost" value="0" checked>
+          0
+        </label>
+        <label>
+          <input type="checkbox" class="costCheckBox" name="cost" value="1" checked>
+          1
+        </label>
+        <label>
+          <input type="checkbox" class="costCheckBox" name="cost" value="2" checked>
+          2
+        </label>
+        <label>
+          <input type="checkbox" class="costCheckBox" name="cost" value="3" checked>
+          3
+        </label>
+        <label>
+          <input type="checkbox" class="costCheckBox" name="cost" value="4" checked>
+          4
+        </label>
+        <label>
+          <input type="checkbox" class="costCheckBox" name="cost" value="5" checked>
+          5
+        </label>
+        <label>
+          <input type="checkbox" class="costCheckBox" name="cost" value="6" checked>
+          6
+        </label>
+        <label>
+          <input type="checkbox" class="costCheckBox" name="cost" value="7" checked>
+          7
+        </label>
+        <label>
+          <input type="checkbox" class="costCheckBox" name="cost" value="8" checked>
+          8
+        </label>
+        <label>
+          <input type="checkbox" class="costCheckBox" name="cost" value="9" checked>
+          9
+        </label>
+        <label>
+          <input type="checkbox" class="costCheckBox" name="cost" value="10" checked>
+          10
+        </label>
+        <label>
+          <input type="checkbox" class="costCheckBox" name="cost" value="11" checked>
+          11
+        </label>
+      </details>
+    </aside>
 
-    <!--<div id="card-container"></div>-->
-
-    <!-- <div id="guess-rows"></div> -->
-
+    <div id="game-layout">
+      <div class="feedback" id="guess-list"></div>
+      <div class="card-images">
+        <img class="pic" id="blank-card" src="cards/Blank.jpg" alt="Blank" width="200px">
+      </div>
     
+      <!--<div id="card-container"></div>-->
+
+      <!-- <div id="guess-rows"></div> -->
+
+      
+    </div>
   </div>
 
   <!-- Stats Modal -->

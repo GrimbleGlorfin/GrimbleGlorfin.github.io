@@ -3,6 +3,19 @@ let daily_card;
 let guessCount = 0;
 const todayKey = getTodaysSeed();
 const guessedCards = new Set();
+const checkboxes = document.querySelectorAll('.sidebar input[type="checkbox"]');
+//const response = fetch('cards.json');
+//const globalCards = response.json();
+
+fetch("cards.json")
+  .then(response => response.json())
+  .then(data => {
+    globalCards = data;          // store cards globally
+    //renderCards(allCards);    // initial render
+  })
+  .catch(error => {
+    console.error("Failed to load cards:", error);
+  });
 
 function loadStats() {
   return JSON.parse(localStorage.getItem("stats")) || {
@@ -123,7 +136,6 @@ function filterImages(event) {
         easyToggle.textContent = "Card Gallery ▼";
     }
 
-    applyAllFilters();
 }
 
 async function filterCards(expansions,types,colors,costs,text) {
@@ -466,68 +478,96 @@ async function init() {
             easyGrid.appendChild(easyImg);
         });
   });
+}
 
-    const expContainer = document.getElementById("expansion-filters");
 
-    const expansions = [...new Set(cards.map(c => c.expansion))].sort();
 
-    expansions.forEach(exp => {
-        const label = document.createElement("label");
+checkboxes.forEach(cb => {
+  cb.addEventListener('change', applyFilters);
+});
 
-        const cb = document.createElement("input");
-        cb.type = "checkbox";
-        cb.value = exp;
-        cb.checked = true;
+function applyFilters() {
+    //const response = await fetch('cards.json');
+    //const cards = await response.json();
+  // 1. Get selected expansions from checkboxes
+  const textCheckBox = document.querySelectorAll(".textCheckBox");
+  const expCheckBox = document.querySelectorAll(".expansionCheckBox");
+  const costCheckBox = document.querySelectorAll(".costCheckBox");
+  const typeCheckBox = document.querySelectorAll(".typeCheckBox");
+  const colorCheckBox = document.querySelectorAll(".colorCheckBox");
+  const activeExpansions = Array.from(expCheckBox)
+    .filter(cb => cb.checked)
+    .map(cb => cb.value);
 
-        cb.addEventListener("change", applyAllFilters);
+  const activeText = Array.from(textCheckBox)
+    .filter(cb => cb.checked)
+    .map(cb => cb.value);
 
-        label.appendChild(cb);
-        label.append(` ${exp}`);
+  const activeCost = Array.from(costCheckBox)
+    .filter(cb => cb.checked)
+    .map(cb => cb.value);
 
-        expContainer.appendChild(label);
+  const activeType = Array.from(typeCheckBox)
+    .filter(cb => cb.checked)
+    .map(cb => cb.value);
+
+  const activeColor = Array.from(colorCheckBox)
+    .filter(cb => cb.checked)
+    .map(cb => cb.value);
+
+  // 2. Filter Expansions
+  const filteredCards = globalCards.filter(card => {
+    correctExp = activeExpansions.includes(card.expansion),
+    correctCardText = activeText.includes(card.text)
+    correctCardCost = activeCost.includes(parseCost(card.cost).coins.toString())
+    //console.log("activeCost " + activeCost)
+    //console.log("parseCost(card.cost).coins " + parseCost(card.cost).coins)
+    //console.log("correctCardCost " + correctCardCost)
+    //partialCardCost = card.cost.includes(activeCost)
+    includesAllText = true
+    includesAllColor = true
+    includesAllType = true
+    activeText.forEach(element => {
+        tempBool = card.text.includes(element)
+        includesAllText = includesAllText && tempBool
     });
-}
+    //activeCost.forEach(element => {
+    //   tempBool = parseCost(card.cost).coins.includes(element)
+    //    includesAllCost = includesAllCost && tempBool
+    //});
+    activeType.forEach(element => {
+        tempBool = card.type.includes(element)
+        includesAllType = includesAllType && tempBool
+    });
+    activeColor.forEach(element => {
+        tempBool = card.color.includes(element)
+        includesAllColor = includesAllColor && tempBool
+    });
+    //partialCardText = card.text.includes(activeText)
+    //console.log("activeColor " + activeColor)
+    return correctExp && includesAllText && includesAllColor && includesAllType && correctCardCost //(correctCardCost || partialCardCost)//(correctCardText || includesAllText)
+});
 
-function getSelectedExpansions() {
-    return Array.from(
-        document.querySelectorAll(
-            "#expansion-filters input:checked"
-        )
-    ).map(cb => cb.value);
-}
+  const cardNames = []
 
-function shouldShowCard(img) {
-    const selectedExpansions = getSelectedExpansions();
+  filteredCards.forEach(card_name => {
+    cardNames.push(card_name.name)
+  });
 
-    // Expansion filter
-    if (
-        selectedExpansions.length &&
-        !selectedExpansions.includes(img.dataset.expansion)
-    ) {
-        return false;
-    }
-
-    // Easy mode: hide guessed cards
-    if (
-        img.classList.contains("easy-card") &&
-        guessedCards.has(img.alt)
-    ) {
-        return false;
-    }
-
-    return true;
-}
-
-function applyAllFilters() {
-    /*
-    document
-      .querySelectorAll(".pic, .easy-card")
-      .forEach(img => {
-          img.style.display = shouldShowCard(img)
-              ? "block"
-              : "none";
-      });
-    */
+  //
+    console.log(cardNames)
+    document.querySelectorAll(".easy-card").forEach(img => {
+        if (!cardNames.includes(img.alt)) {
+            img.style.display = "none";
+            //console.log("Found Card " + img.alt)
+        } else {
+            //console.log("Lost Card " + img.alt)
+            //console.log(filteredCards[0])
+            img.style.display = "block";
+        }
+    });
+    console.log("activeExpansions " + activeExpansions)
+    //console.log("filteredCards" + filteredCards)
 }
 
 document.addEventListener("click", e => {
@@ -562,7 +602,6 @@ document.getElementById("easy-toggle").onclick = () => {
     document.getElementById("easy-toggle").textContent =
         panel.classList.contains("open") ?
         "Card Gallery ▲" : "Card Gallery ▼";
-    applyAllFilters();
 };
 
 init();
