@@ -486,6 +486,23 @@ checkboxes.forEach(cb => {
   cb.addEventListener('change', applyFilters);
 });
 
+document.querySelectorAll(".check-all-btn").forEach(button => {
+  button.addEventListener("click", () => {
+    const details = button.closest("details");
+    const checkboxes = details.querySelectorAll(
+      'input[type="checkbox"]'
+    );
+
+    const allChecked = [...checkboxes].every(cb => cb.checked);
+
+    checkboxes.forEach(cb => cb.checked = !allChecked);
+
+    button.textContent = allChecked ? "Check All" : "Uncheck All";
+
+    applyFilters();
+  });
+});
+
 function applyFilters() {
     //const response = await fetch('cards.json');
     //const cards = await response.json();

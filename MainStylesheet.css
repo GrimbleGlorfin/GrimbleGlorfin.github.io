@@ -395,6 +395,12 @@ details label {
   cursor: pointer;
 }
 
+.check-all-btn {
+  margin: 0.4rem 0.6rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
 
 @media (max-width: 600px) {
     .feedback {
