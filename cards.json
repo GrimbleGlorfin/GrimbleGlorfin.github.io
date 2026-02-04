@@ -1617,8 +1617,8 @@
   },
   {
     "name": "Village Green",
-    "type": "Action - Reaction",
-    "color": "Reaction",
+    "type": "Action - Duration - Reaction",
+    "color": "Duration - Reaction",
     "cost": 4,
     "expansion": "Menagerie",
     "text": "Card - Action"
@@ -2877,7 +2877,7 @@
     "color": "Action",
     "cost": 4,
     "expansion": "Cornucopia",
-    "text": "Action"
+    "text": "Card - Action - Money"
   },
   {
     "name": "Young Witch",
@@ -3981,7 +3981,7 @@
     "name": "Riverboat",
     "type": "Action - Duration",
     "color": "Duration",
-    "cost": 4,
+    "cost": 3,
     "expansion": "Rising Sun",
     "text": "None"
   },

@@ -4,8 +4,68 @@ let guessCount = 0;
 const todayKey = getTodaysSeed();
 const guessedCards = new Set();
 const checkboxes = document.querySelectorAll('.sidebar input[type="checkbox"]');
+let galleryUsed = false;
 //const response = fetch('cards.json');
 //const globalCards = response.json();
+
+const DEBUG = false;
+
+if (DEBUG) {
+  localStorage.removeItem("achievements");
+  localStorage.removeItem("stats");
+  localStorage.removeItem(`guesses-${todayKey}`);
+}
+
+const achievements = [
+  {
+    id: "test",
+    title: "Guess What?",
+    description: "Make a guess"
+  },
+  {
+    id: "weekly_warrior",
+    title: "Weekly Warrior",
+    description: "Get a 7 day streak"
+  },
+  {
+    id: "true_talent",
+    title: "True Talent",
+    description: "Guess a card in 2 guesses"
+  },
+  {
+    id: "blind_genius",
+    title: "Blind Genius",
+    description: "Win without using the Card Gallery"
+  }
+];
+
+const sidebar = document.querySelector(".sidebar");
+const galleryDrawer = document.getElementById("gallery-drawer");
+const Gallery = document.getElementById("easy-mode");
+
+document.getElementById("open-filters").onclick = () => {
+  sidebar.classList.add("open");
+  document.body.classList.add("no-scroll");
+};
+
+document.getElementById("close-filters").onclick = () => {
+  sidebar.classList.remove("open");
+  document.body.classList.remove("no-scroll");
+};
+
+document.getElementById("open-gallery").onclick = () => {
+  galleryDrawer.classList.add("open");
+  document.body.classList.add("drawer-open");
+  Gallery.classList.add("open");
+  document.body.classList.add("no-scroll");
+};
+
+document.getElementById("close-gallery").onclick = () => {
+  galleryDrawer.classList.remove("open");
+  document.body.classList.remove("drawer-open");
+  Gallery.classList.remove("open");
+  document.body.classList.remove("no-scroll");
+};
 
 fetch("cards.json")
   .then(response => response.json())
@@ -31,6 +91,81 @@ function loadStats() {
 function saveStats(stats) {
   localStorage.setItem("stats", JSON.stringify(stats));
 }
+
+function loadAchievements() {
+  return JSON.parse(localStorage.getItem("achievements")) || {};
+}
+
+function saveAchievements(data) {
+  localStorage.setItem("achievements", JSON.stringify(data));
+}
+
+function unlockAchievement(id) {
+  const unlocked = loadAchievements();
+
+  if (unlocked[id]) return; // already unlocked
+
+  unlocked[id] = true;
+  saveAchievements(unlocked);
+
+  const achievement = achievements.find(a => a.id === id);
+  if (achievement) {
+    if (!document.querySelector(".modal:not(.hidden)")) {
+        showAchievementToast(achievement);
+    }   
+  }
+}
+
+
+const achievementsList = document.getElementById("achievements-list");
+
+function renderAchievements() {
+  const unlocked = loadAchievements();
+  const list = document.getElementById("achievements-list");
+
+  list.innerHTML = "";
+
+  achievements.forEach(a => {
+    const div = document.createElement("div");
+    div.className = "achievement";
+
+    if (unlocked[a.id]) {
+      div.classList.add("unlocked");
+    }
+
+    div.innerHTML = `
+      <h4>${a.title}</h4>
+      <p>${a.description}</p>
+      <span>${unlocked[a.id] ? "Unlocked" : "Locked"}</span>
+    `;
+
+    list.appendChild(div);
+  });
+}
+
+
+const achievementsModal = document.getElementById("achievement-modal");
+
+document.getElementById("open-achievements").onclick = () => {
+  achievementsModal.classList.remove("hidden");
+  renderAchievements();
+};
+
+document.getElementById("close-achievements").onclick = () => {
+  achievementsModal.classList.add("hidden");
+};
+
+achievementsModal.addEventListener("click", e => {
+  if (e.target === achievementsModal) {
+    achievementsModal.classList.add("hidden");
+  }
+});
+
+document.getElementById("stats-modal").addEventListener("click", e => {
+  if (e.target === document.getElementById("stats-modal")) {
+    document.getElementById("stats-modal").classList.add("hidden");
+  }
+});
 
 
 document.getElementById("stats-btn").onclick = () => {
@@ -85,81 +220,59 @@ function filterImages(event) {
     const easyMode = document.getElementById("easy-mode");
     const easyToggle = document.getElementById("easy-toggle");
 
-    
+    // Checks for real queary
+    if (!(search === "")) {
 
-    let found = false;
+      let found = false;
 
-    //loop through images looking for guessed image
-    images.forEach(img => {
-      if (img.alt.toLowerCase() === search) {
-          img.style.display = "block";
-          // Track that this card was guessed
-          console.log("Added " + input.value)
-          guessedCards.add(input.value);
-          found = true;
-      } else {
-          img.style.display = "none";
+      //loop through images looking for guessed image
+      images.forEach(img => {
+        if (img.alt.toLowerCase() === search) {
+            img.style.display = "block";
+            // Track that this card was guessed
+            console.log("Added " + input.value)
+            guessedCards.add(input.value);
+            found = true;
+        } else {
+            img.style.display = "none";
+        }
+      });
+
+      addGuessRows(search)
+
+      // Show blank card if no card matched
+      if (!found) {
+          document.querySelector('img[alt="Blank"]').style.display = "block";
       }
-    });
 
-    addGuessRows(search)
+      const shownCard = document.querySelector(".card-images img:not([style*='display: none'])");
+      if (shownCard) {
+          shownCard.classList.add("flip");
 
-    // Show blank card if no card matched
-    if (!found) {
-        document.querySelector('img[alt="Blank"]').style.display = "block";
+        // Remove class after animation so it can flip again later
+        setTimeout(() => shownCard.classList.remove("flip"), 600);
+      }
+
+      //Clear search bar
+      input.value = "";
+
+      //Put cursor back into search bar
+      input.focus();
+
+      // After processing guess, hide guessed cards in Easy Mode
+      document.querySelectorAll(".easy-card").forEach(img => {
+          if (guessedCards.has(img.alt)) {
+              img.style.display = "none";
+          }
+      });
+
+
+      if (easyMode.classList.contains("open")) {
+          easyMode.classList.remove("open");
+          easyToggle.textContent = "Card Gallery ▼";
+      }
     }
-
-    const shownCard = document.querySelector(".card-images img:not([style*='display: none'])");
-    if (shownCard) {
-        shownCard.classList.add("flip");
-
-    // Remove class after animation so it can flip again later
-    setTimeout(() => shownCard.classList.remove("flip"), 600);
 }
-
-    //Clear search bar
-    input.value = "";
-
-    //Put cursor back into search bar
-    input.focus();
-
-    // After processing guess, hide guessed cards in Easy Mode
-    document.querySelectorAll(".easy-card").forEach(img => {
-        if (guessedCards.has(img.alt)) {
-            img.style.display = "none";
-        }
-    });
-
-
-    if (easyMode.classList.contains("open")) {
-        easyMode.classList.remove("open");
-        easyToggle.textContent = "Card Gallery ▼";
-    }
-
-}
-
-async function filterCards(expansions,types,colors,costs,text) {
-    const response = await fetch('cards.json');
-    const cards = await response.json();
-    const filtered_cards = []
-    cards.forEach(card => {
-        if (card["expansion"] in expansions) {
-            filtered_cards.append(card)
-        }
-    }
-
-    )
-
-    document.querySelectorAll(".easy-card").forEach(img => {
-        if (guessedCards.has(img.alt)) {
-            img.style.display = "none";
-        }
-    });
-
-
-}
-
-
 
 
 async function findCard(cardName) {
@@ -215,6 +328,7 @@ function addGuessRows(search) {
     const rows = document.querySelector(".feedback");
     const row = document.createElement("div");
     guessCount += 1
+    unlockAchievement("test")
 
     row.className = "guess-rows";
     console.log("Created row:", row);
@@ -254,6 +368,15 @@ function addGuessRows(search) {
                 setTimeout(() => {
                     showModal("You Win!", `Correct - the card was ${daily_card["name"]}.`);
                 }, 1800);
+                if (stats.streak === 7) {
+                    unlockAchievement("weekly_warrior")
+                }
+                if (!galleryUsed) {
+                    unlockAchievement("blind_genius")
+                }
+                if (guessCount === 2) {
+                    unlockAchievement("true_talent")
+                }
             } 
         }
         if (guessCount >= 8 && card["name"] !== daily_card["name"]) {
@@ -272,8 +395,28 @@ function addGuessRows(search) {
     
     });
 
+}
 
-    
+function showAchievementToast(achievement) {
+  const container = document.getElementById("achievement-toast-container");
+
+  const toast = document.createElement("div");
+  toast.className = "achievement-toast";
+
+  toast.innerHTML = `
+    <strong>${achievement.title}</strong><br>
+    <span>${achievement.description}</span>
+  `;
+
+  container.appendChild(toast);
+
+  // Auto-remove after 3 seconds
+  setTimeout(() => {
+    toast.style.opacity = "0";
+    toast.style.transform = "translateY(10px)";
+
+    setTimeout(() => toast.remove(), 300);
+  }, 3000);
 }
 
 function compareCard(attribute,daily_attribute) {
@@ -473,6 +616,10 @@ async function init() {
                 easyImg.style.display = "none";
 
                 filterImages(new Event("submit"));
+                galleryDrawer.classList.remove("open");
+                document.body.classList.remove("drawer-open");
+                Gallery.classList.remove("open");
+                document.body.classList.remove("no-scroll");
             };
 
             easyGrid.appendChild(easyImg);
@@ -572,7 +719,7 @@ function applyFilters() {
   });
 
   //
-    console.log(cardNames)
+    //console.log(cardNames)
     document.querySelectorAll(".easy-card").forEach(img => {
         if (!cardNames.includes(img.alt)) {
             img.style.display = "none";
@@ -614,7 +761,7 @@ document.getElementById("modal-close").onclick = () => {
 document.getElementById("easy-toggle").onclick = () => {
     const panel = document.getElementById("easy-mode");
     panel.classList.toggle("open");
-
+    galleryUsed = true
     // Update arrow
     document.getElementById("easy-toggle").textContent =
         panel.classList.contains("open") ?

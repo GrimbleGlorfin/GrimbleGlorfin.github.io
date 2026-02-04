@@ -17,7 +17,7 @@
 
   <div class="topnav">
     <form>
-      <label for="search-input">Card Name:</label>
+      <label for="search-input" id="label-card-name" class="desktop-only">Card Name:</label>
       <input type="text" id="search-input" list="search-options" placeholder="Type to search...">
 
       <datalist id="search-options"></datalist>
@@ -25,12 +25,22 @@
       <button type="submit" onclick="filterImages(event)">Guess</button>
     </form>
     <button id="dark-toggle">Dark Mode</button>
-    <button id="new-card">New Card</button>
-    <button id="easy-toggle">Card Gallery ▼</button>
+    <button id="new-card" class="desktop-only">New Card</button>
+    <button id="easy-toggle" class="desktop-only">Card Gallery ▼</button>
     <button id="stats-btn">Stats</button>
-    <div id="easy-mode" class="easy-hidden">
+    <button id="open-achievements">Achievements</button>
+    <div id="gallery-drawer" class="gallery-drawer">
+      <button id="close-gallery" class="mobile-only">Close</button>
+      <div id="easy-mode" class="easy-hidden">
         <div id="easy-grid"></div>
+      </div>
     </div>
+    <button id="open-filters" class="mobile-only">
+      Filters
+    </button>
+    <button id="open-gallery" class="mobile-only">
+      Gallery
+    </button>
   </div>
   <div class="layout">
     <aside class="sidebar">
@@ -360,6 +370,7 @@
           11
         </label>
       </details>
+      <button id="close-filters" class="mobile-only">Close</button>
     </aside>
 
     <div id="game-layout">
@@ -402,6 +413,25 @@
       <button id="modal-close">Close</button>
     </div>
   </div>
+
+  <div id="achievement-modal" class="modal hidden">
+    <div class="s-modal-content">
+      <span class="close" id="close-achievements">&times;</span>
+
+      <h2>Achievements</h2>
+
+      <!--<div class="stats-overview">
+        <div><strong>12</strong><br>Unlocked</div>
+        <div><strong>25</strong><br>Total</div>
+        <div><strong>48%</strong><br>Completion</div>
+        <div><strong>3</strong><br>Hidden</div>
+      </div>-->
+
+      <div id="achievements-list"></div>
+    </div>
+  </div>
+
+  <div id="achievement-toast-container"></div>
 
   <script src="script.js"></script>
 
