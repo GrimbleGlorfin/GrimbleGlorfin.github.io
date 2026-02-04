@@ -257,7 +257,10 @@ function filterImages(event) {
       input.value = "";
 
       //Put cursor back into search bar
-      input.focus();
+      if (window.screen.width > 800) {
+        input.focus();
+      }
+      
 
       // After processing guess, hide guessed cards in Easy Mode
       document.querySelectorAll(".easy-card").forEach(img => {
