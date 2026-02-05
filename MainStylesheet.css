@@ -142,6 +142,16 @@ h1 {
   width: 320px;
   max-width: 90%;
   box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#achievements-list {
+  overflow-y: auto;
+  flex: 1;              /* fills remaining space */
+  padding: 12px;
 }
 
 .close {
@@ -445,10 +455,23 @@ body.no-scroll {
   touch-action: none; /* important on mobile */
 }
 
+#achievements-list::-webkit-scrollbar {
+  display: none;
+}
+
 /*Mobile Content*/
 @media (max-width: 768px) {
   .desktop-only {
     display: none;
+  }
+
+  .s-modal-content {
+    width: 95%;
+    max-height: 85vh;
+  }
+
+  #achievements-list {
+    -webkit-overflow-scrolling: touch;
   }
 
   #page-title {

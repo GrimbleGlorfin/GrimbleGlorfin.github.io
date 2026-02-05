@@ -24,13 +24,43 @@ const achievements = [
   },
   {
     id: "weekly_warrior",
-    title: "Weekly Warrior",
+    title: "Weekly Winner",
     description: "Get a 7 day streak"
+  },
+  {
+    id: "fortnight_fighter",
+    title: "Fortnight Finisher",
+    description: "Get a 14 day streak"
+  },
+  {
+    id: "monthly_monster",
+    title: "Monthly Master",
+    description: "Get a 30 day streak"
+  },
+  {
+    id: "truly_dedicated",
+    title: "Truly Dedicated",
+    description: "Get a 365 day streak"
+  },
+  {
+    id: "lucky",
+    title: "Lucky?",
+    description: "Guess the card in 1 guess"
   },
   {
     id: "true_talent",
     title: "True Talent",
-    description: "Guess a card in 2 guesses"
+    description: "Guess the card in 2 guesses"
+  },
+  {
+    id: "close_call",
+    title: "Close Call",
+    description: "Guess the card in 8 guesses"
+  },
+  {
+    id: "well_rounded",
+    title: "Well Rounded",
+    description: "Win a game with every distribution of guess"
   },
   {
     id: "blind_genius",
@@ -38,6 +68,43 @@ const achievements = [
     description: "Win without using the Card Gallery"
   }
 ];
+
+const hidden_achievements = [
+  {
+    id: "fully_looted",
+    title: "Fully Looted",
+    description: "Guess every Treasure card"
+  },
+  {
+    id: "green_thumb",
+    title: "Green Thumb",
+    description: "Win after only guessing Victory cards"
+  },
+  {
+    id: "outdated",
+    title: "Outdated",
+    description: "Guess the Scout card"
+  },
+  {
+    id: "black_magic",
+    title: "Black Magic",
+    description: "Guess every card with 'Witch' in the name"
+  },
+  {
+    id: "goated",
+    title: "Goated",
+    description: "Guess Goatherd and Prize Goat"
+  },
+  {
+    id: "adventurous",
+    title: "Adventurous",
+    description: "Guess only cards from Adventures"
+  }
+];
+
+const victory_cards = ["Distant Lands","Vineyard","Distant Shore","Stronghold","Territory","Estate","Duchy","Gardens","Province","Fairgrounds"
+  ,"Overgrown Estate","Feodum","Dame Josephine","Humble Castle","Crumbling Castle","Small Castle","Haunted Castle","Opulent Castle","Sprawling Castle"
+  ,"Grand Castle","King's Castle","Tunnel","Silk Road","Farmland","Great Hall","Mill","Duke","Harem","Nobles","Cemetery","Marchland","Colony","Island"]
 
 const sidebar = document.querySelector(".sidebar");
 const galleryDrawer = document.getElementById("gallery-drawer");
@@ -113,6 +180,14 @@ function unlockAchievement(id) {
     if (!document.querySelector(".modal:not(.hidden)")) {
         showAchievementToast(achievement);
     }   
+  } else {
+      const hidden_achievement = hidden_achievements.find(a => a.id === id);
+      if (hidden_achievement) {
+        if (!document.querySelector(".modal:not(.hidden)")) {
+            showAchievementToast(hidden_achievement);
+        } 
+        achievements.push(hidden_achievement)  
+      }
   }
 }
 
@@ -148,11 +223,13 @@ const achievementsModal = document.getElementById("achievement-modal");
 
 document.getElementById("open-achievements").onclick = () => {
   achievementsModal.classList.remove("hidden");
+  document.body.classList.add("no-scroll");
   renderAchievements();
 };
 
 document.getElementById("close-achievements").onclick = () => {
   achievementsModal.classList.add("hidden");
+  document.body.classList.remove("no-scroll");
 };
 
 achievementsModal.addEventListener("click", e => {
@@ -171,10 +248,12 @@ document.getElementById("stats-modal").addEventListener("click", e => {
 document.getElementById("stats-btn").onclick = () => {
   renderStats();
   document.getElementById("stats-modal").classList.remove("hidden");
+  document.body.classList.add("no-scroll");
 };
 
 document.getElementById("close-stats").onclick = () => {
   document.getElementById("stats-modal").classList.add("hidden");
+  document.body.classList.remove("no-scroll");
 };
 
 document.getElementById("dark-toggle").onclick = () => {
@@ -332,6 +411,7 @@ function addGuessRows(search) {
     const row = document.createElement("div");
     guessCount += 1
     unlockAchievement("test")
+    //console.log("Guessed cards" + guessedCards)
 
     row.className = "guess-rows";
     console.log("Created row:", row);
@@ -371,14 +451,53 @@ function addGuessRows(search) {
                 setTimeout(() => {
                     showModal("You Win!", `Correct - the card was ${daily_card["name"]}.`);
                 }, 1800);
-                if (stats.streak === 7) {
+                if (stats.streak >= 7) {
                     unlockAchievement("weekly_warrior")
+                }
+                if (stats.streak >= 14) {
+                    unlockAchievement("fortnight_fighter")
+                }
+                if (stats.streak >= 30) {
+                    unlockAchievement("monthly_monster")
+                }
+                if (stats.streak >= 365) {
+                    unlockAchievement("truly_dedicated")
                 }
                 if (!galleryUsed) {
                     unlockAchievement("blind_genius")
                 }
                 if (guessCount === 2) {
                     unlockAchievement("true_talent")
+                }
+                if (guessCount === 1) {
+                    unlockAchievement("lucky")
+                }
+                if (guessCount === 2) {
+                    unlockAchievement("close_call")
+                }
+                if (guessedCards.has("Goatherd") && guessedCards.has("Prize Goat")) {
+                    unlockAchievement("goated")
+                }
+                if (guessedCards.has("Scout")) {
+                    unlockAchievement("outdated")
+                }
+                const thumb = true
+                guessedCards.forEach((item) => {
+                  if (!victory_cards.has(item)) {
+                    thumb = false
+                  }
+                });
+                if (thumb) {
+                  unlockAchievement("green_thumb")
+                }
+                const some_bool = true
+                stats.guessDistribution.forEach((item) => {
+                  if (item === 0) {
+                    some_bool = false
+                  }
+                });
+                if (some_bool) {
+                  unlockAchievement("well_rounded")
                 }
             } 
         }
