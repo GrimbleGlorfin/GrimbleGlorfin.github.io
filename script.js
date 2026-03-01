@@ -105,6 +105,7 @@ const hidden_achievements = [
 const victory_cards = ["Distant Lands","Vineyard","Distant Shore","Stronghold","Territory","Estate","Duchy","Gardens","Province","Fairgrounds"
   ,"Overgrown Estate","Feodum","Dame Josephine","Humble Castle","Crumbling Castle","Small Castle","Haunted Castle","Opulent Castle","Sprawling Castle"
   ,"Grand Castle","King's Castle","Tunnel","Silk Road","Farmland","Great Hall","Mill","Duke","Harem","Nobles","Cemetery","Marchland","Colony","Island"]
+const witch_cards = ["Witch","Sea Witch","Old Witch","Young Witch","Snake Witch","Witch's Hut"]
 
 const sidebar = document.querySelector(".sidebar");
 const galleryDrawer = document.getElementById("gallery-drawer");
@@ -149,9 +150,11 @@ function loadStats() {
     totalGames: 0,
     wins: 0,
     guessDistribution: [0,0,0,0,0,0,0,0,0], // 1–8 guesses , fails
+    avgGuess: 0,
     streak: 0,
     maxStreak: 0,
-    lastWinDate: null
+    lastWinDate: null,
+    guessedCards: new Set()
   };
 }
 
@@ -424,6 +427,8 @@ function addGuessRows(search) {
 
     findCard(search).then(card => {
         const stats = loadStats();
+        const total_guess = 0
+        const guess_num = 0
         if (card) {
             console.log("Found card:", card);
             addBoxWrapper(row,"Color","color_" + Date.now(),card["color"],compareCard(card["color"],daily_card["color"]),0)
@@ -440,6 +445,13 @@ function addGuessRows(search) {
                 stats.totalGames++;
                 stats.wins++;
                 stats.guessDistribution[guessCount - 1]++; // e.g., stats[3]++ for 4 guesses
+                total_guess = 0
+                guess_num = 0
+                stats.guessDistribution.forEach((guess) => {
+                  total_guess += guess
+                  guess_num += 1
+                });
+                stats.avgGuess = (total_guess / guess_num)
                 if (stats.lastWinDate === getYesterdayKey()) {
                     stats.streak++;
                 } else {
@@ -447,6 +459,7 @@ function addGuessRows(search) {
                 }
                 stats.lastWinDate = todayKey;
                 stats.maxStreak = Math.max(stats.maxStreak, stats.streak);
+                stats.guessedCards.push(guessedCards)
                 saveStats(stats);
                 setTimeout(() => {
                     showModal("You Win!", `Correct - the card was ${daily_card["name"]}.`);
@@ -499,6 +512,15 @@ function addGuessRows(search) {
                 if (some_bool) {
                   unlockAchievement("well_rounded")
                 }
+                const all_witches = true
+                stats.guessedCards.forEach((item) => {
+                  if (!witch_cards.has(item)) {
+                    all_witches = false
+                  }
+                });
+                if (all_witches) {
+                  unlockAchievement("black_magic")
+                }
             } 
         }
         if (guessCount >= 8 && card["name"] !== daily_card["name"]) {
@@ -506,8 +528,16 @@ function addGuessRows(search) {
                 localStorage.setItem(`guesses-${todayKey}`, guessCount);
                 stats.totalGames++;
                 stats.guessDistribution[8]++;
+                total_guess = 0
+                guess_num = 0
+                stats.guessDistribution.forEach((guess) => {
+                  total_guess += guess
+                  guess_num += 1
+                });
+                stats.avgGuess = (total_guess / guess_num)
                 stats.streak = 0;
                 stats.maxStreak = Math.max(stats.maxStreak, stats.streak);
+                stats.guessedCards.push(guessedCards)
                 saveStats(stats);
                 setTimeout(() => {
                     showModal("You Lose!", `The correct card was ${daily_card["name"]}.`);
@@ -565,6 +595,7 @@ function renderStats() {
     stats.totalGames ? Math.round((stats.wins / stats.totalGames) * 100) + "%" : "0%";
   document.getElementById("stat-streak").textContent = stats.streak;
   document.getElementById("stat-maxstreak").textContent = stats.maxStreak;
+  document.getElementById("stat-guessavg").textContent = stats.avgGuess;
 
   const container = document.getElementById("guess-histogram");
   container.innerHTML = "";
@@ -609,9 +640,17 @@ function getYesterdayKey() {
   // Use year, month, and day to create a unique number for yesterday
   const year = today.getFullYear();
   const month = today.getMonth();
-  const day = today.getDate() - 1;
+  day = today.getDate() - 1;
   if (day === 0) {
-    day = 30;
+    if ([1,3,5,7,8,10,12].includes(month)) {
+        day = 31
+    }
+    if ([4,6,9,11].includes(month)) {
+        day = 30
+    }
+    if (month === 2) {
+        day = 28
+    }
   }
   
   return year * 10000 + month * 100 + day;
