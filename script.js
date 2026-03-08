@@ -427,8 +427,8 @@ function addGuessRows(search) {
 
     findCard(search).then(card => {
         const stats = loadStats();
-        const total_guess = 0
-        const guess_num = 0
+        total_guess = 0
+        guess_num = 0
         if (card) {
             console.log("Found card:", card);
             addBoxWrapper(row,"Color","color_" + Date.now(),card["color"],compareCard(card["color"],daily_card["color"]),0)
