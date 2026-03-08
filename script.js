@@ -446,12 +446,12 @@ function addGuessRows(search) {
                 stats.wins++;
                 stats.guessDistribution[guessCount - 1]++; // e.g., stats[3]++ for 4 guesses
                 total_guess = 0
-                guess_num = 0
+                guess_num = 1
                 stats.guessDistribution.forEach((guess) => {
-                  total_guess += guess
+                  total_guess += guess_num*guess
                   guess_num += 1
                 });
-                stats.avgGuess = (total_guess / guess_num)
+                stats.avgGuess = total_guess
                 if (stats.lastWinDate === getYesterdayKey()) {
                     stats.streak++;
                 } else {
@@ -529,12 +529,12 @@ function addGuessRows(search) {
                 stats.totalGames++;
                 stats.guessDistribution[8]++;
                 total_guess = 0
-                guess_num = 0
+                guess_num = 1
                 stats.guessDistribution.forEach((guess) => {
-                  total_guess += guess
+                  total_guess += guess_num*guess
                   guess_num += 1
                 });
-                stats.avgGuess = (total_guess / guess_num)
+                stats.avgGuess = total_guess
                 stats.streak = 0;
                 stats.maxStreak = Math.max(stats.maxStreak, stats.streak);
                 //stats.guessedCards.push(guessedCards)
