@@ -11,6 +11,7 @@ let galleryUsed = false;
 const DEBUG = false;
 
 if (DEBUG) {
+  console.log("DEBUG")
   localStorage.removeItem("achievements");
   localStorage.removeItem("stats");
   localStorage.removeItem(`guesses-${todayKey}`);
@@ -485,7 +486,7 @@ function addGuessRows(search) {
                 if (guessCount === 1) {
                     unlockAchievement("lucky")
                 }
-                if (guessCount === 2) {
+                if (guessCount === 8) {
                     unlockAchievement("close_call")
                 }
                 if (guessedCards.has("Goatherd") && guessedCards.has("Prize Goat")) {
@@ -494,16 +495,16 @@ function addGuessRows(search) {
                 if (guessedCards.has("Scout")) {
                     unlockAchievement("outdated")
                 }
-                const thumb = true
+                thumb = true
                 guessedCards.forEach((item) => {
-                  if (!victory_cards.has(item)) {
+                  if (!victory_cards.includes(item)) {
                     thumb = false
                   }
                 });
                 if (thumb) {
                   unlockAchievement("green_thumb")
                 }
-                const some_bool = true
+                some_bool = true
                 stats.guessDistribution.forEach((item) => {
                   if (item === 0) {
                     some_bool = false
@@ -512,15 +513,15 @@ function addGuessRows(search) {
                 if (some_bool) {
                   unlockAchievement("well_rounded")
                 }
-                const all_witches = true
+                //all_witches = true
                 //stats.guessedCards.forEach((item) => {
                 //  if (!witch_cards.has(item)) {
                 //    all_witches = false
                 //  }
                 //});
-                if (all_witches) {
-                  unlockAchievement("black_magic")
-                }
+                //if (all_witches) {
+                //  unlockAchievement("black_magic")
+                //}
             } 
         }
         if (guessCount >= 8 && card["name"] !== daily_card["name"]) {
@@ -574,7 +575,18 @@ function showAchievementToast(achievement) {
 function compareCard(attribute,daily_attribute) {
     if (attribute === daily_attribute) {
         return "#8BC79A" //"green"
-    } 
+    }
+    if (typeof attribute === 'string' || Array.isArray(attribute)) {
+        attr_list = attribute.split(" - ")
+        d_attr_list = daily_attribute.split(" - ")
+        for (let element of attr_list) {
+          if (d_attr_list.includes(element)) {
+            return "#F1DE77"//"yellow"
+          }
+          
+        }
+    }
+    /*
     if (typeof attribute === 'string' || Array.isArray(attribute)) {
         if (attribute.includes(daily_attribute)) {
             return "#F1DE77"//"yellow"
@@ -584,8 +596,9 @@ function compareCard(attribute,daily_attribute) {
         if (daily_attribute.includes(attribute)) {
             return "#F1DE77"//"yellow"
         }
-    }    
-    return "#E28C8C"//"red"
+    }  
+    */ 
+  return "#E28C8C"//"red"
 }
 
 function renderStats() {
