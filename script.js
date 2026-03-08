@@ -459,7 +459,7 @@ function addGuessRows(search) {
                 }
                 stats.lastWinDate = todayKey;
                 stats.maxStreak = Math.max(stats.maxStreak, stats.streak);
-                stats.guessedCards.push(guessedCards)
+                //stats.guessedCards.push(guessedCards)
                 saveStats(stats);
                 setTimeout(() => {
                     showModal("You Win!", `Correct - the card was ${daily_card["name"]}.`);
@@ -513,11 +513,11 @@ function addGuessRows(search) {
                   unlockAchievement("well_rounded")
                 }
                 const all_witches = true
-                stats.guessedCards.forEach((item) => {
-                  if (!witch_cards.has(item)) {
-                    all_witches = false
-                  }
-                });
+                //stats.guessedCards.forEach((item) => {
+                //  if (!witch_cards.has(item)) {
+                //    all_witches = false
+                //  }
+                //});
                 if (all_witches) {
                   unlockAchievement("black_magic")
                 }
@@ -537,7 +537,7 @@ function addGuessRows(search) {
                 stats.avgGuess = (total_guess / guess_num)
                 stats.streak = 0;
                 stats.maxStreak = Math.max(stats.maxStreak, stats.streak);
-                stats.guessedCards.push(guessedCards)
+                //stats.guessedCards.push(guessedCards)
                 saveStats(stats);
                 setTimeout(() => {
                     showModal("You Lose!", `The correct card was ${daily_card["name"]}.`);
