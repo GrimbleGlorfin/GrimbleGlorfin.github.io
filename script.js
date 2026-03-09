@@ -271,7 +271,7 @@ document.getElementById("new-card").addEventListener("click", () => {
     });
     resetGuesses();
     showBlankCard();
-    console.log("Daily Card: " + daily_card.value)
+    console.log("New Daily Card: " + daily_card.name)
 });
 
 // Load saved preference
@@ -436,7 +436,7 @@ function addGuessRows(search) {
             addBoxWrapper(row,"Type","type_" + Date.now(),card["type"],compareCard(card["type"],daily_card["type"]),300)
             addBoxWrapper(row,"Expansion","expansion_" + Date.now(),card["expansion"],compareCard(card["expansion"],daily_card["expansion"]),600)
             addBoxWrapper(row,"Text","text_" + Date.now(),card["text"],compareCard(card["text"],daily_card["text"]),900)
-            addBoxWrapper(row,"Cost","cost_" + Date.now(),card["cost"],compareCard(card["cost"],daily_card["cost"]),1200)
+            addBoxWrapper(row,"Cost","cost_" + Date.now(),card["cost"],compareCard_Cost(card["cost"],daily_card["cost"]),1200)
             addBoxWrapper(row,"Name","name_" + Date.now(),card["name"],compareCard(card["name"],daily_card["name"]),1500)
             console.log("Row after adding boxes:", row);
         }
@@ -572,6 +572,25 @@ function showAchievementToast(achievement) {
   }, 3000);
 }
 
+function compareCard_Cost(attribute,daily_attribute) {
+  if (attribute === daily_attribute) {
+        return "#8BC79A" //"green"
+  }
+  if (typeof attribute === 'string' || Array.isArray(attribute)) {
+    if (attribute.includes(daily_attribute)) {
+        return "#F1DE77"//"yellow"
+    } 
+  }
+  if (typeof daily_attribute === 'string' || Array.isArray(daily_attribute)) {
+    if (daily_attribute.includes(attribute)) {
+      return "#F1DE77"//"yellow"
+    }
+  }  
+  return "#E28C8C"//"red"
+  
+}
+
+
 function compareCard(attribute,daily_attribute) {
     if (attribute === daily_attribute) {
         return "#8BC79A" //"green"
@@ -583,7 +602,7 @@ function compareCard(attribute,daily_attribute) {
           if (d_attr_list.includes(element)) {
             return "#F1DE77"//"yellow"
           }
-          
+
         }
     }
     /*
