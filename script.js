@@ -452,7 +452,7 @@ function addGuessRows(search) {
                   total_guess += guess_num*guess
                   guess_num += 1
                 });
-                stats.avgGuess = (total_guess/stats.totalGames)
+                stats.avgGuess = (total_guess/stats.totalGames).toFixed(2);
                 if (stats.lastWinDate === getYesterdayKey()) {
                     stats.streak++;
                 } else {
