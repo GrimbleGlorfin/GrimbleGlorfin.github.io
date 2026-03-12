@@ -24,15 +24,13 @@
 
       <button type="submit" onclick="filterImages(event)">Guess</button>
     </form>
-    <span id="auth-label" style="font-size:0.85rem; opacity:0.7;"></span>
     <button id="dark-toggle">Dark Mode</button>
     <button id="new-card" class="desktop-only">New Card</button>
     <button id="easy-toggle" class="desktop-only">Card Gallery ▼</button>
     <button id="stats-btn">Stats</button>
     <button id="open-achievements">Achievements</button>
-    <button id="auth-btn">Sign In</button>
     <div id="gallery-drawer" class="gallery-drawer">
-      <button id="close-gallery" class="mobile-only">Close</button> <!-- Not Working -->
+      <button id="close-gallery">Close</button> <!-- Not Working -->
       <div id="easy-mode" class="easy-hidden">
         <div id="easy-grid"></div>
       </div>
@@ -426,24 +424,6 @@
   </div>
 
   <div id="achievement-toast-container"></div>
-
-  <!-- Firebase SDKs (compat v9 — works as plain globals, no bundler needed) -->
-  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
-  <script>
-
-    firebase.initializeApp({
-      apiKey: "AIzaSyC4O7jtl7StUiMdUCa9-MYUvBpsckBdIQw",
-      authDomain: "dailydominion-5e4ac.firebaseapp.com",
-      projectId: "dailydominion-5e4ac",
-      storageBucket: "dailydominion-5e4ac.firebasestorage.app",
-      messagingSenderId: "189619374870",
-      appId: "1:189619374870:web:6490f4602970699a0dde37",
-      measurementId: "G-0J580DRZCV"
-    });
-    // ─────────────────────────────────────────────────────────────────────────
-  </script>
 
   <script src="script.js"></script>
 
