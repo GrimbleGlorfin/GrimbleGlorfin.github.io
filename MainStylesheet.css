@@ -432,6 +432,10 @@ details label {
   display: none;
 }
 
+#close-gallery {
+  display: none;
+}
+
 
 
 @keyframes toast-in {
@@ -545,6 +549,21 @@ body.no-scroll {
     background: var(--card-bg);
     padding: 12px;
     color: var(--text);
+  }
+
+  #close-gallery {
+    display: block;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 14px;
+    background: var(--card-bg);
+    color: var(--text);
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    z-index: 1300; /* higher than the drawer */
+    text-align: right;
   }
 
   .easy-card {
